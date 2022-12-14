@@ -1,0 +1,24 @@
+rules:
+#  - rule: respond to FAQs
+#    steps:
+#    - intent: faq
+#    - action: utter_faq
+ - rule: respond to question
+   steps:
+   - intent: question
+   - action: action_get_answer
+#  - rule: option 1, respond to FAQs
+#    steps:
+#    - action: utter_greet
+#    - intent: inform
+#      entities:
+#      - number: "1"
+#    - action: utter_faq
+
+#  - rule: option 2, respond to question
+#    steps:
+#    - action: utter_greet
+#    - intent: inform
+#      entities:
+#      - number: "2"
+#    - action: action_get_answer

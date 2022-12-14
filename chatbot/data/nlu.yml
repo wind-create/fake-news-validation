@@ -1,0 +1,62 @@
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey!
+    - Hallo
+    - hello
+    - Good day
+    - Good morning
+    - howdy
+
+- intent: inform
+  examples: |
+    - My email is example@example.com
+    - random@example.com
+    - Please send it to anything@example.com
+    - Email is something@example.com
+    - 1
+    - 2
+    - option 1
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - am I talking to a human
+    - is this a chatbot
+
+- intent: faq/ask_ml
+  examples: |
+    - how can I get started in ML?
+    - what are some good resrouces for learning about deep learning?
+    - can you recommend machine learning stuff?
+
+- intent: faq/ask_nlp
+  examples: |
+    - whats a good nlp course?
+    - how should I learn nlp?
+    - how can i get started in NLP?
+
+- intent: faq/ask_rasa_learn
+  examples: |
+    - how can i learn to build a chatbot?
+    - how to make a chatbot?
+    - how to use rasa?
+    - I need help with rasa
+
+- intent: faq/ask_mentor
+  examples: |
+    - can you be my mentor?
+    - do you mentor people? 
+    - can you guide me? 
+    - how can I be your student?
+- intent: faq/ask_kaggle
+  examples: |
+    - can you help me with Kaggle?
+    - how do I do kaggle competitions?
+    - how to start kaggling
+    - what's kaggle
+- intent: faq/ask_rasa
+  examples: |
+    - what's rasa?
+    - what can I do with rasa
