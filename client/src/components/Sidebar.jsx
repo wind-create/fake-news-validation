@@ -17,17 +17,26 @@ import {
     ChevronLeft,
     ChevronRightOutlined,
     HomeOutlined,
-    ShoppingCartOutlined,
-    Groups2Outlined,
-    ReceiptLongOutlined,
-    PublicOutlined,
-    PointOfSaleOutlined,
-    TodayOutlined,
-    CalendarMonthOutlined,
     AdminPanelSettingsOutlined,
-    TrendingUpOutlined,
-    PieChartOutlined
-} from "@mui/icons-material"
+    QuestionAnswerOutlined,
+    ChatOutlined
+} from "@mui/icons-material";
+// import {
+//     SettingOutlined,
+//     ChevronLeft,
+//     ChevronRightOutlined,
+//     HomeOutlined,
+//     ShoppingCartOutlined,
+//     Groups2Outlined,
+//     ReceiptLongOutlined,
+//     PublicOutlined,
+//     PointOfSaleOutlined,
+//     TodayOutlined,
+//     CalendarMonthOutlined,
+//     AdminPanelSettingsOutlined,
+//     TrendingUpOutlined,
+//     PieChartOutlined,
+// } from "@mui/icons-material";
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import FlexBetween from './FlexBetween';
@@ -39,45 +48,53 @@ const navItems = [
         icon: <HomeOutlined />
     },
     {
-        text: "Data QA Hoax",
+        text: "Data",
         icon: null,
     },
     {
-        text: "Products",
-        icon: <ShoppingCartOutlined />
+        text: "FAQ",
+        icon: <QuestionAnswerOutlined />
     },
     {
-        text: "Customers",
-        icon: <Groups2Outlined />
+        text: "Hoax",
+        icon: <ChatOutlined />
     },
-    {
-        text: "Transactions",
-        icon: <ReceiptLongOutlined />
-    },
-    {
-        text: "Geography",
-        icon: <PublicOutlined />
-    },
-    {
-        text: "Sales",
-        icon: null,
-    },
-    {
-        text: "Overview",
-        icon: <PointOfSaleOutlined />
-    },
-    {
-        text: "Daily",
-        icon: <TodayOutlined />
-    },
-    {
-        text: "Monthly",
-        icon: <CalendarMonthOutlined />
-    },
-    {
-        text: "Breakdown",
-        icon: <PieChartOutlined />
-    },
+    // {
+    //     text: "Products",
+    //     icon: <ShoppingCartOutlined />
+    // },
+    // {
+    //     text: "Customers",
+    //     icon: <Groups2Outlined />
+    // },
+    // {
+    //     text: "Transactions",
+    //     icon: <ReceiptLongOutlined />
+    // },
+    // {
+    //     text: "Geography",
+    //     icon: <PublicOutlined />
+    // },
+    // {
+    //     text: "Sales",
+    //     icon: null,
+    // },
+    // {
+    //     text: "Overview",
+    //     icon: <PointOfSaleOutlined />
+    // },
+    // {
+    //     text: "Daily",
+    //     icon: <TodayOutlined />
+    // },
+    // {
+    //     text: "Monthly",
+    //     icon: <CalendarMonthOutlined />
+    // },
+    // {
+    //     text: "Breakdown",
+    //     icon: <PieChartOutlined />
+    // },
     {
         text: "Management",
         icon: null
@@ -86,10 +103,10 @@ const navItems = [
         text: "Admin",
         icon: <AdminPanelSettingsOutlined />
     },
-    {
-        text: "Performance",
-        icon: <TrendingUpOutlined />
-    },
+    // {
+    //     text: "Performance",
+    //     icon: <TrendingUpOutlined />
+    // },
 
 ]
 

@@ -9,6 +9,9 @@ import clientRoutes from "./routes/client.js";
 import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 
+// data imports
+// import QAHoaxNews from './models/QAHoaxNews.js';
+
 /* configuration */
 dotenv.config();
 const app = express();
