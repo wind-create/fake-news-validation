@@ -8,6 +8,7 @@ import Layout from "scenes/layout";
 import Dashboard from "scenes/dashboard";
 import Hoax from "scenes/hoax";
 import Faq from "scenes/faq";
+import CreateQA from "scenes/createQA";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -23,6 +24,7 @@ function App() {
               <Route path= "/dashboard" element={<Dashboard />}/>
               <Route path= "/hoax" element={<Hoax />}/>
               <Route path= "/faq" element={<Faq />}/>
+              <Route path= "/create" element={<CreateQA />}/>
             </Route>
           </Routes>
         </ThemeProvider>

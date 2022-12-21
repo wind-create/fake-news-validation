@@ -13,13 +13,13 @@ import {
     useTheme
 } from "@mui/material";
 import {
-    SettingOutlined,
     ChevronLeft,
     ChevronRightOutlined,
     HomeOutlined,
     AdminPanelSettingsOutlined,
     QuestionAnswerOutlined,
-    ChatOutlined
+    ChatOutlined,
+    AddBoxOutlined
 } from "@mui/icons-material";
 // import {
 //     SettingOutlined,
@@ -58,6 +58,10 @@ const navItems = [
     {
         text: "Hoax",
         icon: <ChatOutlined />
+    },
+    {
+        text: "create",
+        icon: <AddBoxOutlined />
     },
     // {
     //     text: "Products",
