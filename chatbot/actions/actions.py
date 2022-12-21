@@ -40,27 +40,53 @@ import operator
 
 import sqlite3
 import random
+from pymongo import MongoClient
 
-class DBQueryingMethods:
-     def create_connection(db_file):
-         conn = None
-         try:
-            conn = sqlite3.connect(db_file)
-         except Error as e:
-            print(e)
+# sqlite koneksi
+# class DBQueryingMethods:
+#      def create_connection(db_file):
+#          conn = None
+#          try:
+#             conn = sqlite3.connect(db_file)
+#          except Error as e:
+#             print(e)
          
-         return conn
+#          return conn
 
+# class DBQueryingMethods:
+#      def create_connection(db_file):
+#         client = MongoClient('mongodb+srv://skripsiuser:<password>@cluster0.khqzqbq.mongodb.net/?retryWrites=true&w=majority')
+#         db = client['test']
+#         collection = db['hoax_faqs']
+
+
+def _connect_mongo(username, password):
+    """ A util for making a connection to mongo """
+
+    if username and password:
+        mongo_uri = 'mongodb+srv://%s:%s@cluster0.khqzqbq.mongodb.net/?retryWrites=true&w=majority' % (username, password)
+        conn = MongoClient(mongo_uri)
+    else:
+        print("koneksi mongodb gagal")
+
+
+    return conn
 
 class GetAnswer(Action):
 
 
      def __init__(self):
 
-         conn = DBQueryingMethods.create_connection(db_file= "./data/faq.db")
-         
+        # csv dan sqlite
+        #   conn = DBQueryingMethods.create_connection(db_file= "./data/faq.db")
         #  self.faq = pd.read_csv('./data/faq.csv')
-         self.faq = pd.read_sql_query("SELECT * from faq_hoax_news", conn)
+        #  self.faq = pd.read_sql_query("SELECT * from faq_hoax_news", conn)
+
+        # mongodb
+         db = _connect_mongo(username='skripsiuser', password='skripsi12345')['test']
+         cursor = db['hoax_faqs'].find()
+         self.faq =  pd.DataFrame(list(cursor))
+        
          qss = list(self.faq['pertanyaan'])
          with open("./data/faq.yml", "wt", encoding="utf-8") as f:
              f.write("nlu: \n- intent: question\n  examples: | \n")
