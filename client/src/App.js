@@ -7,6 +7,7 @@ import { themeSettings } from "theme";
 import Layout from "scenes/layout";
 import Dashboard from "scenes/dashboard";
 import Hoax from "scenes/hoax";
+import Faq from "scenes/faq";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<Navigate to= "/dashboard" replace />}/>
               <Route path= "/dashboard" element={<Dashboard />}/>
               <Route path= "/hoax" element={<Hoax />}/>
+              <Route path= "/faq" element={<Faq />}/>
             </Route>
           </Routes>
         </ThemeProvider>

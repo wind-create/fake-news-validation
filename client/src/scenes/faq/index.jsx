@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Box, useTheme } from "@mui/material";
-import { useGetQAHoaxNewsQuery } from "state/api";
+import { useGetFaqQuery } from "state/api";
 import Header from "components/Header";
 import { DataGrid } from "@mui/x-data-grid";
 import DataGridCustomToolbar from "components/DataGridCustomToolbar";
 
-const Hoax = () => {
+const Faq = () => {
   const theme = useTheme();
   const [sort, setSort] = useState({});
-  const { data, isLoading } = useGetQAHoaxNewsQuery({
+  const { data, isLoading } = useGetFaqQuery({
     sort: JSON.stringify(sort),
   });
   console.log("data", data);
@@ -32,7 +32,7 @@ const Hoax = () => {
   ]
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="data QA Hoax" subtitle="List pertanyaan dan response QA Hoax"/>
+      <Header title="data FAQ" subtitle="List pertanyaan dan response FAQ"/>
       <Box
       mt="30px"
       height="75vh"
@@ -75,4 +75,4 @@ const Hoax = () => {
   )
 }
 
-export default Hoax
+export default Faq
