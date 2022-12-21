@@ -1,4 +1,4 @@
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, RadioGroup, Radio, FormLabel, FormControlLabel } from "@mui/material";
 import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -6,7 +6,7 @@ import Header from "../../components/Header";
 
 const CreateQA = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
-
+  
   const handleFormSubmit = (values) => {
     console.log(values);
   };
@@ -54,6 +54,7 @@ const CreateQA = () => {
               />
               <TextField
                 fullWidth
+                multiline
                 variant="filled"
                 type="text"
                 label="Response"
@@ -65,6 +66,15 @@ const CreateQA = () => {
                 helperText={touched.response && errors.response}
                 sx={{ gridColumn: "span 4" }}
               />
+              <FormLabel>Penyimpanan data</FormLabel>
+              <RadioGroup
+                name="collection"
+                value={values.collection}
+                onChange={handleChange}
+              >
+                <FormControlLabel control={<Radio />} label="FAQ" value="faqs"/>
+                <FormControlLabel control={<Radio />} label="Hoax" value="hoax_faqs"/>
+              </RadioGroup>
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
@@ -82,10 +92,12 @@ const CreateQA = () => {
 const checkoutSchema = yup.object().shape({
   pertanyaan: yup.string().required("required"),
   response: yup.string().required("required"),
+  collection: yup.string().required("required")
 });
 const initialValues = {
   pertanyaan: "",
   response: "",
+  collection:""
 };
 
 export default CreateQA;
