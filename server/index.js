@@ -9,12 +9,12 @@ import morgan from 'morgan';
 import path from "path";
 import { fileURLToPath } from "url";
 import clientRoutes from "./routes/client.js";
-import generalRoutes from "./routes/general.js";
-import managementRoutes from "./routes/management.js";
-import authRoutes from "./routes/auth.js";
-import userRoutes from "./routes/users.js";
+// import generalRoutes from "./routes/general.js";
+// import managementRoutes from "./routes/management.js";
+// import authRoutes from "./routes/auth.js";
+// import userRoutes from "./routes/users.js";
 // import postRoutes from "./routes/posts.js";
-import { register } from "./controllers/auth.js"
+// import { register } from "./controllers/auth.js"
 import { add } from './controllers/client.js';
 // import { createPost } from "./controllers/posts.js";
 // import { verifyToken } from './middleware/auth.js';
@@ -49,16 +49,16 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 /* Routes post */
-app.post("/auth/register", upload.single("picture"), register);
+// app.post("/auth/register", upload.single("picture"), register);
 // app.post("/posts", verifyToken, createPost)
 app.post("/client/add", add);
 
 /* Routes */
 app.use("/client", clientRoutes);
-app.use("/general", generalRoutes);
-app.use("/management", managementRoutes);
-app.use("/auth", authRoutes);
-app.use("/users", userRoutes);
+// app.use("/general", generalRoutes);
+// app.use("/management", managementRoutes);
+// app.use("/auth", authRoutes);
+// app.use("/users", userRoutes);
 // app.use("/posts", postRoutes)
 
 

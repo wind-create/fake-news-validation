@@ -5,7 +5,8 @@ export const api = createApi({
   reducerPath: "adminApi",
     tagTypes: [
         "Hoax",
-        "FAQ"
+        "FAQ",
+        "add"
     ],
     endpoints:(build) => ({
         getQAHoaxNews: build.query({
@@ -15,10 +16,18 @@ export const api = createApi({
         getFaq: build.query({
             query: () => "client/faq",
             providesTags: ["FAQ"],
+        }),
+        postaddData: build.query({
+            query: () => ({
+                url: "client/add",
+                method: "POST"
+            }),
+            providesTags: ["add"],
         })
     })
 })
 export const {
     useGetQAHoaxNewsQuery,
-    useGetFaqQuery
+    useGetFaqQuery,
+    usePostaddDataQuery
 } = api;

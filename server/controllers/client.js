@@ -4,6 +4,7 @@ import faq from "../models/faq.js";
 
 /* add data client */
 
+
 export const add = async(req, res) => {
     try {
         const {
@@ -11,13 +12,13 @@ export const add = async(req, res) => {
             response
         } = req.body;
 
-        const newData = new DataTransfer({
+        const newData = new faq({
             pertanyaan,
             response,
         });
         await newData.save();
 
-        const data = await faq.find();
+        const data = await newData.save();
         res.status(201).json(data);
     } catch (err) {
         res.status(409).json({ message: err.message});
