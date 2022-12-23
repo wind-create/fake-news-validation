@@ -1,6 +1,52 @@
 import hoax_faq from "../models/hoax_faq.js";
 import faq from "../models/faq.js";
 
+
+/* add data client */
+
+export const add = async(req, res) => {
+    try {
+        const {
+            pertanyaan,
+            response
+        } = req.body;
+
+        const newData = new DataTransfer({
+            pertanyaan,
+            response,
+        });
+        await newData.save();
+
+        const data = await faq.find();
+        res.status(201).json(data);
+    } catch (err) {
+        res.status(409).json({ message: err.message});
+    }
+};
+
+/* update data */ 
+
+export const updateData = async (req, res) => {
+    try{
+        const { id } = req.params;
+        const pertanyaan =  await faq.findById(id);
+        const response = await faq.findById(id);
+    
+        const updatedData = await faq.findByIdAndUpdate(
+            id,
+            { pertanyaan: pertanyaan.pertanyaan},
+            { response: response.response },
+            { new: true}
+        );
+    
+        res.status(200).json(updatedData);
+    } catch (err) {
+        res.status(404).json({message: err.message});
+    }
+    
+};
+
+/* get data client */
 export const getQAHoaxNews = async(req, res) =>{
     try{
         const QAHoaxNews = await hoax_faq.find()
