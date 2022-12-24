@@ -4,7 +4,7 @@ import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Dropzone from "react-dropzone";
 import Header from "../../components/Header";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import { useState } from "react";
 // import { useDispatch } from "react-redux";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
@@ -16,7 +16,7 @@ const Register = () => {
 
     const { palette } = useTheme();
     // const dispatch = useDispatch();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const registerAdmin = async (values, onSubmitProps) =>{
         try{
@@ -174,7 +174,7 @@ const Register = () => {
   )
 }
 
-const usernameReqExp =/^[A-z]{3,20}$/
+/* const usernameReqExp =/^[A-z]{3,20}$/ */
 const checkoutSchema = yup.object().shape({
   firstName: yup.string().required("required"),
   lastName: yup.string().required("required"),

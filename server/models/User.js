@@ -32,7 +32,7 @@ const UserSchema = new mongoose.Schema(
           },
         role: {
             type: String,
-            default: "admin",
+            default: "manager",
             min: 5,
         },
     }, { timestamps: true }
