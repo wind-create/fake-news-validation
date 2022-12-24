@@ -69,7 +69,7 @@ const navItems = [
     },
     {
         text: "Create",
-        icon: <ChatOutlined />
+        icon: <AddBoxOutlined />
     },
     {
         text: "Management",
