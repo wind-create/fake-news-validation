@@ -174,6 +174,7 @@ const Register = () => {
   )
 }
 
+const usernameReqExp =/^[A-z]{3,20}$/
 const checkoutSchema = yup.object().shape({
   firstName: yup.string().required("required"),
   lastName: yup.string().required("required"),
