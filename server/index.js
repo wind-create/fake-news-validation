@@ -16,6 +16,7 @@ import clientRoutes from "./routes/client.js";
 // import postRoutes from "./routes/posts.js";
 // import { register } from "./controllers/auth.js"
 import { add } from './controllers/client.js';
+import { addHoax } from './controllers/client.js';
 // import { createPost } from "./controllers/posts.js";
 // import { verifyToken } from './middleware/auth.js';
 
@@ -52,6 +53,7 @@ const upload = multer({ storage });
 // app.post("/auth/register", upload.single("picture"), register);
 // app.post("/posts", verifyToken, createPost)
 app.post("/client/add", add);
+app.post("/client/addHoax", addHoax);
 
 /* Routes */
 app.use("/client", clientRoutes);

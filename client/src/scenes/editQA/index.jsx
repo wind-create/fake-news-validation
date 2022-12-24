@@ -17,7 +17,7 @@ const EditQA = () => {
 
   useEffect(()=> {
     getFaqById();
-  })
+  },[])
   const getFaqById = async () => {
     const Faq = await axios.get(process.env.REACT_APP_BASE_URL + `/client/faq/${id}`)
     setPertanyaan(Faq.data.pertanyaan);

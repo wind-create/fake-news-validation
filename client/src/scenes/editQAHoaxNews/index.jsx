@@ -1,39 +1,56 @@
 import { useState, useEffect } from "react";
-import { useAddDataQAHoaxNewsMutation } from "state/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
 import { Box, Button, TextField} from "@mui/material";
 import { Formik } from "formik";
+import axios from "axios";
 
-const CreateHoax = () => {
+const EditQAHoaxNews = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
-  const [ addNewDataQAHoaxNews, {
-    isSuccess,
-  }] = useAddDataQAHoaxNewsMutation()
+
   const navigate = useNavigate()
   const [pertanyaan, setPertanyaan] = useState('')
   const [response, setResponse] = useState('');
+  const {id} = useParams();
 
-  useEffect(() => {
-    if(isSuccess) {
-      setPertanyaan('')
-      setResponse('')
-      navigate('/hoax')
-    }
-  }, [isSuccess, navigate])
+
+  useEffect(()=> {
+    getqahoaxnewsById();
+  },[])
+  const getqahoaxnewsById = async () => {
+    const QAHoaxNews = await axios.get(process.env.REACT_APP_BASE_URL + `/client/qahoaxnews/${id}`)
+    setPertanyaan(QAHoaxNews.data.pertanyaan);
+    setResponse(QAHoaxNews.data.response)
+  }
+
+//   useEffect(() => {
+//     if(isSuccess) {
+//       setPertanyaan('')
+//       setResponse('')
+//       navigate('/faq')
+//     }
+//   }, [isSuccess, navigate])
 
   const onPertanyaanChanged = e => setPertanyaan(e.target.value)
   const onResponseChanged = e => setResponse(e.target.value)
 
   const onSavedQAHoaxNewsClicked = async(e) => {
     e.preventDefault()
-    addNewDataQAHoaxNews({ pertanyaan, response})
+    try {
+        await axios.patch(process.env.REACT_APP_BASE_URL + `/client/qahoaxnews/${id}/updatedataqahoax`, {
+          pertanyaan,
+          response
+        });
+        navigate("/");
+      } catch (error) {
+        console.log(error);
+      }
   }
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="CREATE DATA QA Hoax NEws" subtitle="Membuat Data Pertanyaan dan Response Hoax News" />
+      <Header title="CREATE DATA QA" subtitle="Create Pertanyaan dan Response" />
       <Box
       mt="30px"
       height="75vh">
@@ -71,7 +88,7 @@ const CreateHoax = () => {
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
-                Create Data QA Hoax News
+                update Data QA Hoax News
               </Button>
             </Box>
           </form>
@@ -81,4 +98,4 @@ const CreateHoax = () => {
   )
 }
 
-export default CreateHoax
+export default EditQAHoaxNews

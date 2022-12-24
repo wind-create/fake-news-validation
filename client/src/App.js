@@ -10,6 +10,8 @@ import Hoax from "scenes/hoax";
 import Faq from "scenes/faq";
 import CreateQA from "scenes/createQA";
 import EditQA from "scenes/editQA";
+import EditQAHoaxNews from "scenes/editQAHoaxNews";
+import CreateHoax from "scenes/createHoax";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -26,7 +28,9 @@ function App() {
               <Route path= "/hoax" element={<Hoax />}/>
               <Route path= "/faq" element={<Faq />}/>
               <Route path= "/createFAQ" element={<CreateQA />}/>
+              <Route path= "/create" element={<CreateHoax />}/>
               <Route path="/client/faq/:id/editdatafaq" element={<EditQA />} />
+              <Route path="/client/qahoaxnews/:id/editdataqahoaxnews" element={<EditQAHoaxNews />} />
             </Route>
           </Routes>
         </ThemeProvider>

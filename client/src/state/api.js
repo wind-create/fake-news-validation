@@ -16,7 +16,7 @@ export const api = createApi({
         "Hoax",
         "FAQ",
         "add",
-        "deletefaq"
+        "addHoax"
     ],
     endpoints:(build) => ({
         getQAHoaxNews: build.query({
@@ -37,19 +37,21 @@ export const api = createApi({
             }),
             providesTags: ["add"],
         }),
-        deleteDataFAQ: build.mutation({
-            query: ({ id }) => ({
-                url: `client/faq/${id}/deletefaq`,
-                method: 'DELETE',
-                body: { id }
+        addDataQAHoaxNews: build.mutation({
+            query: initialQAHoaxNewsData => ({
+                url: "client/addHoax",
+                method: "POST",
+                body: {
+                    ...initialQAHoaxNewsData,
+                }
             }),
-            providesTags: ["deletefaq"]
-        }) 
+            providesTags: ["addHoax"],
+        })
     })
 })
 export const {
     useGetQAHoaxNewsQuery,
     useGetFaqQuery,
     useAddDataFAQMutation,
-    useDeleteDataFAQMutation,
+    useAddDataQAHoaxNewsMutation
 } = api;

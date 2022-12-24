@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Box, useTheme } from "@mui/material";
-import { useGetQAHoaxNewsQuery } from "state/api";
+import { useGetQAHoaxNewsQuery} from "state/api";
 import Header from "components/Header";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid} from "@mui/x-data-grid";
 import DataGridCustomToolbar from "components/DataGridCustomToolbar";
+import Button from '@mui/material/Button';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Hoax = () => {
   const theme = useTheme();
@@ -11,7 +14,26 @@ const Hoax = () => {
   const { data, isLoading } = useGetQAHoaxNewsQuery({
     sort: JSON.stringify(sort),
   });
+  const navigate = useNavigate()
+  const deleteQAHoax= async (id) => {
+    try {
+      await axios.delete(process.env.REACT_APP_BASE_URL + `/client/qahoaxnews/${id}/deleteQAHoax`);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
   console.log("data", data);
+  const onButtonDeleteClick = (e, id) => {
+    e.stopPropagation();
+    //do whatever you want with the row
+    deleteQAHoax(id)
+  };
+  const onButtonEditClick = (e, id) => {
+    e.stopPropagation();
+    //do whatever you want with the row
+    navigate(`/client/qahoaxnews/${id}/editdataqahoaxnews`)
+  };
 
   const columns = [
     {
@@ -29,6 +51,37 @@ const Hoax = () => {
       headerName: "response",
       flex: 0.5,
     },
+    {
+      field: 'edit',
+      headerName: 'edit',
+      sortable: false,
+      renderCell: (row) => {
+        return (
+          <Button
+            onClick={(e) => onButtonEditClick(e, row.id)}
+            variant="contained"
+          >
+            edit
+          </Button>
+        );
+      }
+      },
+      {
+        field: 'delete',
+        headerName: 'delete',
+        sortable: false,
+        renderCell: (row) => {
+          return (
+            <Button
+              onClick={(e) => onButtonDeleteClick(e, row.id)}
+              variant="contained"
+            >
+              Delete
+            </Button>
+          );
+        }
+        },
+    
   ]
   return (
     <Box m="1.5rem 2.5rem">
