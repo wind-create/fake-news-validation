@@ -48,7 +48,7 @@ const navItems = [
         icon: <HomeOutlined />
     },
     {
-        text: "Data",
+        text: "Data FAQ",
         icon: null,
     },
     {
@@ -56,49 +56,21 @@ const navItems = [
         icon: <QuestionAnswerOutlined />
     },
     {
+        text: "CreateFAQ",
+        icon: <AddBoxOutlined />
+    },
+    {
+        text: "Data QA Hoax",
+        icon: null,
+    },
+    {
         text: "Hoax",
         icon: <ChatOutlined />
     },
     {
-        text: "create",
-        icon: <AddBoxOutlined />
+        text: "Create",
+        icon: <ChatOutlined />
     },
-    // {
-    //     text: "Products",
-    //     icon: <ShoppingCartOutlined />
-    // },
-    // {
-    //     text: "Customers",
-    //     icon: <Groups2Outlined />
-    // },
-    // {
-    //     text: "Transactions",
-    //     icon: <ReceiptLongOutlined />
-    // },
-    // {
-    //     text: "Geography",
-    //     icon: <PublicOutlined />
-    // },
-    // {
-    //     text: "Sales",
-    //     icon: null,
-    // },
-    // {
-    //     text: "Overview",
-    //     icon: <PointOfSaleOutlined />
-    // },
-    // {
-    //     text: "Daily",
-    //     icon: <TodayOutlined />
-    // },
-    // {
-    //     text: "Monthly",
-    //     icon: <CalendarMonthOutlined />
-    // },
-    // {
-    //     text: "Breakdown",
-    //     icon: <PieChartOutlined />
-    // },
     {
         text: "Management",
         icon: null

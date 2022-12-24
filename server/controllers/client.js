@@ -28,19 +28,12 @@ export const add = async(req, res) => {
 /* update data */ 
 
 export const updateDataFaq = async (req, res) => {
-    try{
-        const { id } = req.params;
-        const pertanyaan =  await faq.findById(id);
-        const response = await faq.findById(id);
-    
-        const updatedData = await faq.findByIdAndUpdate(
-            id,
-            { pertanyaan: pertanyaan.pertanyaan},
-            { response: response.response },
-            { new: true}
+    try{    
+        const updatedatafaq = await faq.updateOne(
+            {_id:req.params.id}, {$set: req.body}
         );
     
-        res.status(200).json(updatedData);
+        res.status(200).json(updatedatafaq);
     } catch (err) {
         res.status(404).json({message: err.message});
     }
@@ -66,3 +59,33 @@ export const getFaq = async(req, res) =>{
     }
 }
 
+/* delete data client */
+
+export const deleteFaq = async(req, res) => {
+    const { id } = req.params
+
+    //confirm data
+    if(!id) {
+        return res.status(400).json({ message: 'Data ID Required'})
+    }
+
+    const Faq = await faq.findById(id).exec()
+
+    if(!Faq) {
+        return res.status(400).json({ message: 'Data not found'})
+    }
+    const result = await Faq.deleteOne()
+
+    const reply = `data FAQ ${result.pertanyaan} with ID ${result._id} deleted`
+    res.json(reply)
+}
+
+/* get data by id */
+export const getFAQById = async (req, res) => {
+    try {
+        const Faq = await faq.findById(req.params.id);
+        res.json(Faq);
+    } catch (error) {
+        res.status(404).json({message: error.message});
+    }
+}

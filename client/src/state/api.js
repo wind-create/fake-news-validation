@@ -3,6 +3,7 @@ import {
     createSelector,
     createEntityAdapter
 } from "@reduxjs/toolkit";
+import { buildQueries } from "@testing-library/react";
 
 const dataAdapter = createEntityAdapter({});
 
@@ -14,7 +15,8 @@ export const api = createApi({
     tagTypes: [
         "Hoax",
         "FAQ",
-        "add"
+        "add",
+        "deletefaq"
     ],
     endpoints:(build) => ({
         getQAHoaxNews: build.query({
@@ -34,11 +36,20 @@ export const api = createApi({
                 }
             }),
             providesTags: ["add"],
-        })
+        }),
+        deleteDataFAQ: build.mutation({
+            query: ({ id }) => ({
+                url: `client/faq/${id}/deletefaq`,
+                method: 'DELETE',
+                body: { id }
+            }),
+            providesTags: ["deletefaq"]
+        }) 
     })
 })
 export const {
     useGetQAHoaxNewsQuery,
     useGetFaqQuery,
-    useAddDataFAQMutation
+    useAddDataFAQMutation,
+    useDeleteDataFAQMutation,
 } = api;

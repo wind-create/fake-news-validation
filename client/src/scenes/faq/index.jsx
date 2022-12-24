@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Box, useTheme } from "@mui/material";
-import { useGetFaqQuery } from "state/api";
+import { useGetFaqQuery} from "state/api";
 import Header from "components/Header";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid} from "@mui/x-data-grid";
 import DataGridCustomToolbar from "components/DataGridCustomToolbar";
+import Button from '@mui/material/Button';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 const Faq = () => {
   const theme = useTheme();
@@ -11,7 +15,25 @@ const Faq = () => {
   const { data, isLoading } = useGetFaqQuery({
     sort: JSON.stringify(sort),
   });
+  const navigate = useNavigate()
+  const deletedFAQ= async (id) => {
+    try {
+      await axios.delete(process.env.REACT_APP_BASE_URL + `/client/faq/${id}/deletefaq`);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   console.log("data", data);
+  const onButtonDeleteClick = (e, id) => {
+    e.stopPropagation();
+    //do whatever you want with the row
+    deletedFAQ(id)
+  };
+  const onButtonEditClick = (e, id) => {
+    e.stopPropagation();
+    //do whatever you want with the row
+    navigate(`/client/faq/${id}/editdatafaq`)
+  };
 
   const columns = [
     {
@@ -29,6 +51,37 @@ const Faq = () => {
       headerName: "response",
       flex: 0.5,
     },
+    {
+      field: 'edit',
+      headerName: 'edit',
+      sortable: false,
+      renderCell: (row) => {
+        return (
+          <Button
+            onClick={(e) => onButtonEditClick(e, row.id)}
+            variant="contained"
+          >
+            edit
+          </Button>
+        );
+      }
+      },
+      {
+        field: 'delete',
+        headerName: 'delete',
+        sortable: false,
+        renderCell: (row) => {
+          return (
+            <Button
+              onClick={(e) => onButtonDeleteClick(e, row.id)}
+              variant="contained"
+            >
+              Delete
+            </Button>
+          );
+        }
+        },
+    
   ]
   return (
     <Box m="1.5rem 2.5rem">
