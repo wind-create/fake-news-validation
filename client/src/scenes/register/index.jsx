@@ -4,15 +4,46 @@ import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Dropzone from "react-dropzone";
 import Header from "../../components/Header";
-
+import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
+// import { useDispatch } from "react-redux";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import FlexBetween from "components/FlexBetween";
 
 const Register = () => {
     const isNonMobile = useMediaQuery("(min-width:600px)");
+//   const [pageType, setPageType] = useState("/");
+
     const { palette } = useTheme();
-    const handleFormSubmit = (values) => {
-        console.log(values);
+    // const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const registerAdmin = async (values, onSubmitProps) =>{
+        try{
+        const formData = new FormData();
+        for(let value in values) {
+            formData.append(value, values[value]);
+        }
+        formData.append("picturePath", values.picture.name)
+
+        await fetch(process.env.REACT_APP_BASE_URL + '/auth/register', {
+            method: "POST",
+            body: formData,
+            
+        });
+    
+        // const savedAdmin = await savedAdminResponse.json();
+        onSubmitProps.resetForm();
+    } catch (error){
+        console.log(error)
+    }
+        // if (savedAdmin) {
+        //     setPageType("/");
+        //   }
+    }
+
+    const handleFormSubmit = async(values, onSubmitProps) => {
+        await registerAdmin(values, onSubmitProps);
       };
     
   return (
