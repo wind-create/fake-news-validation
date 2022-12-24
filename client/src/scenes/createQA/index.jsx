@@ -1,30 +1,35 @@
-import { Box, Button, TextField, RadioGroup, Radio, FormLabel, FormControlLabel } from "@mui/material";
-import { Formik } from "formik";
-import * as yup from "yup";
+import { useState, useEffect } from "react";
+import { useAddDataFAQMutation } from "state/api";
+import { useNavigate } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
-import { usePostaddDataQuery } from "state/api";
-import { useState } from "react";
-import axios from "axios";
+import { Box, Button, TextField} from "@mui/material";
+import { Formik } from "formik";
 
 const CreateQA = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
-  
-  const [pertanyaan, setPertanyaan] = useState("");
-  const [response, setResponse] =useState("");
+  const [ addNewData, {
+    isSuccess,
+  }] = useAddDataFAQMutation()
+  const navigate = useNavigate()
+  const [pertanyaan, setPertanyaan] = useState('')
+  const [response, setResponse] = useState('');
 
+  useEffect(() => {
+    if(isSuccess) {
+      setPertanyaan('')
+      setResponse('')
+      navigate('/faq')
+    }
+  }, [isSuccess, navigate])
 
-  const saveData = async(e) => {
-    e.preventDefault();
-    try {  await axios.post("http://localhost:5001/client/add", {
-      pertanyaan,
-      response,
-    }) 
-  } catch (error) {console.log(error)}
+  const onPertanyaanChanged = e => setPertanyaan(e.target.value)
+  const onResponseChanged = e => setResponse(e.target.value)
+
+  const onSavedFAQClicked = async(e) => {
+    e.preventDefault()
+    addNewData({ pertanyaan, response})
   }
-  const handleFormSubmit = (values) => {
-    console.log(values);
-  };
 
   return (
     <Box m="1.5rem 2.5rem">
@@ -32,21 +37,9 @@ const CreateQA = () => {
       <Box
       mt="30px"
       height="75vh">
-      <Formik
-        onSubmit={handleFormSubmit}
-        initialValues={initialValues}
-        validationSchema={checkoutSchema}
-      >
-        {({
-          values,
-          errors,
-          touched,
-          handleBlur,
-          handleChange,
-          handleSubmit,
-        }) => (
-          <form onSubmit={saveData}>
-            <Box
+        <Formik>
+          <form className="form" onSubmit={onSavedFAQClicked}>
+          <Box
               display="grid"
               gap="30px"
               gridTemplateColumns="repeat(4, minmax(0, 1fr))"
@@ -55,49 +48,37 @@ const CreateQA = () => {
               }}
             >
               <TextField
-                fullWidth
-                variant="filled"
-                type="text"
-                label="Pertanyaan"
-                onChange={(e) => setPertanyaan(e.target.value)}
-                value={pertanyaan}
-                name="pertanyaan"
-                sx={{ gridColumn: "span 4" }}
+              fullWidth
+              variant="filled"
+              type="text"
+              label="Pertanyaan"
+              name="pertanyaan"
+              value={pertanyaan}
+              onChange={onPertanyaanChanged}
+              sx={{ gridColumn: "span 4" }}
               />
               <TextField
-                fullWidth
-                multiline
-                variant="filled"
-                type="text"
-                label="Response"
-                onChange={(e) => setResponse(e.target.value)}
-                value={response}
-                name="response"
-                sx={{ gridColumn: "span 4" }}
+              fullWidth
+              multiline
+              variant="filled"
+              type="text"
+              label="Response"
+              name="response"
+              value={response}
+              onChange={onResponseChanged}
+              sx={{ gridColumn: "span 4" }}
               />
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
-                Create
+                Create Data FAQ
               </Button>
             </Box>
           </form>
-        )}
-      </Formik>
+        </Formik>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-const checkoutSchema = yup.object().shape({
-  pertanyaan: yup.string().required("required"),
-  response: yup.string().required("required"),
-  collection: yup.string().required("required")
-});
-const initialValues = {
-  pertanyaan: "",
-  response: "",
-  collection:""
-};
-
-export default CreateQA;
+export default CreateQA

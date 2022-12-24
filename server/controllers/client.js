@@ -27,7 +27,7 @@ export const add = async(req, res) => {
 
 /* update data */ 
 
-export const updateData = async (req, res) => {
+export const updateDataFaq = async (req, res) => {
     try{
         const { id } = req.params;
         const pertanyaan =  await faq.findById(id);
@@ -65,3 +65,4 @@ export const getFaq = async(req, res) =>{
         res.status(404).json({ message: error.message});
     }
 }
+

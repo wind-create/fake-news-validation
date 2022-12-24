@@ -1,4 +1,12 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import {
+    createSelector,
+    createEntityAdapter
+} from "@reduxjs/toolkit";
+
+const dataAdapter = createEntityAdapter({});
+
+const initialState = dataAdapter.getInitialState()
 
 export const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
@@ -17,10 +25,13 @@ export const api = createApi({
             query: () => "client/faq",
             providesTags: ["FAQ"],
         }),
-        postaddData: build.query({
-            query: () => ({
+        addDataFAQ: build.mutation({
+            query: initialFAQData => ({
                 url: "client/add",
-                method: "POST"
+                method: "POST",
+                body: {
+                    ...initialFAQData,
+                }
             }),
             providesTags: ["add"],
         })
@@ -29,5 +40,5 @@ export const api = createApi({
 export const {
     useGetQAHoaxNewsQuery,
     useGetFaqQuery,
-    usePostaddDataQuery
+    useAddDataFAQMutation
 } = api;
