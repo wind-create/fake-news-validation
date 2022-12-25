@@ -10,7 +10,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import clientRoutes from "./routes/client.js";
 import authRoutes from "./routes/auth.js";
-// import userRoutes from "./routes/users.js";
+import userRoutes from "./routes/users.js";
 import { register } from "./controllers/auth.js"
 import { add } from './controllers/client.js';
 import { addHoax } from './controllers/client.js';
@@ -52,7 +52,7 @@ app.post("/client/addHoax", addHoax);
 /* Routes */
 app.use("/client", clientRoutes);
 app.use("/auth", authRoutes);
-// app.use("/users", userRoutes);
+app.use("/users", userRoutes);
 
 
 

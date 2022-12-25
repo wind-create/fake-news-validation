@@ -74,8 +74,12 @@ const navItems = [
         icon: null
     },
     {
-        text: "Admin",
+        text: "Manager",
         icon: <AdminPanelSettingsOutlined />
+    },
+    {
+        text: "Create_manager",
+        icon: <AddBoxOutlined />
     },
     // {
     //     text: "Performance",

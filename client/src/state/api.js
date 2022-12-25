@@ -13,12 +13,22 @@ export const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
   reducerPath: "adminApi",
     tagTypes: [
+        "User",
+        "Managers",
         "Hoax",
         "FAQ",
         "add",
         "addHoax"
     ],
     endpoints:(build) => ({
+        getUser: build.query({
+            query: (id) => `users/${id}`,
+            providesTags: ["User"],
+          }),
+        getManagers: build.query({
+            query: () => "users/managers",
+            providesTags: ["Managers"]
+        }),
         getQAHoaxNews: build.query({
             query: () => "client/qahoaxnews",
             providesTags: ["Hoax"],
@@ -50,6 +60,8 @@ export const api = createApi({
     })
 })
 export const {
+    useGetUserQuery,
+    useGetManagersQuery,
     useGetQAHoaxNewsQuery,
     useGetFaqQuery,
     useAddDataFAQMutation,

@@ -14,6 +14,7 @@ import profileImage from 'assets/profile.jpg';
 import { AppBar, Button, Box, Typography, IconButton, InputBase, Toolbar, Menu, MenuItem, useTheme } from '@mui/material';
 
 const Navbar = ({
+    user,
     isSidebarOpen,
     setIsSidebarOpen,
 }) => {
@@ -88,12 +89,12 @@ const Navbar = ({
                             fontSize="0.85rem"
                             sx={{ color: theme.palette.secondary[100] }}
                             >
-                                Willi
+                                {user.firstName}
                             </Typography>
                             <Typography
                              fontSize="0.75rem"
                              sx={{ color: theme.palette.secondary[200] }}>
-                                Admin
+                                {user.role}
                             </Typography>
                         </Box>
                         <ArrowDropDownOutlined

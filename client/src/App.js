@@ -14,6 +14,7 @@ import EditQAHoaxNews from "scenes/editQAHoaxNews";
 import CreateHoax from "scenes/createHoax";
 import Register from "scenes/register";
 import Login from "scenes/login";
+import Manager from "scenes/manager";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -35,7 +36,8 @@ function App() {
               <Route path= "/create" element={<CreateHoax />}/>
               <Route path="/client/faq/:id/editdatafaq" element={<EditQA />} />
               <Route path="/client/qahoaxnews/:id/editdataqahoaxnews" element={<EditQAHoaxNews />} />
-              <Route path= "/admin" element={<Register />}/>
+              <Route path= "/create_manager" element={<Register />}/>
+              <Route path= "/manager" element={<Manager />}/>
             </Route>
           </Routes>
         </ThemeProvider>

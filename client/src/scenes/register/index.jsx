@@ -48,7 +48,7 @@ const Register = () => {
     
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="CREATE DATA ADMIN" subtitle="Create Admin Baru" />
+      <Header title="CREATE DATA MANAGER" subtitle="Create Manager Baru" />
       <Box
       mt="30px"
       height="75vh">
