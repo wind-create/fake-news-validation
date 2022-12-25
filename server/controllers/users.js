@@ -19,3 +19,23 @@ export const getUsers = async(req, res) =>{
       res.status(404).json({ message: error.message});
   }
 }
+
+/* delete */
+export const deleteUser = async(req, res) => {
+  const { id } = req.params
+
+  //confirm data
+  if(!id) {
+      return res.status(400).json({ message: 'Data ID Required'})
+  }
+
+  const user = await User.findById(id).exec()
+
+  if(!user) {
+      return res.status(400).json({ message: 'Data not found'})
+  }
+  const result = await user.deleteOne()
+
+  const reply = `data user ${result.email} with ID ${result._id} deleted`
+  res.json(reply)
+}

@@ -15,21 +15,21 @@ const Manager = () => {
   const { data, isLoading } = useGetManagersQuery({
     sort: JSON.stringify(sort),
   });
-//   const navigate = useNavigate()
-//   const deletedFAQ= async (id) => {
-//     try {
-//       await axios.delete(process.env.REACT_APP_BASE_URL + `/client/faq/${id}/deletefaq`);
-//       navigate("/");
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
-//   console.log("data", data);
-//   const onButtonDeleteClick = (e, id) => {
-//     e.stopPropagation();
-//     //do whatever you want with the row
-//     deletedFAQ(id)
-//   };
+  const navigate = useNavigate()
+  const deletedFAQ= async (id) => {
+    try {
+      await axios.delete(process.env.REACT_APP_BASE_URL + `/users/${id}/deleteUser`);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  console.log("data", data);
+  const onButtonDeleteClick = (e, id) => {
+    e.stopPropagation();
+    //do whatever you want with the row
+    deletedFAQ(id)
+  };
 //   const onButtonEditClick = (e, id) => {
 //     e.stopPropagation();
 //     //do whatever you want with the row
@@ -77,21 +77,21 @@ const Manager = () => {
     //     );
     //   }
     //   },
-    //   {
-    //     field: 'delete',
-    //     headerName: 'delete',
-    //     sortable: false,
-    //     renderCell: (row) => {
-    //       return (
-    //         <Button
-    //           onClick={(e) => onButtonDeleteClick(e, row.id)}
-    //           variant="contained"
-    //         >
-    //           Delete
-    //         </Button>
-    //       );
-    //     }
-    //     },
+      {
+        field: 'delete',
+        headerName: 'delete',
+        sortable: false,
+        renderCell: (row) => {
+          return (
+            <Button
+              onClick={(e) => onButtonDeleteClick(e, row.id)}
+              variant="contained"
+            >
+              Delete
+            </Button>
+          );
+        }
+        },
     
   ]
   return (
