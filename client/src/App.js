@@ -19,6 +19,8 @@ import Manager from "scenes/manager";
 function App() {
   const mode = useSelector((state) => state.global.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+  const isAuth = Boolean(useSelector((state) => state.global.token))
+  
   return (
     <div className="app">
       <BrowserRouter>
@@ -26,18 +28,17 @@ function App() {
           <CssBaseline />
           <Routes>
             
-          <Route path= "/login" element={<Login />}/>
+          <Route path= "/" element={<Login />}/>
             <Route element={<Layout />}>
-              <Route path="/" element={<Navigate to= "/dashboard" replace />}/>
-              <Route path= "/dashboard" element={<Dashboard />}/>
-              <Route path= "/hoax" element={<Hoax />}/>
-              <Route path= "/faq" element={<Faq />}/>
-              <Route path= "/createFAQ" element={<CreateQA />}/>
-              <Route path= "/create" element={<CreateHoax />}/>
-              <Route path="/client/faq/:id/editdatafaq" element={<EditQA />} />
-              <Route path="/client/qahoaxnews/:id/editdataqahoaxnews" element={<EditQAHoaxNews />} />
-              <Route path= "/create_manager" element={<Register />}/>
-              <Route path= "/manager" element={<Manager />}/>
+              <Route path= "/dashboard" element={isAuth ? <Dashboard /> : <Navigate to="/" />}/>
+              <Route path= "/hoax" element={isAuth ? <Hoax /> : <Navigate to="/" />}/>
+              <Route path= "/faq" element={isAuth ? <Faq /> : <Navigate to="/" />}/>
+              <Route path= "/createFAQ" element={isAuth ? <CreateQA /> : <Navigate to="/" />}/>
+              <Route path= "/create" element={isAuth ? <CreateHoax /> : <Navigate to="/" />}/>
+              <Route path="/client/faq/:id/editdatafaq" element={isAuth ? <EditQA /> : <Navigate to="/" />} />
+              <Route path="/client/qahoaxnews/:id/editdataqahoaxnews" element={isAuth ? <EditQAHoaxNews /> : <Navigate to="/" />} />
+              <Route path= "/create_manager" element={isAuth ? <Register />  : <Navigate to="/" />}/>
+              <Route path= "/manager" element={isAuth ? <Manager />: <Navigate to="/" />}/>
             </Route>
           </Routes>
         </ThemeProvider>

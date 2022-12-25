@@ -11,16 +11,43 @@ import {
     DarkModeOutlined
 } from '@mui/icons-material';
 import { useDispatch } from 'react-redux';
+import {  useNavigate } from 'react-router-dom';
+
+import { setLogin } from "state";
+
 
 const Login = () => {
     const theme = useTheme();
     const isNonMobile = useMediaQuery("(min-width:600px)");
     const dispatch = useDispatch();
+    const navigate = useNavigate()
 
+    const loginAdmin = async(values, onSubmitProps) => {
+      try{
+      const loggedInResponse = await fetch(process.env.REACT_APP_BASE_URL + '/auth/login', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+      const loggedIn = await loggedInResponse.json()
+      onSubmitProps.resetForm()
+      if(loggedIn) {
+        dispatch(
+          setLogin({
+            user: loggedIn.user,
+            token: loggedIn.token,
+          })
+        );
+        navigate("/dashboard")
+      }
+    } catch (error){
+      console.log(error)
+  }
+    }
 
-    const handleFormSubmit = (values) => {
-        console.log(values);
-      };
+    const handleFormSubmit = async(values, onSubmitProps) => {
+      await loginAdmin(values, onSubmitProps);
+    };
   return (
     <Box>
     <Box
@@ -61,8 +88,7 @@ const Login = () => {
           touched,
           handleBlur,
           handleChange,
-          handleSubmit,
-          setFieldValue
+          handleSubmit
         }) => (
           <form onSubmit={handleSubmit}>
             <Box

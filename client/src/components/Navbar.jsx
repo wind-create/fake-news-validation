@@ -9,7 +9,7 @@ import {
 } from '@mui/icons-material';
 import FlexBetween from 'components/FlexBetween';
 import { useDispatch } from 'react-redux';
-import { setMode } from 'state';
+import { setMode, setLogout } from 'state';
 import profileImage from 'assets/profile.jpg';
 import { AppBar, Button, Box, Typography, IconButton, InputBase, Toolbar, Menu, MenuItem, useTheme } from '@mui/material';
 
@@ -24,6 +24,8 @@ const Navbar = ({
     const isOpen = Boolean(anchorEl);
     const handleClick = (event) => setAnchorEl(event.currentTarget);
     const handleClose = () => setAnchorEl(null);
+    const fullName = `${user.firstName} ${user.lastName}`;
+
 
     return (
       <AppBar 
@@ -89,7 +91,7 @@ const Navbar = ({
                             fontSize="0.85rem"
                             sx={{ color: theme.palette.secondary[100] }}
                             >
-                                {user.firstName}
+                                {fullName}
                             </Typography>
                             <Typography
                              fontSize="0.75rem"
@@ -107,7 +109,7 @@ const Navbar = ({
                     onClose={handleClose}
                     anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
                     >
-                    <MenuItem onClick={handleClose}>Log Out</MenuItem>
+                    <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
                     </Menu>
                 </FlexBetween>
             </FlexBetween>
