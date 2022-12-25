@@ -39,3 +39,17 @@ export const deleteUser = async(req, res) => {
   const reply = `data user ${result.email} with ID ${result._id} deleted`
   res.json(reply)
 }
+
+// update
+export const updateDataUser = async (req, res) => {
+    try{    
+        const updatedatauser = await User.updateOne(
+            {_id:req.params.id}, {$set: req.body}
+        );
+    
+        res.status(200).json(updatedatauser);
+    } catch (err) {
+        res.status(404).json({message: err.message});
+    }
+    
+};

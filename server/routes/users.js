@@ -2,7 +2,8 @@ import express from "express";
 import {
   getUsers,
   getUser,
-  deleteUser
+  deleteUser,
+  updateDataUser
 } from "../controllers/users.js";
 
 const router = express.Router();
@@ -14,6 +15,7 @@ router.get("/:id", getUser);
 
 router.delete("/:id/deleteUser", deleteUser)
 
+router.patch("/:id/updatedatauser", updateDataUser)
 /* UPDATE */
 // router.patch("/:id/:friendId", verifyToken, addRemoveFriend);
 
