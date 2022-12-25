@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     Box,
-    Divider,
     Drawer,
     IconButton,
     List,
@@ -40,7 +39,6 @@ import {
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import FlexBetween from './FlexBetween';
-import profileImage from "assets/profile.jpg";
 
 const navItems = [
     {
