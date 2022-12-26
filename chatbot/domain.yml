@@ -8,6 +8,7 @@ intents:
 - bot_challenge
 - faq
 - question
+- hoax_faq
 entities:
 - time
 - number
@@ -46,3 +47,4 @@ actions:
 - utter_greet
 - utter_i_am_a_bot
 - action_get_answer
+- action_get_hoax_faq_answer

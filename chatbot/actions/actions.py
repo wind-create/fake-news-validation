@@ -72,7 +72,7 @@ def _connect_mongo(username, password):
 
     return conn
 
-class GetAnswer(Action):
+class GetHoaxFaqAnswer(Action):
 
 
      def __init__(self):
@@ -85,6 +85,54 @@ class GetAnswer(Action):
         # mongodb
          db = _connect_mongo(username='skripsiuser', password='skripsi12345')['test']
          cursor = db['hoax_faqs'].find()
+         self.faq =  pd.DataFrame(list(cursor))
+        
+         qss = list(self.faq['pertanyaan'])
+         with open("./data/hoax_faq.yml", "wt", encoding="utf-8") as f:
+             f.write("nlu: \n- intent: hoax_faq\n  examples: | \n")
+             for q in qss:
+                 f.write(f"    - {q}\n")
+
+        
+     def name(self) -> Text:
+        return "action_get_hoax_faq_answer"
+
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        query = tracker.latest_message['text']
+        questions = list(self.faq['pertanyaan'])
+        answer = list(self.faq['response'])
+        Ratios = process.extract(query, questions)
+        print(Ratios)
+
+        mathed_question, score = process.extractOne(query,questions, scorer=fuzz.token_set_ratio)
+
+        if score > 50:
+            matched_row = self.faq.loc[self.faq['pertanyaan'] == mathed_question,]
+            answer = matched_row['response'].values[0]
+            response = "fakta berita hoax , \n answer: {} \n".format(answer)
+        
+        else:
+            response = "maaf, saya tidak menemukan jawaban untuk pertanyaan tersebut"
+
+        
+        dispatcher.utter_message(response)
+
+
+class GetAnswer(Action):
+
+
+     def __init__(self):
+
+        # csv dan sqlite
+        #   conn = DBQueryingMethods.create_connection(db_file= "./data/faq.db")
+        #  self.faq = pd.read_csv('./data/faq.csv')
+        #  self.faq = pd.read_sql_query("SELECT * from faq_hoax_news", conn)
+
+        # mongodb
+         db = _connect_mongo(username='skripsiuser', password='skripsi12345')['test']
+         cursor = db['faqs'].find()
          self.faq =  pd.DataFrame(list(cursor))
         
          qss = list(self.faq['pertanyaan'])
@@ -111,10 +159,10 @@ class GetAnswer(Action):
         if score > 50:
             matched_row = self.faq.loc[self.faq['pertanyaan'] == mathed_question,]
             answer = matched_row['response'].values[0]
-            response = "Here's something I found, \n Answer: {} \n".format(answer)
+            response = "{} \n".format(answer)
         
         else:
-            response = " sorry I couldn't find anything"
+            response = "maaf, saya tidak menemukan jawaban untuk pertanyaan tersebut"
 
         
         dispatcher.utter_message(response)

@@ -7,6 +7,11 @@ rules:
    steps:
    - intent: question
    - action: action_get_answer
+
+ - rule: respond to question
+   steps:
+   - intent: question
+   - action: action_get_hoax_faq_answer
 #  - rule: option 1, respond to FAQs
 #    steps:
 #    - action: utter_greet
