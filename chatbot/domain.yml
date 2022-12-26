@@ -1,4 +1,5 @@
-version: '3.0'
+version: "2.0"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -9,22 +10,7 @@ intents:
 - hoax_faq
 - goodbye
 - out_of_scope
-entities:
-- time
-- number
-slots: 
-  time:
-    type: any
-    mappings:
-    - type: from_entity
-      entity: time
-  number:
-    type: float
-    min_value: 0
-    max_value: 3
-    mappings:
-    - type: from_entity
-      entity: number
+
 responses:
   utter_greet:
   - text: "Hi! apakah kamu punya pertanyaan seputar hoax? chatbot ini dirancang untuk menjawab pertanyaan seputar hoax ataupun bertanya mengenai berita hoax"
