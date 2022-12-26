@@ -32,14 +32,14 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 import pandas as pd
-import csv
+# import csv
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
-import functools
-import operator
+# import functools
+# import operator
 
-import sqlite3
-import random
+# import sqlite3
+# import random
 from pymongo import MongoClient
 
 # sqlite koneksi
