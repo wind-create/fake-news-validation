@@ -8,9 +8,9 @@ rules:
    - intent: question
    - action: action_get_answer
 
- - rule: respond to question
+ - rule: respond to hoax news
    steps:
-   - intent: question
+   - intent: hoax_faq
    - action: action_get_hoax_faq_answer
 #  - rule: option 1, respond to FAQs
 #    steps:

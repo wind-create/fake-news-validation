@@ -1,0 +1,44 @@
+nlu: 
+- intent: question
+  examples: | 
+    - kenapa hoaks bisa menyerang media-media informasi?
+    - apa saja bentuk hoaks yang menyerangan media-media informasi ?
+    - Kerugian apa yang dialami oleh media yang diserang oleh hoaks?
+    - ada situs-situs yang menyebarkan berita hoaks, kira-kira apa pendapat jurnalis mengenai situs-situs tersebut?
+    - apa penyebab sering munculnya situs-situs yang menyebarkan informasi hoaks?
+    - cara efektif untuk mengatasi situs-situs yang menyebarkan informasi hoaks?
+    - Tips & trik untuk melawan hoax
+    - Tentang Mafindo
+    - apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?
+    - Mengapa Tirto mengambil data dari Mafindo?
+    - Bagaimana manfaat riset mandiri Tirto terkait hoax itu sendiri?
+    - apa manfaat hasil riset mandiri Tirto untuk para pemangku kepentingan seperti platform media sosial?
+    - apakah banyak berita hoax pandemi yang dikaitkan dengan politik?
+    - bagaimana pendapat dari sudut pandang MUI mengenai hoax bertema agama?
+    - mengapa hoax yang bertema agama selalu dikaitkan dengan politik ?
+    - bagaimana cara MUI menangkal hoax bertema agama?
+    - fenomena masyarakat dalam melihat hoax?
+    - seberapa efektif iklan layanan masyarakat (PSA) dalam menangkal hoax?
+    - apa itu Pubic Service Announcemen (PSA) ?
+    - apa tujuan dari Pubic Service Announcemen (PSA) ?
+    - PSA tersebar di platform apa?
+    - tips masyarakat dalam membuat PSA anti-hoax
+    - bagaimana machine learning dapat membantu dalam menangani hoax?
+    - cara kerja machine learning dalam menangani hoax?
+    - siapa oknum atau orang-orang yang suka menyebarkan hoax ?
+    - bagaimana karakter dari sebuah hoax yang disebarkan di twitter?
+    - adakah perbedaan hoax yang tersebar di berbagai media sosial?
+    - bagaimana cara untuk menangani hoax yang tersebar di media sosial?
+    - mengapa fenomena penyebaran hoax dapat terjadi?
+    - apa pentingnya kecakapan literasi pada pelajar dalam menangkal hoax?
+    - apa itu literasi digital?
+    - bagaimana tingkat literasi digital di masyarakat Indonesia ?
+    - apakah misinformasi, disinformasi / hoax itu sama?
+    - apakah facebook memiliki langkah dalam menangani disinformasi ?
+    - apa penyebab facebook memiliki banyak penyebaran hoax?
+    - apakah facebook memiliki pihak ketiga dalam memeriksa fakta dari berita hoax?
+    - Serikat Jurnalis untuk Keberagaman (SEJUK) lembaga apa?
+    - apa tujuan dari lembaga Serikat Jurnalis untuk Keberagaman (SEJUK) ?
+    - tentang Serikat Jurnalis untuk Keberagaman (SEJUK) 
+    - visi Serikat Jurnalis untuk Keberagaman (SEJUK) 
+    - misi Serikat Jurnalis untuk Keberagaman (SEJUK) 
