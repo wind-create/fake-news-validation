@@ -5,7 +5,6 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - start
-# - start
 - bot
 - question
 - hoax_faq
@@ -15,8 +14,6 @@ intents:
 responses:
   utter_start:
   - text: "Hi! apakah kamu punya pertanyaan seputar hoax? chatbot ini dirancang untuk menjawab pertanyaan seputar hoax, tips dan trik melawan hoaks,  serta memberitahukan kebenaran dari berita hoaks. \nAnda bisa memberi pertanyaan seperti: \n- tips trik melawan hoaks \n- apa itu mafindo \n- Cek Fakta: Hoaks Informasi Adopsi Bayi Korban Gempa Cianjur di Sebuah Rumah Sakit \n- Cek Fakta: Hoaks FIFA Bagikan Kuota Internet 50GB Gratis untuk Nonton Piala Dunia Qatar 2022 \n- [SALAH] Warga Bogor Meninggal Hidup Kembali "
-  # utter_start:
-  # - text: "Hi! apakah kamu punya pertanyaan seputar hoax? chatbot ini dirancang untuk menjawab pertanyaan seputar hoax, tips dan trik melawan hoaks,  serta memberitahukan kebenaran dari berita hoaks. \nAnda bisa memberi pertanyaan seperti: \n- tips trik melawan hoaks \n- apa itu mafindo \n- Cek Fakta: Hoaks Informasi Adopsi Bayi Korban Gempa Cianjur di Sebuah Rumah Sakit \n- Cek Fakta: Hoaks FIFA Bagikan Kuota Internet 50GB Gratis untuk Nonton Piala Dunia Qatar 2022 \n- [SALAH] Warga Bogor Meninggal Hidup Kembali "
   utter_i_am_a_bot:
   - text: "saya adalah sebuah bot yang dibuat untuk menanggapi pertanyaan seputar hoax"
   utter_goodbye:
@@ -26,7 +23,6 @@ responses:
 actions:
 - '...'
 - utter_start
-# - utter_start
 - utter_i_am_a_bot
 - utter_out_of_scope
 - action_get_answer

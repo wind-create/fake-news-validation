@@ -13,11 +13,6 @@ nlu:
     - /start
     - start
 
-# - intent: start
-#   examples: |
-#     - /start
-#     - start
-
 - intent: goodbye
   examples: |
     - bye
