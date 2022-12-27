@@ -3,8 +3,6 @@ import {
     LightModeOutlined, 
     DarkModeOutlined, 
     Menu as MenuIcon, 
-    Search, 
-    SettingsOutlined, 
     ArrowDropDownOutlined, 
 } from '@mui/icons-material';
 import FlexBetween from 'components/FlexBetween';
@@ -24,7 +22,7 @@ const Navbar = ({
     const isOpen = Boolean(anchorEl);
     const handleClick = (event) => setAnchorEl(event.currentTarget);
     const handleClose = () => setAnchorEl(null);
-    const fullName = `${user.firstName} ${user.lastName}`;
+    const fullName = `${user.firstName}`;
 
 
     return (
@@ -41,7 +39,7 @@ const Navbar = ({
                 <IconButton onClick= {() => setIsSidebarOpen(!isSidebarOpen)}>
                     <MenuIcon />
                 </IconButton>
-                <FlexBetween 
+                {/* <FlexBetween 
                 backgroundColor = {theme.palette.background.alt}
                 borderRadius="9px"
                 gap="3rem"
@@ -51,7 +49,7 @@ const Navbar = ({
                     <IconButton>
                         <Search />
                     </IconButton>
-                </FlexBetween>
+                </FlexBetween> */}
             </FlexBetween>
             {/* Right Side */}
             <FlexBetween gap="1.5rem">
@@ -62,9 +60,9 @@ const Navbar = ({
                         <LightModeOutlined sx={{ fontSize: "25px" }} />
                     )}
                 </IconButton>
-                <IconButton>
+                {/* <IconButton>
                     <SettingsOutlined sx={{ fontSize: "25px" }} />
-                </IconButton>
+                </IconButton> */}
                 <FlexBetween>
                     <Button
                     onClick={handleClick}

@@ -20,22 +20,6 @@ import {
     ChatOutlined,
     AddBoxOutlined
 } from "@mui/icons-material";
-// import {
-//     SettingOutlined,
-//     ChevronLeft,
-//     ChevronRightOutlined,
-//     HomeOutlined,
-//     ShoppingCartOutlined,
-//     Groups2Outlined,
-//     ReceiptLongOutlined,
-//     PublicOutlined,
-//     PointOfSaleOutlined,
-//     TodayOutlined,
-//     CalendarMonthOutlined,
-//     AdminPanelSettingsOutlined,
-//     TrendingUpOutlined,
-//     PieChartOutlined,
-// } from "@mui/icons-material";
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import FlexBetween from './FlexBetween';
@@ -69,21 +53,17 @@ const navItems = [
         text: "Create",
         icon: <AddBoxOutlined />
     },
-    {
-        text: "Management",
-        icon: null
-    },
-    {
-        text: "Manager",
-        icon: <AdminPanelSettingsOutlined />
-    },
-    {
-        text: "Create_manager",
-        icon: <AddBoxOutlined />
-    },
     // {
-    //     text: "Performance",
-    //     icon: <TrendingUpOutlined />
+    //     text: "Management",
+    //     icon: null
+    // },
+    // {
+    //     text: "Manager",
+    //     icon: <AdminPanelSettingsOutlined />
+    // },
+    // {
+    //     text: "Create_manager",
+    //     icon: <AddBoxOutlined />
     // },
 
 ]

@@ -1,0 +1,146 @@
+[
+  {
+    "text": "hello",
+    "intent": "start",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6308056116104126
+    }
+  },
+  {
+    "text": "siang",
+    "intent": "start",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.996408224105835
+    }
+  },
+  {
+    "text": "astaga",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9956808090209961
+    }
+  },
+  {
+    "text": "tidak suka",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9817876815795898
+    }
+  },
+  {
+    "text": "Kerugian apa yang dialami oleh media yang diserang oleh hoaks?",
+    "intent": "question",
+    "intent_prediction": {
+      "name": "hoax_faq",
+      "confidence": 0.9568056464195251
+    }
+  },
+  {
+    "text": "pagi",
+    "intent": "start",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8257992267608643
+    }
+  },
+  {
+    "text": "robot bacot",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot",
+      "confidence": 0.9990412592887878
+    }
+  },
+  {
+    "text": "terserah",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9914854168891907
+    }
+  },
+  {
+    "text": "malam",
+    "intent": "start",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9999752044677734
+    }
+  },
+  {
+    "text": "heleh",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9985284805297852
+    }
+  },
+  {
+    "text": "apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?",
+    "intent": "question",
+    "intent_prediction": {
+      "name": "hoax_faq",
+      "confidence": 0.9997257590293884
+    }
+  },
+  {
+    "text": "dah",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9999678134918213
+    }
+  },
+  {
+    "text": "apa ini manusia",
+    "intent": "bot",
+    "intent_prediction": {
+      "name": "question",
+      "confidence": 0.9859834313392639
+    }
+  },
+  {
+    "text": "bukan urusan mu",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "hoax_faq",
+      "confidence": 0.9999995231628418
+    }
+  },
+  {
+    "text": "Tentang Mafindo",
+    "intent": "question",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9955832362174988
+    }
+  },
+  {
+    "text": "selamat tinggal",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9013712406158447
+    }
+  },
+  {
+    "text": "mati kau",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot",
+      "confidence": 0.9943956136703491
+    }
+  },
+  {
+    "text": "dapur",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9172980189323425
+    }
+  }
+]

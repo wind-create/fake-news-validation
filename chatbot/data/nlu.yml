@@ -1,5 +1,5 @@
 nlu:
-- intent: greet
+- intent: start
   examples: |
     - Hi
     - Hey!
@@ -10,8 +10,13 @@ nlu:
     - pagi
     - siang
     - malam
-    - sore
-    
+    - /start
+    - start
+
+# - intent: start
+#   examples: |
+#     - /start
+#     - start
 
 - intent: goodbye
   examples: |

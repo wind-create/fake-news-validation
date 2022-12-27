@@ -1,8 +1,13 @@
 stories:
- - story: greet
+ - story: start
    steps:
-   - intent: greet
-   - action: utter_greet
+   - intent: start
+   - action: utter_start
+
+#  - story: start
+#    steps:
+#    - intent: start
+#    - action: utter_start
 
  - story: goodbye
    steps:
@@ -21,15 +26,15 @@ stories:
 
  - story: interaksi_story_1
    steps:
-   - intent: greet
-   - action: utter_greet
+   - intent: start
+   - action: utter_start
    - intent: question
    - action: action_get_answer
    
  - story: interaksi_story_2
    steps:
-   - intent: greet
-   - action: utter_greet
+   - intent: start
+   - action: utter_start
    - intent: hoax_faq
    - action: action_get_hoax_faq_answer
    
