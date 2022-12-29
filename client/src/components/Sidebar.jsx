@@ -106,7 +106,7 @@ const Sidebar = ({
                         <FlexBetween color={theme.palette.secondary.main}>
                             <Box display="flex" alignItems="center" gap="0.5rem">
                                 <Typography variant="h4" fontWeight="bold">
-                                    Chatbot
+                                    SKRIPSI
                                 </Typography>
                             </Box>
                             {!isNonMobile && (
