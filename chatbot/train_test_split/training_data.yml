@@ -2,1063 +2,1063 @@ version: "2.0"
 nlu:
 - intent: bot
   examples: |
+    - apa kau bot?
+    - ini chatbot
     - Are you a bot?
     - apa ini manusia
-    - is this a chatbot
-    - ini chatbot
 - intent: goodbye
   examples: |
-    - goodbye
     - see you around
     - bye bye
     - bye
     - see you later
     - dah
+    - selamat tinggal
 - intent: start
   examples: |
-    - Hey!
-    - pagi
-    - malam
-    - hallo
-    - hai
-    - Hi
     - start
-    - siang
+    - hallo
+    - Hey!
+    - hai
     - halo
+    - pagi
+    - siang
+    - /start
+    - Hi
 - intent: out_of_scope
   examples: |
-    - la la la
-    - terserah
-    - robot bacot
-    - heleh
-    - dapur
-    - berhenti bertanya
-    - laptop
-    - penis
     - gak guna
-    - lapet
-    - gempa
-    - gila
-    - bla bla bla
-    - astaga
     - mati kau
+    - heleh
+    - minta judul
+    - bla bla bla
+    - laptop
+    - terserah
     - bukan urusan mu
+    - fuck
+    - penis
+    - gempa
+    - astaga
+    - robot bacot
+    - tidak suka
+    - la la la
     - bacottt
+    - dapur
 - intent: question
   examples: |
-    - apa pentingnya kecakapan literasi pada pelajar dalam menangkal hoax?
-    - apa tujuan dari Pubic Service Announcemen (PSA) ?
-    - apa penyebab sering munculnya situs-situs yang menyebarkan informasi hoaks?
-    - visi Serikat Jurnalis untuk Keberagaman (SEJUK)
-    - bagaimana cara MUI menangkal hoax bertema agama?
-    - PSA tersebar di platform apa?
     - cara efektif untuk mengatasi situs-situs yang menyebarkan informasi hoaks?
-    - ada situs-situs yang menyebarkan berita hoaks, kira-kira apa pendapat jurnalis mengenai situs-situs tersebut?
-    - cara kerja machine learning dalam menangani hoax?
-    - mengapa hoax yang bertema agama selalu dikaitkan dengan politik ?
-    - bagaimana machine learning dapat membantu dalam menangani hoax?
-    - apakah banyak berita hoax pandemi yang dikaitkan dengan politik?
-    - Mengapa Tirto mengambil data dari Mafindo?
-    - adakah perbedaan hoax yang tersebar di berbagai media sosial?
-    - apakah facebook memiliki langkah dalam menangani disinformasi ?
+    - bagaimana karakter dari sebuah hoax yang disebarkan di twitter?
+    - apa itu literasi digital?
     - apa saja bentuk hoaks yang menyerangan media-media informasi ?
-    - Bagaimana manfaat riset mandiri Tirto terkait hoax itu sendiri?
-    - Tips & trik untuk melawan hoax
-    - Tentang Mafindo
     - bagaimana cara untuk menangani hoax yang tersebar di media sosial?
-    - Serikat Jurnalis untuk Keberagaman (SEJUK) lembaga apa?
-    - apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?
-    - apa penyebab facebook memiliki banyak penyebaran hoax?
-    - apa tujuan dari lembaga Serikat Jurnalis untuk Keberagaman (SEJUK) ?
-    - siapa oknum atau orang-orang yang suka menyebarkan hoax ?
-    - Kerugian apa yang dialami oleh media yang diserang oleh hoaks?
     - apakah misinformasi, disinformasi / hoax itu sama?
-    - kenapa hoaks bisa menyerang media-media informasi?
-    - apa itu Pubic Service Announcemen (PSA) ?
+    - bagaimana tingkat literasi digital di masyarakat Indonesia ?
+    - Mengapa Tirto mengambil data dari Mafindo?
+    - apa pentingnya kecakapan literasi pada pelajar dalam menangkal hoax?
+    - apa tujuan dari lembaga Serikat Jurnalis untuk Keberagaman (SEJUK) ?
+    - apa penyebab facebook memiliki banyak penyebaran hoax?
+    - misi Serikat Jurnalis untuk Keberagaman (SEJUK)
+    - bagaimana cara MUI menangkal hoax bertema agama?
+    - apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?
+    - Tentang Mafindo
+    - apakah facebook memiliki pihak ketiga dalam memeriksa fakta dari berita hoax?
+    - bagaimana machine learning dapat membantu dalam menangani hoax?
+    - PSA tersebar di platform apa?
+    - Tips & trik untuk melawan hoax
     - seberapa efektif iklan layanan masyarakat (PSA) dalam menangkal hoax?
+    - apakah banyak berita hoax pandemi yang dikaitkan dengan politik?
+    - visi Serikat Jurnalis untuk Keberagaman (SEJUK)
+    - ada situs-situs yang menyebarkan berita hoaks, kira-kira apa pendapat jurnalis mengenai situs-situs tersebut?
+    - Serikat Jurnalis untuk Keberagaman (SEJUK) lembaga apa?
+    - apakah facebook memiliki langkah dalam menangani disinformasi ?
+    - apa itu Pubic Service Announcemen (PSA) ?
+    - mengapa hoax yang bertema agama selalu dikaitkan dengan politik ?
+    - apa penyebab sering munculnya situs-situs yang menyebarkan informasi hoaks?
+    - tips masyarakat dalam membuat PSA anti-hoax
     - bagaimana pendapat dari sudut pandang MUI mengenai hoax bertema agama?
     - tentang Serikat Jurnalis untuk Keberagaman (SEJUK)
+    - kenapa hoaks bisa menyerang media-media informasi?
 - intent: hoax_faq
   examples: |
-    - [SALAH] Video 'Eril Kamil Terseret Arus, Sampai Sejauh 800 Meter, Dan Di Temukan Sosok Ini'
-    - [SALAH] Infografis Larangan Bagi Pendatang Asing di Qatar Selama Piala Dunia 2022
-    - [SALAH] 'Tabiat ASLINYA PRESIDEN INDONESIA terhadap rakyat yg bersebrangan di anggap musuh pribadi.'
-    - Cek Fakta: Hoaks Kabar Dedi Mulyadi Meninggal Dunia Usai Diracun pada 6 Oktober 2022
-    - [SALAH] Kereta Api Berhenti karena Ditilang
-    - Keliru, Biden Makin Keterlaluan, Amerika Serikat Tuduh Indonesia Bekingi Rusia di Medan Perang
-    - [SALAH] Rebusan Genjer bisa Sembuhkan Diabetes
-    - [SALAH] Foto Ibu Yang Mengajak Bersetubuh Anak Kandungnya
-    - [SALAH] Video Bocah Kritis Akibat Tersambar Petir Saat Main Handphone
-    - Keliru, Video Pasukan Korea Utara Turun Ke Medan Laga, Habisi Tentara Ukraina
-    - [SALAH] Foto Banjir Jakarta di Masa Pemerintahan Heru Budi Hartono
-    - [SALAH] Foto Badai Petir yang Terlihat dari Luar Angkasa
-    - [SALAH] Beberapa Nomor Telepon Luar Negeri yang Bisa Menyalin Data di HP
-    - [SALAH] Seekor Anjing Laut Lepas di Florida
-    - [SALAH] 'SUPORTER SEPAK BOLA LIGA JERMAN SEKALIGUS MEMPERINGATI MAULID NABI MEMBENTUK FORMASI YA HABIBI YA RASULULLAH'
-    - Keliru, Video yang Diklaim Jutaan Umat Muslim India Turun ke Jalan Atas Penistaan Nabi Muhamad SAW
-    - [SALAH] Video Polisi Hindutva India Menyerang Secara Brutal Seorang Pria Muslim Tua
-    - [SALAH] Mahasiswa Universitas Najran Ikut Melakukan Protes terhadap Pemerintah Arab Saudi
-    - [SALAH] Video Agen CIA Mendoktrin Mahasiswa Berdemo Dan Melawan Pemerintah
-    - [SALAH] Informasi Lowongan Pekerjaan PT Pelabuhan Indonesia III
-    - [SALAH] Sopir Ambulan Mendapat Wangsit dari Jenazah Eril
-    - [SALAH] Seekor Naga Ditemukan di Mongolia
-    - [SALAH] Akun Facebook Bupati Kayong Utara Haji Drs Citra Duani
-    - [SALAH] Albert Einstein: 'Kejahatan ada ketika manusia tidak memiliki kehadiran Tuhan di dalam hatinya.'
-    - Sebagian Benar, Aplikasi Cek Penerima Bantuan Sosial Kemensos
-    - Keliru, Turkmenistan Memberi Gas, Air, dan Listrik Kepada Rakyat Secara Gratis Sampai Saat Ini
-    - [SALAH] Mike Tyson, Bado Jack, dan Amer Abdallah Shalat di Kafe yang Melarang Umat Muslim Masuk
-    - Sebagian Benar, Arab Saudi Bangun Kota di Atas Tanah yang Dilarang Nabi Muhammad
-    - Keliru, Video Pengerahan Militer Korea Utara Setelah Putus Hubungan dengan Malaysia
-    - [SALAH] Foto Kerusakan Gempa di Jalanan Afghanistan Juni 2022
-    - Sebagian Benar, Berita Duka Cita 7 Anggota Paskibra Mendadak Dijemput Ajal
-    - [SALAH] Video Nikita Sempoyongan
-    - [SALAH] 'Presiden Jokowi Memberikan Penganugerahan Gelar Pahlawan Nasional Kepada Alm Jenderal TNI Soeharto'
-    - [SALAH] Video Penimbunan Saluran Air dengan Karung Pasir
-    - [SALAH] Sampul Artikel CNN Indonesia Ganjar dan Jokowi RI 1 – RI 2 Pilpres 2024
-    - [SALAH]: Botol Minuman Yang Dipegang Jokowi Dan Elon Musk Merupakan Alat Penerjemah Canggih
-    - Keliru, Video Putri Duyung Ditemukan di Afrika
-    - [SALAH] Jokowi Didemo di Jerman
-    - [SALAH] Video '*SORE TADI Pos polisi tugu tani di bakar masa td sekitar pkl 16;30'
-    - Belum Ada Bukti, Kunyit dan Madu sebagai Ramuan Obat Cacar Monyet
-    - Cek Fakta: Tidak Benar Mengonsumsi Kulit Pohon Jambu Mete Bisa Menetralisir Racun Akibat Gigitan Ular
-    - [SALAH] Surat Penetapan Penjabat Gubernur Papua Barat Mengatasnamakan Deputi Bidang Administrasi Aparatur, Kementerian Sekretariat Negara
-    - [SALAH] Indomaret Bagi-Bagi Uang Rp 13 Juta Rayakan HUT Kemerdekaan RI
-    - [SALAH] Megawati Resmi Tunjuk Ganjar Pranowo Sebagai Calon Presiden Untuk Pemilu 2024
-    - [SALAH] Eks Danjen Kopassus: 'Buzzer Anies Makhluk Pemakan Bangkai, Tukang Fitnah dan Adu Domba'
-    - [SALAH] Video 'TANPA ROMPI PENGAMAN JOKOWI TINJAU LANGSUNG PULAU PASIR DI NTT'
-    - [SALAH] Video Vladimir Putin Meminta Indonesia Angkat Senjata Melawan Australia
-    - Keliru, Video Berjudul Aku Butuh PKI
-    - Cek Fakta: Tidak Benar Video Salat Berjamaah dalam Stadion Saat Piala Dunia Qatar 2021
-    - Keliru, Malaysia Tak Lagi Jadi Negara Persemakmuran Inggris
-    - [SALAH] 'jokowi bilang telah mengakuisisi saham PT. Freport adalah bohong belaka'
-    - [SALAH] Penyanyi Cilik Farel Prayoga Meninggal Dunia Dibunuh
-    - Cek Fakta: Hoaks Surat Pemanggilan Seleksi Calon Karyawan BNI
-    - [SALAH] Mengonsumsi Air Rebusan Daun Putri Malu Bisa Sembuhkan Vertigo hingga Stroke
-    - Menyesatkan, Video DPR Pecat Hakim yang Akan Vonis Mati Ferdy Sambo
-    - Keliru, PBB Jatuhkan Sanksi atas Penyadapan Australia di Indonesia Jelang KTT G20
-    - [SALAH] Ruang angkasa buatan China
-    - [SALAH] Gambar Kartu Nikah dengan 4 Kolom Foto Istri
-    - [SALAH] Foto 'Ratusan orang mengantre di Plaza Senayan untuk membeli AC mini'
-    - Menyesatkan, Video Penangkapan Pelaku Perusakan Tanggul Bethukandi yang Dikaitkan dengan Muslim India
-    - [SALAH] 'Ratu Elizabeth pernah memesan 80 kaos Cristiano Ronaldo untuk Royal Court'
+    - Menyesatkan, Video Masjid di Papua Putar Lagu Yospan
+    - [SALAH] Akun WhatsApp Wakil Bupati Bantul dengan Nomor '081213408053' Memberikan Donasi
+    - [SALAH] Video Cara Deteksi Asam Urat Melalui Jari Tangan
+    - [SALAH] Ratusan Pasukan Khusus Cina Menjadi Tentara Sukarelawan Rusia Untuk Perang dengan Ukraina
+    - [SALAH] 'Puluhan Orang ‘j0get ‘ didalam mesjid sambil teriak lafadz Allah'
+    - Keliru, Video Berjudul Pimpin Penyidik KPK, Ahok Obrak-Abrik Kantor Cikeas
     - [SALAH] Nekat Kabur Dari Mako Brimob, Irjen Ferdy Sambo Langsung di Door di Tempat
-    - [SALAH] Perubahan Biaya Transaksi Bank BCA
-    - Keliru, Video Polisi Jemput AHY karena Provokasi Demo
-    - [SALAH] Akun Whatsapp Bupati Indramayu Nina Agustina '083185379465'
-    - [SALAH] Video 'Meninggal Saat Khutbah'
+    - [SALAH] Lagu 'Ojo Dibandingke' Dinyanyikan Di Luar Negeri
+    - [SALAH] Pemain Ligue 1 Prancis Lakukan Aksi Teatrikal Sindir Penggunaan Gas Air Mata di Tragedi Kanjuruhan
+    - [SALAH] Presiden Ukraina Volodymyr Zelensky Mengikuti Acara Gay Pride di New York pada 1999
+    - [SALAH] Cacar Monyet adalah Efek Vaksin
+    - [SALAH] Surat Edaran Oleh Wali Kota Pontianak Terkait Kelayakan Penerima Donasi
+    - [SALAH] Megawati Resmi Tunjuk Ganjar Pranowo Sebagai Calon Presiden Untuk Pemilu 2024
+    - Cek Fakta: Tidak Benar Vaksin COVID-19 Mengandung Microchip dan Robot Berukuran Sel
+    - [SALAH] Fenomena Albelian selama Juli-Agustus 2022
     - Cek Fakta: Waspada Hoaks Kuesioner Bagikan Hadiah Rp 4 Juta Catut Nama Indomilk
-    - Keliru, Artikel Seekor Ular Melahap Senapan AK-47
-    - [SALAH] Nonton Gratis Pertandingan Sepakbola Antara Persib Bandung dan Bali United di Stadion GBLA
-    - Keliru, Wawancara Najwa Shihab  dengan Dokter Terawan Mempromosikan Obat Hipertensi
-    - [SALAH] Video 'seberapa cepat kereta peluru Jepang'
-    - Keliru, Klaim Kedua Anak Ferdy Sambo Berusaha Kabur Karena Campur Tangan Eksekusi Brigadir J
-    - Keliru, Foto dan Nama Ahli dalam Iklan Suplemen Mata Orbitrim
-    - Keliru, Najwa Shihab Sidak Sel Tahanan Sambo, Ternyata Isinya Kosong
-    - Cek Fakta: Tidak Benar dalam Foto ini Anies Baswedan Jadi Penerima Tamu pada KTT G20 di Bali
-    - [SALAH] CNN News: 'Climate Change will be back next summer'
-    - Cek Fakta: Beredar Lagi Hoaks Trans7 Bagikan Uang Rp 50 Juta
-    - [SALAH] Daftar Biaya Tilang Terbaru di Indonesia
-    - [SALAH] Ritual Iluminati Janin Bayi Aborsi untuk Kandungan Vaksin
-    - [SALAH] Pesan Berantai Dana Bantuan Rp 189 Juta dari Pertamina
-    - [SALAH] Akun Facebook KJRI Dubai
-    - Belum Ada Bukti, PT LIB Putus Kontrak Indosiar sebagai Pemegang Hak Siar Liga 1 dan Tunjuk ANTV
-    - [SALAH] Awan Jatuh di Kampar, Riau
-    - Cek Fakta: Tidak Benar Air Nanas Bisa Membunuh Sel Kanker
-    - Menyesatkan, Artikel Tenggelamnya KM Lestari Maju Memakan Korban 139 Orang pada Juni 2022
-    - Keliru, Para Pemimpin Uni Eropa Datangi Joe Biden Agar Mencabut Sanksi untuk Rusia
-    - Keliru, Kolase Video Penampakan Makhluk Misterius yang Tertangkap Kamera
-    - [SALAH] 'MILITER INDONESIA DITAKUTI DUNIA, CHINA SIAP BANTU INDONESIA JIKA DIBUTUHKAN'
-    - Sebagian Benar, Klaim Air Zamzam Dilarang Masuk Ke Indonesia
-    - Keliru, Unggahan Uskup Katolik Se-Jabodetabek Deklarasi Dukungan dan Beri Pujian ke Anies Baswedan
-    - [SALAH] Video 'MENGEJUTKAN! PRABOWO MUNDUR DARI JABATANNYA!!TAK INGIN TERJERUMUS KEJALAN BUSUK JOKOWI'
-    - [SALAH] Vaksin Merupakan Praktik Depopulasi Rakyat
-    - [SALAH] Permintaan Pengisian Data Penerima BSU di Media Sosial
-    - [SALAH] 'Akun Facebook Atta dan Aurel giveaway'
-    - [SALAH] Video Anies Baswedan di Produk Mainan Hot Wheels sebagai Atribut Ajang Formula E
-    - [SALAH] Lowongan Kerja PT Berau Coal
-    - Keliru, Video Persiapan Khusus Polri untuk Eksekusi Mati Irjen Ferdy Sambo
-    - Cek Fakta: Tidak Benar Tepung Beras Bisa Meredakan Demam pada Anak
-    - [SALAH] Berita Tribun Manado 'diduga cemburu dengan adik kandung yang baru lahir, sang kakak nekad olesi racun di putting ibunya. Anehnya keesokan harinya seisi rumah gempar karna mendapati sopir mereka yang tewas.'
-    - [SALAH] Berita CNN 'Anggota Polisi Ini Dimutasi ke Papua Barat karena Anaknya Hina Idol K-Pop'
-    - Sebagian Benar, Ilmuwan Rusia Hidupkan Kembali Cacing yang Membeku Selama 42 Ribu Tahun
-    - [SALAH] Video 'Menolak lupa tragedi pembantaian anak usia 15 tahun pada bulan puasa tanggal 23 mei 2019 oleh pasukan Brimob'
-    - Keliru, Video Perang Amerika Serikat dan Taiwan Melawan Cina Picu Perang Dunia III
-    - [SALAH] Foto Kota di Jawa Tengah
-    - Keliru, Ferdy Sambo Tak Terima Hukuman Mati dan Mengamuk Saat Sidang
-    - [SALAH] "JIKA RAKSASA ITU GAK ADA, LALU SIAPA YANG MENEBANG POHON INI?"
-    - Keliru, Video Jokowi Diangkat Jadi Sekjen PBB dan Terima Nobel Perdamaian
-    - [SALAH] Wanita berusia 399 Tahun
-    - [SALAH] Video Penceramah Menyampaikan Ferdy Sambo Punya Bungker Rp900 Miliar
-    - Cek Fakta: Tidak Benar dalam Video Ini Barack Obama Perkenalkan Anies Baswedan Sebagai Capres 2024
-    - [SALAH] Akun Whatsapp Wakil Wali Kota Cirebon Eti Herawati '+6285837232955'
-    - Cek Fakta: Tidak Benar Mike Tyson Salat Jamaah di Kafe Anti Islam
-    - [SALAH] Sungai Inhulets di Ukraina Berubah Warna Menjadi Merah karena Darah Tentara Ukraina
-    - [SALAH] Berita CNN tentang Dokter Terawan yang Menemukan Pengganti Insulin
-    - Menyesatkan, Video Presiden Ukraina Volodymyr Zelenskyy Menyerah Tanpa Syarat
-    - [SALAH] Video 'Kiamat bagi australia rusia kerahkan 9.000 pasukan ke perbatasan indonesia-australia-pulau pasir'
-    - Cek Fakta: Tidak Benar Iriana Jokowi Jenguk Lesti Kejora di Rumah Sakit
-    - Keliru, Sweeping Kendaraan Plat Nomor L di Malang Usai Tragedi Kanjuruhan
+    - Menyesatkan, Kolase Foto Bus Transjakarta Rongsokan yang Diklaim Dibeli oleh Ahok
+    - [SALAH] Link kuesioner berhadiah all new scoopy
+    - Cek Fakta: Tidak Benar Kabar Jokowi Jenguk Lesti Kejora di Rumah Sakit
+    - [SALAH] Kejahatan di Ukraina Meningkat 270% Sejak 2021
+    - [SALAH] "ANIES BIKIN JOE BIDEN TERPUKAU!!! UNTUNG ADA ANIES"
+    - Keliru, Video yang Diklaim Tim Sar Swiss saat Mencari Emmeril Khan Mumtadz di Sungai Aare
+    - Keliru, Video Kakek Terima Upah Tebang Tebu dalam Bentuk Uang Mainan
+    - [SALAH] Pesan Whatsapp Acara Launching Program Baru MNC Peduli
+    - [SALAH] Foto Pemancing Dekat dengan Kumpulan Ikan Paus di Svalbard, Norwegia
+    - [SALAH] Jam Kerja Di Denmark 33 Jam Per Minggu
+    - [SALAH] Foto Ariel Noah Ijab Qobul
+    - Belum Ada Bukti, Khasiat Biji Mahoni Dapat Mengobati Cacar atau Gatal-gatal Bernanah
+    - Keliru, Foto Seorang Bocah Meninggal karena Ponsel Disembunyikan Orang Tuanya
+    - Keliru, Harian Kompas Memuat Pernyataan Menkes Budi Gunadi Sadikin tentang Obat Diabetes
+    - [SALAH]: Kerokan Kulit Batang Pohon Mangga Dapat Mengobati Sakit Gigi
+    - [SALAH] Video Eksekusi Penyebar Khilafah di Arab Saudi
+    - Belum Ada Bukti, Makan Buah Durian dengan 7 Jenis Makanan dan Minuman Ini Berbahaya Bagi Tubuh
+    - Menyesatkan, NASA Sebut Matahari akan Terbit dari Barat Tanda Kiamat
+    - [SALAH] Video Gempa Cianjur
+    - Cek Fakta: Tidak Benar Aksi Pemukulan Suporter dalam Video ini Jadi Penyebab Tragedi Kanjuruhan
     - Keliru, Artikel Masjid Bangladesh Terbakar yang Menyebabkan 50 Jemaah Meninggal Dunia
-    - [SALAH] Paparan Sinar Matahari Tidak Menyebabkan Kanker Kulit, tapi Sun Screen Penyebabnya
-    - [SALAH] Video Al Jazeera: Tiga Warga Ukraina Ditangkap di Qatar Setelah Menggambar Lambang Swastika
-    - [SALAH] Telkomsel dan Baim Wong Bagi-Bagi Mercedes Benz Rayakan HUT Kemerdekaan RI
-    - [SALAH] 'Perpisahan yang menakjubkan dan tidak pernah terjadi pada masa gubernur-gubernur bahkan kepala negara sebelumnya'
-    - [SALAH] Foto Ayah Walikota Bangkok yang Terlibat dalam Pembunuhan Besar-besaran di Thailand pada 1976
-    - Sebagian Benar, Video tentang Netizen Korea Protes Bendera Indonesia di KF 21 Boromae
-    - [SALAH] Mobil Esemka Bakal Ikut Formula E Jakarta
-    - [SALAH] Vaksin Covid-19 Mengandung Logam
+    - [SALAH] 'waduk Pluit diterlantarkan pa Heru gercep dua hari bekerja langsung dikeruk dan dibersihkan'
+    - [SALAH] Akun WhatsApp Bupati Bantaeng Ilham Azikin '081233588590'
+    - [SALAH] 'Bill Gates: Efek Samping Vaksin Covid-19 Muncul Setelah Dua Tahun'
+    - Cek Fakta: Tidak Benar Vaksin Genosida Uni Eropa Membuat 100 Ribu Kematian
+    - Belum Ada Bukti, Vaksin Sinopharm Menyebabkan Leukemia dan Diabetes
+    - [SALAH] Menkes Budi Gunadi Sadikin: 'Diabetes Mudah Diobati'
+    - [SALAH] Foto Muslim Bangladesh Barat Menyerang Warga Hindu Pada Juli 2022
+    - [SALAH] Donald Trump: Ratu Elizabeth Memberikan Saya Gelar Bangsawan Secara Pribadi
+    - Menyesatkan, Varian Baru Covid-19 dari India Hanya Bisa Dideteksi dengan Scan Paru-Paru
+    - [SALAH] Video Demo pada Tanggal 23 September 2022
+    - [SALAH] Perhelatan Puncak Balapan Formula E Sepi Penonton
+    - [SALAH] Video 'ada oknum coklat memprofokator supporter Arema Malang 2 Oktober 2022'
+    - [SALAH] Lowongan Kerja di PT. Petrosida Gresik
+    - [SALAH] Ibu Kandung Jokowi Bernama Sulami yang Merupakan Aktivis GERWANI
+    - Cek Fakta: Klarifikasi Qatar Keluarkan Aturan Bagi Fans dan Pengunjung Piala Dunia 2022
+    - Belum Ada Bukti tentang Penemuan Suku Mante di Kalimantan
+    - Keliru, Video Pasukan Korea Utara Turun Ke Medan Laga, Habisi Tentara Ukraina
+    - [SALAH] Pertamina Bagi Subsidi Rp 3 Juta dengan Isi Kuesioner
+    - Sebagian Benar, Klaim Air Zamzam Dilarang Masuk Ke Indonesia
+    - [SALAH] Gambar Tangkapan Layar Artikel Viva 'Jateng Disebut Provinsi Termiskin di Pulau Jawa'
+    - Sebagian Benar, Klaim Sekolah di Jepang Larang Siswa Perempuan Gunakan Gaya Rambut Kuncir Kuda
+    - Sebagian Benar, Penculikan Anak di Desa Noreh, Sampang, Madura
+    - Cek Fakta: Tidak Benar Mengonsumsi Kulit Pohon Jambu Mete Bisa Menetralisir Racun Akibat Gigitan Ular
+    - [SALAH] Foto Anies Baswedan Berdiri di Luar Tempat Makan Siang G20
+    - [SALAH] Penggunaan masker memperburuk kondisi kesehatan tubuh
+    - [SALAH] 55th Anniversary Indomilk
+    - [SALAH] Kader Partai Nasional Demokrat Mengundurkan Diri setelah Deklarasi Anies Baswedan
+    - [SALAH] Indonesia Melarang Penumpang Membawa Air Zamzam
+    - Keliru, Video Banjir di Bogor Pada Oktober 2022
+    - [SALAH] Foto 'Pantai Ancol dipenuhi belasan ribua turis asing menanti gelaran #FormulaE'
+    - [SALAH] Twice Konser Di Depan Pendukung Persib
+    - [SALAH] Uskup Katolik Jabodetabek Deklarasi Dukung Anies Baswedan Jadi Presiden
+    - [SALAH] Video DPR Gelar Sidang Tertutup untuk Bahas Ijazah Palsu Jokowi
+    - [SALAH] Serial The Simpsons Prediksi Kematian Ratu Elizabeth II Pada Tahun 2022
+    - [SALAH] BuzzeRp Diam Lihat Hutan Gundul
+    - [SALAH]: Foto Plang Rumah Sakit Jiwa Korban Kebencian Formula E
+    - [SALAH] Air Panas Sipaholon Tapanuli Utara Berhenti Mengalir Akibat Gempa
+    - [SALAH] Wisma atlet resmi ditutup awal bulan Juli 2022
+    - [SALAH] Jus Campuran Nanas, Lobak Dan Kemiri Dapat Menyembuhkan Asam Urat
+    - Cek Fakta: Tidak Benar Mike Tyson Salat Jamaah di Kafe Anti Islam
+    - [SALAH] Broadcast Chat Lowongan Kerja Operator Produksi PT Astra Group
+    - Keliru, Biden Makin Keterlaluan, Amerika Serikat Tuduh Indonesia Bekingi Rusia di Medan Perang
+    - Cek Fakta: Tidak Benar Presiden Jokowi Tolak Malaysia Jadi Anggota Penuh G20
+    - [SALAH] 'Pejuang ABW: Partai yang Tak Usung Anies di Pilpres 2024 Tidak Akan Masuk Surga'
+    - [SALAH] Video Anies Baswedan di Produk Mainan Hot Wheels sebagai Atribut Ajang Formula E
+    - [SALAH] Akun Whatsapp Wali Kota Tasikmalaya Muhammad Yusuf '+628123316***' Minta Donasi
+    - [SALAH] Akun WhatsApp Rektor Unnes Martono '085964387457'
+    - [SALAH] Makan Buah Saat Perut Kosong Dapat Sembuhkan Kanker
+    - [SALAH] Judul Artikel CNN: 'Should Women be allowed to breastfeed on the battlefield?'
+    - Cek Fakta: Tidak Benar MUI Berikan Logo Halal Pada Mie Instan Rasa Kaldu Tulang Babi
+    - [SALAH] Video '21 Mei 2022, Jokowi Resmi Tunjuk Risma Gantikan Anies'
+    - [SALAH] Akun Facebook Bupati Malaka Simon Nahak
+    - Keliru, Turkmenistan Memberi Gas, Air, dan Listrik Kepada Rakyat Secara Gratis Sampai Saat Ini
+    - Keliru, Unggahan Uskup Katolik Se-Jabodetabek Deklarasi Dukungan dan Beri Pujian ke Anies Baswedan
+    - [SALAH] TNI Serbu Malaysia, 6000 TKI Diungsikan
+    - [SALAH] Video Penampakan Ikan Paus Nabi Yunus
+    - [SALAH] Video 'RESMI JADI TERSANGKA KPK TITO KARNAVIAN TAK BISA MENGELAK PENYIDIK TEMUKAN INI'
+    - Menyesatkan, Video Detik-detik Jokowi Lari Ketakutan Saat Demo Tolak Kenaikan BBM
+    - Keliru, Rusia Kirim Ribuan Pasukan Serang Malaysia Demi Bantu Indonesia
+    - [SALAH] Kunyit dan Madu Bisa Jadi Obat Cacar Monyet
+    - [SALAH] Video 'Sidak Sel Tahanan Ferdy Mbak Nana Hanya Temui Ruangan Kosong'
+    - [SALAH] Artikel Wartakota Berjudul 'Viral Renovasi Ruang Kerja Megawati di BRIN mencapai Rp 6 Miliar'
+    - [SALAH] Lemon Dapat Membunuh Sel Kanker dan 10.000 Kali Lebih Ampuh Daripada Kemoterapi
+    - [SALAH] Ahok Ditetapkan Sebagai Menteri Perdagangan Baru Pada Kabinet Indonesia Maju Pemerintahan Presiden Jokowi
     - Cek Fakta: Tidak Benar FIFA Bekukan Sepak Bola Indonesia Selama 5 Tahun Akibat Tragedi Kanjuruhan
-    - [SALAH] Video Badai Ian di Naples, Florida
-    - [SALAH] Video telur palsu dari plastik
+    - [SALAH] Judul Artikel Tribunnews.com 'Wanita penghadang mobil iring-iringan mobil Presiden Joko Widodo (Jokowi) di Bali mengaku melakukan aksinya dibayar Rp. 300.000'
+    - [SALAH] Akun Whatsapp Kepala BKPSDM Kab Tangerang Hendar Herawan '+6285841645716'
+    - [SALAH] Justin Bieber Mengatakan Kelumpuhan Wajahnya Disebabkan Oleh Vaksin Covid-19
+    - [SALAH] Terapi Pijat untuk Anak Delay Speech (Lambat Bicara)
+    - [SALAH] Demonstran Membakar Rumah Ayatollah Khomeini pada 22 November 2022
+    - [SALAH] Tenggelamnya Kapal Laut di Wilayah NTT dengan Menewaskan 139 Orang Penumpang
     - [SALAH] Pesan Whatsapp Penawaran Hadiah Shopee Rp3.000.000
-    - [SALAH] Foto 'DIPANGGIL KE ISTANA !! BAMBANG TRI TOLAK SEGUDANG TAWARAN DARI JOKOWI'
-    - [SALAH] Setelah menjadi pembantu Luhut dan Mega orang tua ini sudah pandai pake celana
-    - [SALAH] 'Tak Sanggup Tahan Air Mata Putin Terharu Dengan Perlakuan Warga Indonesia Terhadap Rusia'
-    - [SALAH] Mengonsumsi Kurma Muda Bisa Mempercepat Proses Kehamilan
-    - Keliru, Video tentang Serangan Nuklir Rusia ke Ukraina
-    - [SALAH] Foto Bendera Dari Rambut Wanita Sebagai Bentuk Protes Terhadap Iran
+    - [SALAH] Foto Seorang Anak Yaman Tidur di Antara Kuburan Kedua Orang Tuanya
+    - [SALAH] Akun WhatsApp Bupati Purwakarta Ambu Anne Ratna Mustika '081359664986'
+    - [SALAH] 63 Sepeda Motor Hilang Pada Malam Peringatan Hari Ulang Tahun Kota Medan
+    - Cek Fakta: Tidak Benar Fenomena Air Laut di Pantai Bangka Surut Simulasi HAARP untuk Membuat Bencana
+    - [SALAH] Foto 'Xavier Bettel Perdana Menteri Luxembourg datang ke sebuah acara dengan istri lelakinya, Gauthier Destenay (brewok pakai longdress)'
+    - [SALAH] Bunglon Dapat Mengubah Warna Kulitnya Sesuai dengan Warna Benda yang Disentuhnya
+    - Menyesatkan, Narasi dan Video SK Gubernur DKI Jakarta Dicabut Presiden RI
+    - Keliru, Video Rudal Nuklir Rusia Tiba di Indonesia, Bikin Australia Ketakutan
+    - Belum Ada Bukti, Madu, Air Kelapa, Cokelat Bubuk, dan Alpukat Dapat Menyembuhkan Stroke
+    - Menyesatkan, Cacar Monyet dan Penyakit Anak Ulah Laboratorium Biologi Amerika Serikat
+    - [SALAH] Pemilik Bahan Peledak dan Senjata Api di Bandung telah Ditemukan
+    - [SALAH] Foto Gerhana Matahari dari Luar Angkasa
+    - Cek Fakta: Tidak Benar Panda Merah di Kebun Binatang Toronto Mati usai Divaksin Covid-19
+    - Keliru, Klaim Kedua Anak Ferdy Sambo Berusaha Kabur Karena Campur Tangan Eksekusi Brigadir J
+    - Cek Fakta: Tidak Benar Mendeteksi Stroke dengan Menggerakkan Jari Tangan
+    - [SALAH] Surat Edaran Nomor 16 Tahun 2022 Oleh Lembaga Penjamin Simpanan (LPS)
+    - [SALAH] Peserta BPJS Wajib Skrining
+    - [SALAH] 'Sanksi FIFA: PSSI di Banned FIFA 8 Tahun'
+    - [SALAH] Detik-detik Salmet Maarif Melakukan Percobaan Pembunuhan Terhadap Presiden di Istana
+    - [SALAH] "Simpanan Emas 24 Karat Ratu Elizabeth, Yang Tersimpan Di Ruang Bawah Tanah"
+    - Cek Fakta: Klarifikasi Video Laut Kering Tanda Bakal Tsunami di Bangka Belitung
+    - [SALAH] Trik Baterai Awet dengan Cara Dimasukan ke Magic Com
+    - [SALAH]: 212 Mart Adalah Sponsor Resmi ajang Formula E
+    - [SALAH] Wakil Bupati Yapen Frans Sanadi Meninggal Dunia
+    - Keliru, Penyelundupan 36 Pekerja Seks dari Cina di Medan Maimun
+    - [SALAH] Akun Facebook Bupati Kayong Utara Haji Drs Citra Duani
+    - [SALAH] Lowongan Pekerjaan Dinas P3AP2KB Pasuruan
+    - [SALAH] Akun WhatsApp Politisi NasDem Ali Mansyur HD '085762089507'
+    - Cek Fakta: Tidak Benar Video Ini Kondisi Sungai Ciliwung pada 12 Oktober 2022
+    - [SALAH] Foto Bulan Jatuh
+    - [SALAH] 'Perpisahan yang menakjubkan dan tidak pernah terjadi pada masa gubernur-gubernur bahkan kepala negara sebelumnya'
+    - Cek Fakta: Tidak Benar Uskup Katolik Jabodetabek Deklarasi Dukung Anies Baswedan Jadi Presiden
+    - [SALAH] Kata 'KADRUN' Merupakan Sandi Dari PKI Untuk Menarget Umat Islam Untuk Dibunuh
+    - [SALAH] Ramsay Hunt syndrome disebabkan oleh vaksin Covid-19
+    - Keliru, Sosok Pria dalam Video Kenangan Brigadir J di TikTok
+    - Cek Fakta: Hoaks Kabar Nikita Mirzani Meninggal Dunia Akibat Serangan Jantung pada 2 November 2022
+    - Keliru, Presiden Joko Widodo Umumkan TNI Akan Serang Malaysia
+    - [SALAH] Akun WhatsApp Anggota Ombudsman RI Hery Susanto '+62 813-3336-9598'
+    - [SALAH] Video 'ufo sudah satu jam lebih berada diatas daerah tanah abang'
+    - [SALAH] Anggota DPRD Fraksi Demokrat Lampung Barat Heri Gunawan Tawarkan Lelang Kendaraan Melalui Pesan WhatsApp
+    - Keliru, Awan Jatuh di Kampar Riau
+    - [SALAH] Link Bantuan PKH Tahap 2
+    - Keliru, Timnas Indonesia Keluar dari AFF dan Bergabung dengan EAFF
+    - [SALAH] Ilmuwan Pembuat Virus Corona Telah Ditangkap
+    - [SALAH] Judul Artikel IDNTODAY News 'Peneliti Australia Sebut : Jokowi ' Presiden Tak Berkemampuan ' Tapi Memiliki Daya Rusak'
+    - [SALAH] Akun Whatsapp Kadisminfosantik Kalteng Agus Siswadi '081213008042'
+    - [SALAH] Seekor Anjing Laut Lepas di Florida
+    - [SALAH] 'Sejumlah orang tertembak di stasiun bawah tanah New York Amerika Serikat'
+    - [SALAH] Lowongan Kerja JNE Tegal
+    - Menyesatkan, Bawang Merah untuk Obat Paru-Paru Kotor
+    - [SALAH] Video Cara Mengecek Minyak Goreng Bekas dan Baru
+    - Benar, Video Warga Tangkap Ular Piton Raksasa
+    - [SALAH] Ramuan Bawang Putih, Kunyit, Jahe, Dan Madu Dapat Membersihkan Nikotin dan Tar di Paru-Paru
+    - [SALAH] Cara Mengidentifikasi Ular Berbisa Dengan Cara Melihat Bentuk Kepalanya
+    - Cek Fakta: Tidak Benar Ada Uang Baru Bernominal Rp 1 Juta
+    - [SALAH] 'Baim Wong memberikan uang tunai dan handphone untuk 342 orang pertama melalui akun facebook Boss Qlu'
+    - [SALAH] Tiket Masuk Candi Borobudur naik karena patung 'I Gede Utange Jokowi'
+    - Cek Fakta: Hoaks FIFA Bagikan Kuota Internet 50GB Gratis untuk Nonton Piala Dunia Qatar 2022
+    - [SALAH] Perubahan Tarif Transaksi BRI
+    - [SALAH] Lowongan Pekerjaan Dinas Perhubungan Kota Salatiga
+    - [SALAH] Meletakkan Bawang Putih Di Telinga Bisa Menyembuhkan Sakit Kepala Dan Sakit Telinga
+    - [SALAH] Surat Undangan Penerima Bantuan Dana Operasional Masjid Tahun 2022 Bimas Islam Kemenag
+    - Menyesatkan, Narasi 5 Ribu Kader Nasdem Mengundurkan Diri
+    - [SALAH] Foto Putri Candrawati istri Irjen Ferdy Sambo
+    - [SALAH] Ditetapkan Jadi Tersangka, Prabowo Subianto Minta Maaf Kepada Jokowi
+    - [SALAH] Gambar Tangkapan Layar Artikel 'Wapres Ikhlaskan Saja Dana Haji Di Pakai Pemerintah Biar Kalian Masuk Surga'
+    - Sebagian Benar, Narasi Bocah Jepang Berdiri Menunggu Giliran Kremasi Adiknya
+    - [SALAH] Akun Twitter @VIVACoid Dinonaktifkan Setelah Beritakan Kematian Kolonel TNI AL Penemu Kokain Senial Rp 1 Triliun
+    - [SALAH] JUARA YG SATU INI SOK NKRI, TAPI ACUNGKAN SYAL BENDERA LGBT
+    - [SALAH] Surat Sosialisasi SINTA Versi 3 Oleh Ditjen Diktiristek Kemendikbudristek
+    - [SALAH] Video Banyak Domba Mati di Idaho, Amerika Serikat
+    - [SALAH] Vaksin Covid-19 Dapat Sebabkan AIDS Sampai Cacar Monyet
+    - [SALAH]: Eric Thohir Berfoto Dengan Ibunya Ediba Tan Mei Hwa dan Kakak Ibunya, William Soerjadjaja, Jangan Terkecoh Dikira Pribumi Muslim
+    - Cek Fakta: Klarifikasi Pesan Berantai Gangster Cari Korban di Wilayah Jabodetabek
+    - [SALAH] HUT Ke-77 RI, Anies Baswedan Pimpin Upacara Pengibaran Bendera Raksasa Di Monas
+    - Belum Ada Bukti, Video tentang Muhammadiyah Resmi Usung Anies di Pilpres 2024
+    - Cek Fakta: Tidak Benar Video Jembatan Serayu Adipala Cilacap Runtuh dan Hanyut pada 15 Oktober 2022
+    - Keliru, Klaim Rekaman Suara Teriakan Minta Tolong Brigadir J Saat Disiksa dan Dibantai Irjen Ferdy Sambo
+    - Menyesatkan, Soekarno Meminjamkan 57 Ribu Ton Emas ke John F. Kennedy
+    - [SALAH] CNN News: 'Climate Change will be back next summer'
+    - Keliru, Utang Pemerintah Indonesia Salah Satu yang Terkecil di Dunia
+    - Menyesatkan, Mie Instan Indonesia Ditolak Masuk Taiwan karena Mengandung Racun Berbahaya
+    - Keliru, Luhut Binsar Pandjaitan Gandeng Jenderal Andika Memburu Jenderal di Belakang Ferdy Sambo
+    - [SALAH] Akun Whatsapp Sekretaris Daerah Kabupaten Aceh Utara A. Murtala '+6281250401484'
+    - Cek Fakta: Tidak Benar Pemain Ligue 1 Prancis Lakukan Aksi Teatrikal Sindir Penggunaan Gas Air Mata di Tragedi Kanjuruhan
+    - [SALAH] Sampul Artikel CNN Indonesia Ganjar dan Jokowi RI 1 – RI 2 Pilpres 2024
+    - [SALAH] Video Polisi Hindutva India Menyerang Secara Brutal Seorang Pria Muslim Tua
+    - [SALAH] 'POMBENSIN TUBAN DIBAKAR MASSA BEGITU HARGA BBM NAIK TGL 03-09-2022'
+    - [SALAH] Mengonsumsi Air Rebusan Daun Putri Malu Bisa Sembuhkan Vertigo hingga Stroke
+    - [SALAH] Video 'PEMALSU IJAZAH RESMI DIRINGKUS PAK DHE TAK TERTOLONG KESAKSIANNYA MENGEJUTKAN'
+    - Sebagian Benar, Arab Saudi Bangun Kota di Atas Tanah yang Dilarang Nabi Muhammad
+    - Cek Fakta: Tidak Benar dalam Video Ini Hewan Hasil Modifikasi Genetik antara Babi dan Sapi
+    - [SALAH] Akun Whatsapp Bupati Limapuluh Kota Safaruddin Dt Bandaro '+6282169316526'
     - Cek Fakta: Tidak Benar Dana Bantuan Rp 189 Juta dari Pertamina
+    - Sebagian Benar, Video tentang Netizen Korea Protes Bendera Indonesia di KF 21 Boromae
+    - [SALAH] 'Orang yang Sudah Divaksin Dapat Dikoneksikan ke Bluetooth'
+    - [SALAH] 'Bisnis Vaksin PMK dan Efek Shedding penyakit PMK dari Hewan Menular ke Manusia'
+    - Keliru, Foto dan Tautan yang Diklaim CCTV di Rumah Ferdy Sambo Saat Pembunuhan Brigadir J
+    - [SALAH] Foto Warga Papua Demo Tolak PDIP di Papua
+    - Keliru, Tes Kesehatan Paru-paru dengan Menahan Napas Dari Titik A ke B Selama 30 Detik
+    - [SALAH] Pasangan di Ghana Wajib Memakai Baju Pengantin Ketika Akan Bercerai
+    - [SALAH] Gelombang Panas Melanda Indonesia
+    - Keliru, Video Warga Eropa Protes Salahkan Uni Eropa karena Sanksi Gas Rusia
+    - Keliru, Tautan Pendaftaran Bansos Program Keluarga Harapan
+    - [SALAH] Katy Perry terkena Ramsay Hunt Syndrome
+    - Keliru, Foto Hewan Armadillo Memiliki Bentuk Kepala Seperti Manusia
+    - [SALAH] Foto Badai Petir yang Terlihat dari Luar Angkasa
+    - [SALAH] Indomaret Bagi-Bagi Uang Rp 13 Juta Rayakan HUT Kemerdekaan RI
+    - [SALAH] Video Seorang Ayah Menari Saat Pemakaman Putrinya yang Dibunuh Polisi di Iran
+    - Menyesatkan, Ayah dan Anak Diikat di Pohon di Luar Wilayah Kendali Militer Rusia
+    - Keliru, Ma'ruf Amin Minta Rakyat Bantu Pemerintah Karena Kas Negara Menipis
+    - Keliru, Video Polisi Jemput AHY karena Provokasi Demo
+    - [SALAH] 'Kelompok anies pesta pora makan duit rakyat'
+    - [SALAH] 'Alhamdullilah, Biang Coronanya Udah Tertangkap'
+    - [SALAH] Mengonsumsi Kurma Muda Bisa Mempercepat Proses Kehamilan
+    - Cek Fakta: Tidak Benar Dokumen CDC AS Nyatakan Covid-19 Tak Ada
+    - [SALAH] Foto 'SBY Dijemput Paksa Brimob Bersenjata Lengkap'
+    - [SALAH] Ribuan Rumah Terendam Banjir, tapi Kuil Rumah Tuhan Masih Berdiri Tegak
+    - Tidak Terbukti, Kulit Lemon 10.000 Kali Lebih Kuat Daripada Kemoterapi untuk Membunuh Sel Kanker
+    - [SALAH] Foto Buku-buku Sejarah Ukraina yang Dibakar Tentara Rusia
+    - Cek Fakta: Tidak Benar Video Ganjar Pranowo Resmi Keluar dari PDIP
+    - [SALAH] Foto 'Istri Tusuk Suami Usai Lihat Fotonya Dengan Wanita Lain ,Ternyata Perempuan Itu Dirinya Saat Masih Langsing'
+    - [SALAH] Akun Whatsapp Wakil Wali Kota Cirebon Eti Herawati '+6285837232955'
+    - [SALAH] Pidato Anies Baswedan: 'Saya Merancang Grand Design Lapangan Banteng Dari Nol'
+    - [SALAH] Video 'Kiamat bagi australia rusia kerahkan 9.000 pasukan ke perbatasan indonesia-australia-pulau pasir'
+    - Keliru, Video Suasana Sidang DPR Memanas Saat Bahas Ijazah Jokowi
+    - Sebagian Benar, Video Perubahan Daging Setelah Digigit Manusia dan Komodo
+    - Benar, Seorang Pria Italia Terinfeksi Cacar Monyet, Covid-19, dan HIV Sekaligus
+    - [SALAH]: Pesan Whatsapp Pengangkatan Tenaga Honorer Perawat dan Guru Tanpa Tes di Pemprov Yogyakarta
+    - Keliru, Video Pemerintah Singapura Menyerahkan 1000 Triliun Aset Negara Indonesia yang Dicuri Koruptor
+    - [SALAH] 'Ahmad Dhani: Saya Akan Potong Kemaluan Jika Jokowi Menang'
+    - Menyesatkan, Pisang dengan Bintik Hitam Mengandung TNF Antikanker
+    - [SALAH] Mengonsumsi Kulit Pohon Jambu Mete Bisa Menetralisir Racun Akibat Gigitan Ular
+    - Cek Fakta: Tidak Benar Kabar 5000 Kader Partai Nasdem Mengundurkan Diri Usai Usung Anies Baswedan Jadi Capres 2024
+    - [SALAH] Hillary Clinton Mengaku Terinspirasi oleh Sri Mulyani dan Jokowi pada Debat Calon Presiden Amerika Serikat
+    - Sebagian Benar, Berita Duka Cita 7 Anggota Paskibra Mendadak Dijemput Ajal
+    - [SALAH] Cacar Monyet Disebabkan dari Efek Samping Vaksin Covid-19 AstraZeneca
+    - [SALAH] Sakit Hati Karena Disebut 'Lame Duck (Bebek Lumpuh)', Jokowi Tampar Rizal Ramli
+    - Keliru, Brazil Izinkan Pembunuhan Begal Motor Hingga Turunkan Angka Kasus
+    - [SALAH] Anies Jelaskan Sistem Inovatif Profit ACT: Orang yang Berkekurangan Memberi Kepada Orang yang Berlebih
+    - [SALAH] BNI Terbitkan Uang Kertas Pecahan Rp100 Ribu Bergambar Presiden Joko Widodo
+    - [SALAH] KABAR KONDISI IBU IRIANA TERKINI USAI TERPELESET, GIBRAN RAKABUMING KABARKAN KONDISI IBU
+    - [SALAH] 'KEREN bendera NKRI kita terbentang luas di konser group Scorpion dipolandia berkat presiden kita Jokowi'
+    - Cek Fakta: Tidak Benar Foto yang Diklaim Kupu-Kupu Bertanduk
+    - Keliru, Video Pernyataan Penyesalan Istri Ferdy Sambo soal Kasus Pembunuhan Brigadir J
+    - Sebagian Benar, Video Jemaah Haji Korea Selatan Pawai di Jalanan Kota Seoul Pada 2022
+    - [SALAH] Pfizer yang terbaru mempunyai kandungan potasium klorida yang membahayakan jantung
+    - Sebagian Benar, Link Cek Bantuan Sosial Subsidi BBM Langsung di HP Sambil Makan atau Sibuk Kerja
+    - Cek Fakta: Tidak Benar Video Penampakan Robot Perang Buatan Militer Amerika Serikat
+    - [SALAH] Foto Boris Johnson Kabur ke Laut setelah Mengundurkan Diri dari Jabatan Perdana Menteri Inggris
+    - Cek Fakta: Tidak Benar Mata Katy Perry Bermasalah Akibat Vaksin COVID-19
+    - Keliru, Dua Anak Ferdy Sambo Ditangkap Bantu Pembunuhan Brigadir J
+    - [SALAH] Video 'MENGENASKAN ! IBU PUTRI LANGSUNG SYOK BACA WASIAT SAMBO SEBELUM ‘MENINGGAL''
+    - Menyesatkan, Siswi SMP dan SMA di Jepang Wajib Pakai Dalaman Senada dengan Seragam Sekolah
+    - [SALAH] Panitia Rekrutmen Waskita Karya Jemput Calon Karyawan Langsung dari Rumah
+    - [SALAH] Akun Twitter Investasi Terra Luna
+    - [SALAH] Kaitan Kasus Penangkapan Ferdy Sambo dengan Artikel Berjudul 'Pengakuan Bandar Narkoba: Saya Sudah 'Setor' Rp450M, ke BNN Rp90M ke Pejabat Polisi, Tapi Masih Ditangkap'
+    - [SALAH] Gajah Berwarna Merah Muda karena Tanah Sekitarnya Berwarna Merah
+    - Menyesatkan, NATO Kalang Kabut, Rudal Rusia Siap Musnahkan Amerika Serikat Dalam Sekejap
+    - [SALAH] 'SUPORTER SEPAK BOLA LIGA JERMAN SEKALIGUS MEMPERINGATI MAULID NABI MEMBENTUK FORMASI YA HABIBI YA RASULULLAH'
+    - [SALAH] 'Beredar Video Diduga Mempertontonkan Pasangan LGBT Sedang Bermesraan di Salah Satu Kafe di Palangkaraya'
+    - [SALAH] Nomor Call Center Bank Mega '+628041500010'
+    - [SALAH] Video Badai Ian di Naples, Florida
+    - [SALAH] Indonesia Lolos Semifinal AFF U-19
+    - [SALAH] Video Al Jazeera: Tiga Warga Ukraina Ditangkap di Qatar Setelah Menggambar Lambang Swastika
+    - [SALAH] KTP dan NPWP Ganda Untuk Persiapan 2024
+    - [SALAH] Lowongan Kerja Departemen Sumber Daya Manusia (SDM) Tokopedia
+    - [SALAH] Foto Kota di Jawa Tengah
+    - [SALAH] 'Demo tuh MUI dah jelas tertulis ada pork bone kok di cap HALAL !!'
+    - [SALAH] Kutipan Ucapan Stalin tentang Pemilu
+    - Keliru, Surat Imbauan Gubernur Papua Agar Pangkodap TPNPB dan seluruh TPM-OPM Papua Menurunkan Senjata dan Bergabung dengan NKRI
+    - [SALAH] China Sudah Menjajah NKRI Salah Satunya Komplek Khusus Rumah Elit China Bertuliskan China
+    - [SALAH] Ketua Kejaksaan Negeri Aceh Singkil Meminta Uang Senilai Rp25 Juta Melalui WhatsApp
+    - [SALAH] Pesan WhatsApp Dana Bantuan Pertamina Sebesar Rp100 Juta
+    - [SALAH] 27 Mei 2022 anak Ridwan Kamil sudah ditemukan dalam keadaan selamat
+    - [SALAH] Sampul Majalah Tempo 'SANG DALANG PERUSAK BHINNEKA'
+    - [SALAH] Video Petinju Babak Belur Melawan Petinju Tidak Terlihat
+    - [SALAH] Vaksin Covid-19 mempengaruhi siklus menstruasi
+    - [SALAH] 'Kata ‘jancuk’ berasal dari Tank Jan Cox'
+    - Menyesatkan, Video Anak-anak Sekolah Rusia Menyanyikan Lagu Indonesia Raya Sambut Kedatangan Jokowi
+    - Cek Fakta: Tidak Benar Video Pemain Sepak Bola Ditampar Pelatih di Ruang Ganti Tim Qatar
+    - Menyesatkan, Video TikTok dengan Narasi Etnis Madura Buat Masalah dengan Orang Bandung
+    - [SALAH] Video Banjir Bandang Pakistan 28 Agustus 2022
+    - [SALAH] Foto Arnold Schwarzenegger Mengenakan Kaus Bergambar Peta Krimea
+    - [SALAH] China Meluncurkan Matahari Buatan
+    - [SALAH] Memakai Sendal Jepit Akan Ditilang
+    - [SALAH] Etnis Madura Membuat Masalah dengan Orang Bandung
+    - [SALAH] Hidrogen Peroksida Dapat Sembuhkan Kanker Jika Digosokkan ke Kulit
+    - [SALAH] Mahasiswa Sri Lanka Ditahan Oleh Angkatan Bersenjata Ukraina di Wilayah Kharkiv
+    - [SALAH] 'perilaku PKI baru selesai shalat dihajar'
+    - Menyesatkan, Video Jokowi Digugat Utang Rp 62 Miliar Buntut Kasus Ijazah Palsu
+    - [SALAH] 'Protes di Indonesia melonjaknya biaya energi'
+    - [SALAH] Video 'Ini situasi terkini di AS negara super power yang menderita, akibat adanya resesi yang melanda dunia.'
+    - Keliru, Video Negara-negara Eropa Sepakat Menyerah Ke Rusia
+    - [SALAH] Militer Amerika Menemukan Pestisida dalam Vaksin Covid-19 Moderna
+    - Menyesatkan, Klaim Sejarah Raja Anglo Saxon Marcia Menerbitkan Koin Emas dengan Kalimat Tauhid Tidak Pernah Diumumkan
+    - Keliru, Sandiwara dalam Penjara, Ferdy Sambo Ngamuk dan Ancam Lakukan Ini Pada Polisi
+    - [SALAH] PERTOLONGAN PERTAMA TERKENA MINYAK GORENG ATAU AIR PANAS DENGAN TEPUNG
+    - [SALAH] Ustadz Abdul Somad: 'Hukum Mencintai Pasangan Orang Lain Ternyata Tidak Dosa, Itulah Nilai Jihad'
+    - [SALAH] Pemberian Hadiah Senilai Rp35 Juta dari Indonesia Giveaway Trans7 yang Dipandu Baim Wong dan Paula Verhoeven
+    - Cek Fakta: Tidak Benar Video Klaim Siswa SD Sedang Ujian di KFC
+    - Cek Fakta: Tidak Benar Video KPK Menyita Harta Mendagri Tito Karnavian
+    - [SALAH] Honda Bagi-Bagi All New Scoopy Lewat WhatsApp
+    -  [SALAH] 'Mohon doa keselamatan untuk Blitar'
+    - [SALAH] Robot berukuran sel ditemukan dalam vaksin covid baru
+    - [SALAH] Jokowi Ingin Pindah Agama Katolik
+    - Keliru, Gelembung Putih pada Daging Penyakit TBC Hewan
+    - Keliru, Foto dan Kisah 4 Ribu Tentara Jerman Masuk Agama Islam
+    - [SALAH] Penyakit Bell's Palsy Disebabkan Angin Dingin
+    - [SALAH] Informasi Lowongan Pekerjaan PT Pelabuhan Indonesia III
+    - [SALAH] Wanita berusia 399 Tahun
+    - [SALAH] Anak-Anak di Rusia Menyanyikan Lagu Indonesia Raya untuk Menyambut Presiden RI dalam Misi Perdamaian Rusia-Ukarina
+    - Keliru, Mike Tyson Pakai Kursi Roda Akibat Suntikan Vaksin Covid-19
+    - [SALAH] Kabar Viral Hari ini, 2 intelejen Malaysia Serang Markas TNI AL Jokowi Perintahkan Tembak Di Tempat
+    - Keliru, Video Pidato Jokowi yang Sebut Seharusnya Amerika Serikat dan NATO Sudah Bubar
+    - Cek Fakta: Tidak Terbukti Mengonsumsi Kurma Muda Bisa Mempercepat Proses Kehamilan
+    - Menyesatkan, Larangan Konsumsi Empat Jenis Makanan Karena Sebabkan Kematian Mendadak
+    - [SALAH] Artikel CNN: 'Anak Presiden Uganda Tidak Mau Mendukung Ukraina Karena itu Menjijikkan'
+    - Menyesatkan, Video tentang Bisnis Jual Beli Ijazah Palsu
+    - [SALAH] Petir Menyambar Candi Borobudur
+    - [SALAH] Video 'Cacing akibat makan sosis, naget dan sejenisnya, dari daging yg lama di awetkan'
+    - [SALAH] Rektor UGM Akui Semua Kecurangan Ijazah dan Mengaku Dibayar oleh Jokowi
+    - [SALAH] Jokowi Mengembalikan Ahok ke Balai Kota DKI
+    - [SALAH] Demo Anti Pemerintah Cina di Guangzhou
+    - [SALAH] Surat Izin Sementara Bagi Pekerja Asing Tanpa Izin (PATI) di Malaysia
+    - [SALAH] Keributan antara camat dan warga pemilik tanah
+    - [SALAH] Artikel 'Puan Maharani: Hapus Pendidikan Agama Islam Jika Ingin Negara Maju'
+    - [SALAH] Mike Tyson, Bado Jack, dan Amer Abdallah Shalat di Kafe yang Melarang Umat Muslim Masuk
+    - Cek Fakta: Tidak Benar Gempa Cianjur dan Sukabumi disebabkan Gunung Gede dan Pangrango
+    - Keliru, Minum Kopi dengan Dicampur Lemon dan Air Panas Dapat Menurunkan Berat Badan
+    - Menyesatkan, Video Pembajakan Telkomsel yang Diunggah Pada 17 Juli 2022
+    - Belum Ada Bukti, Penemuan Cincin Berhuruf Arab Bukti Orang Viking yang Memeluk Agama Islam
+    - Cek Fakta: Hoaks Kode Warna Sebagai Tanda Bahan Kandungan dalam Pasta Gigi
+    - Menyesatkan, Video Prabowo Terdepak dari Istana, Jokowi Langsung Bacakan SK Pemberhentian
+    - Menyesatkan, Video DPR Pecat Hakim yang Akan Vonis Mati Ferdy Sambo
+    - Keliru, Video Perang Amerika Serikat dan Taiwan Melawan Cina Picu Perang Dunia III
+    - Sebagian Benar, Penampakan Hiu Berjumbai di Jepang Tahun 2007
+    - Keliru, PBB Jatuhkan Sanksi atas Penyadapan Australia di Indonesia Jelang KTT G20
+    - [SALAH] JERMAN TELAH MENGHENTIKAN SEMUA VAKSIN COVID-19
+    - [SALAH] Video 'Najwa Shihab Berhasil Polisikan Nikita Mirzani, Kini Berakhir Dijeruji Besi'
+    - Menyesatkan, Artikel Tenggelamnya KM Lestari Maju Memakan Korban 139 Orang pada Juni 2022
+    - [SALAH] Pelaku Penembakan Mantan PM Jepang Shinzo Abe
+    - [SALAH] Video 'Aksi Kader Partai Nasdem Rame-Rame Melepaskan Atribut'
+    - Keliru, Video Presiden Jokowi Tagih Utang Malaysia Rp 100 Miliar Lewat Bank Dunia
+    - Keliru, Foto Pengunjung Grand Indonesia Mall Berdesakan hingga Pingsan
+    - [SALAH] Video Simpanan Emas Ratu Elizabeth II Tersimpan di Ruangan Bawah Tanah
+    - [SALAH] Eks Danjen Kopassus: 'Buzzer Anies Makhluk Pemakan Bangkai, Tukang Fitnah dan Adu Domba'
+    - [SALAH] Video Anak-Anak Ujian di KFC
+    - Keliru, Video Presiden Sri Lanka Melarikan Diri Gunakan Kapal TNI AL Pada 9 Juli 2022
+    - Cek Fakta: Hoaks Surat Pemanggilan Seleksi Calon Karyawan BNI
+    - [SALAH] Gambar Tangkapan Layar Artikel Detiknews 'Anies andai ada yang meninggal pada saat pelaksanaan formula E atap tribun nya roboh itu sudah musibah bukan tanggung jawab kami'
+    - [SALAH] "VIDEO DETIK-DETIK FAREL PRAYOGA JUARA LOMBA ADZAN NO 1 DI ARAB SAUDI"
+    - [SALAH] Video 'Kota Medan Turun Salju'
+    - Bentengi Generasi Muda dari Hoaks, Edukasi Cek Fakta Sasar Siswa dan Mahasiswa
+    - [SALAH] 'Giveaway Baim Wong melalui akun Boss Qiuu'
+    - [SALAH] Video Uang Baru Nominal Rp 1 Juta
+    - [SALAH] Dua Orang Ini Sudah 100 Tahun Meninggal, Tetapi Mereka Bisa Hidup Kembali.
+    - [SALAH] Nama Asli Bruce Lee adalah Badruddin Rusli
+    - Sebagian Benar, Ratusan Minyak Goreng Tumpah Ruah di Laut Jawa
+    - [SALAH] Durian Tidak Boleh Dimakan Dengan Minuman Berkarbonasi Hingga Kopi
+    - [SALAH] Air Nanas Bisa Membunuh Sel Kanker
+    - [SALAH] Festival Musik Glastonbury Dipenuhi Sampah Setelah Pidato Greta Thunberg
+    - [SALAH] 'Hukuman Mati Di Depan Mata, Aktor Ganteng Ini Cuma Minta Dibawakan Makanan Sisa Di Penjara, Ternyata Punya Alasan Mulia Dibaliknya'
+    - Keliru, Video Pengerahan Militer Korea Utara Setelah Putus Hubungan dengan Malaysia
+    - [SALAH] Akun WhatsApp Labuhanbatu Utara Melakukan Penggalangan Donasi Berupa Uang Untuk Pondok Pesantren dan PAUD
+    - [SALAH] Foto 'PEMBUAT IJAZAH PALSU DIAMANKAN, KESAKSIANNYA BIKIN JKW TERP0JOK !!'
+    - [SALAH] Video 'Akhirnya Penyidik Temukan Ruang Rahasia Ferdy Sambo | Berisi T4ng4n M4nusi4'
+    - [SALAH] POSTER FESTIVAL LELANG TAHUNAN OLEH DJKN
+    - [SALAH] Rebusan Air Campuran Bawang Merah, Kunyit, dan Jahe Dapat Bersihkan Paru-paru kotor Akibat Rokok
+    - [SALAH] Nomor WhatsApp BNI +1 (256) 291-8191 Sebagai Customer Service
+    - [SALAH] Foto Pernikahan Sule dan Riesca Rose
+    - [SALAH] Lowongan Kerja di Puskesmas Wonosari 1 Gunung Kidul
+    - [SALAH] Panda Merah di Kebun Binatang Toronto Mati usai Divaksin Covid-19
+    - [SALAH] Vaksin Covid-19 Menyebabkan Peningkatan Kasus Kanker
+    - [SALAH] Giveaway Soimah 1-5 juta
+    - [SALAH] Surat Pengangkatan Tenaga Honorer Menjadi PNS Tahun 2022 Oleh Menteri PANRB
+    - [SALAH] Foto Pemandangan Alam Palestina
+    - [SALAH] Video 'SOMBONG BANGET ! Kapolda Metro Fadil rampas KTA Paspampres'
+    - Keliru, Foto Kapolda Metro Jaya Ditahan dalam Kasus Pembunuhan Brigadir J oleh Ferdy Sambo
+    - [SALAH] 'Ma’ruf amin: kas negara menipis Ma’ruf Amin minta rakyat sisihkan harta bantu pemerintah'
+    - [SALAH] Foto Bayi Platypus yang Dipanggil 'Puggle'
+    - [SALAH] Video Ledakan Besar dari Beijing Saat Kudeta Terhadap Xi Jinping, Presiden China
+    - [SALAH] Kemenkes RI Adakan Bantuan Biaya STR Bagi Tenaga Kesehatan
+    - Keliru, Video Roy Suryo Ditahan Pada 19 Juni 2022
+    - [SALAH] Video 'BONGKAR BOROK ANIES WAKIL GUBERNUR OGAH DUKUNG ANIES NYAPRES'
+    - [SALAH] Gambar Jokowi sedang Wisuda
+    - [SALAH] Akun Whatsapp Bupati Mesuji Sulpakar '+6289636247958'
+    - [SALAH] Video Buaya Berukuran Besar
+    - [SALAH] Foto RA Kartini Memakai Jilbab dan Kacamata saat Menjadi Santri
+    - [SALAH] Polytron Bagi-Bagi 670 Set Top Box TV Lewat Akun Facebook
+    - [SALAH] Artikel Kecelakaan Mobil Rombongan Ibu-Ibu Senam Masuk Jurang di Aceh
+    - Cek Fakta: Tidak Benar Video Wanita Tertua di Dunia Berusia 399 Tahun
+    - [SALAH] Peningkatan kasus Covid-19 disebabkan oleh orang-orang yang sudah divaksin
+    - [SALAH] PEMBINA BRIMOB saat ini bernama Thahir alias Ang Tjoeng Ming
+    - Cek Fakta: Tidak Benar Kondisi AS Terkena Dampak Resesi dalam Video Ini
+    - [SALAH] Artikel Berjudul, 'Optimis Menang Pemilu 2024, Puan: Kita Bersama Wong Licik'
+    - Keliru, Pesan WhatsApp Berisi Klaim Cuci Ginjal Alamiah dengan Daun Seledri
+    - Cek Fakta: Tidak Benar Orang dalam Video Ini Tersambar Sinar Gamma
+    - Keliru, Buah Tanpa Biji Hasil Rekayasa Genetika Berbahaya dan Haram Dikonsumsi
+    - [SALAH] Putri Esmat Al-Dowleh Lambang Kecantikan Persia pada Abad ke-19 dan Menyebabkan Banyak Pemuda Bunuh Diri karena Ditolak Cintanya
+    - Menyesatkan, Video Malaysia Tolak Diplomasi dengan Indonesia, Jokowi Lakukan Ini
+    - Cek Fakta: Beredar Lagi Hoaks Trans7 Bagikan Uang Rp 50 Juta
+    - [SALAH] Akun Facebook Bupati Nias Barat 'Khenoki Waruwu'
+    - [SALAH] Tak Kuat Iman Putri Candrawati Putuskan Bunuh Diri
+    - Keliru, Massa Demo Tolak Kenaikan BBM Membakar SPBU di Tuban
+    - [SALAH] 'Presiden AS Menjemput PM Singapura, sementara Jokowi hanya Dijemput Dubes Indonesia untuk AS.'
+    - [SALAH] Akun WhatsApp Bank BRI '082316350080'
+    - Belum Ada Bukti, Rekaman CCTV Asli Saat Istri Ferdy Sambo Menusuk dan Mengejar Brigadir J dari Belakang
+    - [SALAH] Video 'Hati2 buah tak berbiji berbahaya dan haram'
+    - [SALAH] 'AKHIRNYA PARTAI PKS DIBUBARKAN'
+    - [SALAH] Donald Trump Meninggal Pada Usia 76 Tahun
+    - Keliru, Malaysia Tak Lagi Jadi Negara Persemakmuran Inggris
+    - Keliru, BRI Mengganti Biaya Transaksi ATM dengan Autodebet Rp 150.000 per Bulan PERUBAHAN TARIF LAYANAN BRI
+    - Cek Fakta: Hoaks Alfamart Bagi-Bagi Tas Kado Spesial Lewat Akun Facebook
+    - [SALAH] Foto Buaya Berenang Dalam Rumah yang Terendam Banjir Setelah Badai di Florida
+    - [SALAH] Minum Air Rebusan Genjer Bisa Obati Diabetes
+    - [SALAH]: Hanyalah Malin Kundang Yang Tidak Mau Mengakui Ibu Kandungnya
+    - [SALAH] Jenazah Nenek Hindun Ditolak dan Tidak Disalatkan Karena Memilih Ahok
+    - [SALAH] Pemberian Hadiah Senilai Rp100 Juta dari TikTok Kepada Pengguna
+    - Cek Fakta: Hoaks Informasi TikTok Bagikan Hadiah Mobil hingga Uang Rp 75 juta
+    - [SALAH] Efektivitas Vaksin Pfizer Hanya Sebesar 12%
+    - Keliru, Rutin Konsumsi Spirulina Dapat Cegah Cacar Monyet
+    - [SALAH] Video 'Atas Permintaan Kapolri Akhirnya Ferdian Gantikan Uya Kuya Giliran Ferdy Sambo Dihipnotis'
+    - [SALAH] Video 'Akibat perang Rusia – Ukraina mengakibatkan krisis pangan & ekonomi melanda Negara Eropa.'
+    - [SALAH] Gambar Pratinjau (Thumbnail) Video 'KABAR TERBARU‼️ZELENSKY BERAKHIR MENG3N4SK4N JADI BULAN-BULANAN APARAT.!!'
+    - [SALAH] George Floyd Meninggal Karena Overdosis
+    - Menyesatkan, Seorang Ayah Tega Gorok Leher Anak Kandungnya Karena Sepeda Motor Dipakai Tanpa Izin
+    - Sebagian Benar, Ilmuwan Rusia Hidupkan Kembali Cacing yang Membeku Selama 42 Ribu Tahun
+    - [SALAH] Bendera dan Atribut PDI-P Dilarang Beredar di Sumatera Barat karena Telah Menjadi Partai Terlarang
+    - Keliru, Bantuan Kesehatan Rp 150 juta bagi TKI dan TKW
+    - [SALAH] Akun Facebook Bupati Gayo Lues Meminta Bantuan Sejumlah Dana
+    - [SALAH] "Video Presiden Joko Widodo Jenguk Lesti Kejora Di Rumah Sakit Tanpa Kehadiran Rizky Billar"
+    - Cek Fakta: Gagal Ginjal Akut pada Anak Tidak Terkait dengan Vaksin Covid-19
+    - [SALAH] Menahan Tangis Bisa Menyebabkan Kanker
+    - [SALAH] Video Luhut Perintahkan Kabareskrim Untuk Mengusut Kasus Pembunuhan Brigadir J
+    - [SALAH] Hoaks Surat Pemanggilan Seleksi Pegawai Pertamina
+    - Belum Ada Bukti, PT LIB Putus Kontrak Indosiar sebagai Pemegang Hak Siar Liga 1 dan Tunjuk ANTV
+    - Keliru, Video Perempuan Hamil dan Melahirkan 9 Bayi Sekaligus
+    - [SALAH] Jokowi dan Putin Joget Bersama Saat Farel Prayoga Nyanyi di Pembukaan KTT G20
+    - [SALAH] Video telur palsu dari plastik
+    - [SALAH] 'Hotman Paris bagi-bagi uang tanpa diundi di Facebook'
+    - [SALAH] Surat Undangan Pengadaan Bahan Baku di PT Sido Muncul
+    - [SALAH] Sopir Ambulan Mendapat Wangsit dari Jenazah Eril
+    - Keliru, Klaim Bill Gates Memesan 13 juta dosis vaksin Cacar Monyet
+    - [SALAH] KPK Segel Rumah Milik Prabowo Subianto
+    - [SALAH] Foto Ayah Walikota Bangkok yang Terlibat dalam Pembunuhan Besar-besaran di Thailand pada 1976
+    - [SALAH] Video 'Ferdy Sambo hanya bisa pasrah, puluhan tengkoraknya disita Polri'
+    - [SALAH] KFC Bagi-Bagi Tiga Ember Ayam Gratis untuk Merayakan 71 Tahun KFC
+    - [SALAH] Video 'AUSTRALIA KAGET !! INDONESIA UJICOBA PESAWAT PENGEBOM'
+    - [SALAH] 'Kronologis Peristiwa Hasil Klarifikasi dengan Ketiga Guru BK di SMAN 1 Banguntapan Oleh: LBH Muhammadiyyah'
+    - Cek Fakta: Tidak Benar Ini Daftar 15 Obat Berbahaya
+    - [SALAH] Panda Merah Mati Setelah Diberi Dosis Vaksin Covid-19
+    - [SALAH] Video Makhluk Aneh di Hutan Belantara Kalimantan
+    - [SALAH] Video 'Gemparkan China, Akhirnya Presiden Xin Jink Dikudeta Hari Ini'
+    - [SALAH] Video 'SELURUH NATO KETAKUTAN JET TEMPUR JERMAN TEMBAK JATUH INDONESIA'
+    - [SALAH] Perubahan Tarif Transfer Bank BRI Jadi Rp150.000
+    - [SALAH] Tautan Pos Indonesia Memberikan Subsidi sebesar 4 Juta
+    - Keliru, Video Jutaan Umat Muslim India Turun ke Jalan Atas Penistaan Nabi Muhamad SAW
+    - [SALAH] Akun Facebook Bupati Cirebon 'Kang Imron' Meminta Sejumlah Sumbangan
+    - Sebagian Benar, Foto Anak SD Meninggal Tersambar Petir Karena Handphone Diunggah Tahun 2022
+    - [SALAH] Ruben Onsu Mualaf
+    - [SALAH] Video Pertandingan Piala Dunia Qatar 2022 Diskors Saat Azan Berkumandang
+    - Cek Fakta: Tidak Benar dalam Video ini Perayaan Maulid Nabi Muhammad SAW di Rusia
+    - [SALAH] Video 'Innalillahi ~ Eko kuntadi tak tertolong, Tangis keluarga tak terbendung'
+    - Keliru, Video TNI Tingkatkan Serangan Jarak Jauh Hingga Malaysia
+    - [SALAH] Vaksin Covid-19 menurunkan fertilitas pria
+    - [SALAH] PPATK Keluarkan Sertifikat untuk Keamanan Dana Investasi
+    - Keliru, Ferdy Sambo Tak Terima Hukuman Mati dan Mengamuk Saat Sidang
+    - Keliru, Unggahan tentang Menkes Budi Gunadi Sadikin Menyatakan Diabetes Mudah Diobati
+    - Keliru, Foto Anak Siswa SD Korban Penembakan di Sekolah
+    - [SALAH] Gambar Tangkapan Layar Artikel Aspek.id 'Anies menyakinkan pada warga apabila formula E di laksanakan Jakarta tidak akan banjir lagi'
+    - [SALAH] Video 'Menolak lupa tragedi pembantaian anak usia 15 tahun pada bulan puasa tanggal 23 mei 2019 oleh pasukan Brimob'
+    - [SALAH] Foto 'Masjid Meledak di kota Narayanganj, Bangladesh saat sholat Sebanyak 120 Jamaah Meninggal Dunia'
+    - Menyesatkan, Video Mobil Terbakar di SPBU Wero Gombong Lantaran Gunakan Aplikasi MyPertamina
+    - [SALAH]: Dabbah Telah Muncul, binatang Pesan Tanda Kiamat
+    - Cek Fakta: Tidak Benar Vaksin Pfizer Mengandung Logam Berat Graphene Oxide
+    - [SALAH] Perubahan Tarif Transaksi Bank Aceh Kepada Bank Lain
+    - Menyesatkan, Artikel Pesawat Garuda Kecelakaan dengan 22 Korban Jiwa yang Dipublikasikan Juni 2022
+    - [SALAH] Anang Meninggal Dunia
+    - [SALAH] Berita CNN tentang Dokter Terawan yang Menemukan Pengganti Insulin
+    - [SALAH] Foto 'orang2 dari zaman belanda ternyata udah romantis'
+    - [SALAH] NATO Membeberkan Rencana Ekspansi di Dekat Perbatasan Rusia
+    - Cek Fakta: Tidak Benar dalam Video ini Rekaman Satelit Gempa di Cianjur
+    - [SALAH] Lowongan Kerja di Puskesmas Ponorogo Selatan
+    - [SALAH] Akun Whatsapp Bupati Gresik Fandi Akhmad Yani Menggalang Dana
+    - [SALAH] Pidato Surya Paloh Dalam Rangka Mendukung Anies Baswedan untuk Pemilu 2024
+    - [SALAH] Tjahjo Kumolo meninggal karena Vaksin Covid-19
+    - [SALAH] Patung Berumur 5.000 tahun di Laut
+    - [SALAH] Akun WhatsApp Wakil Wali Kota Sukabumi Andri Setiawan Hamami '085805025738'
+    - [SALAH] Merapi Ngamuk Erupsi Besar
+    - [SALAH] Pesan Berantai TikTok Bagikan Cek Tunai Rp 75 Juta
+    - [SALAH] Mandi Air Hujan Supaya Cepat Punya Anak
+    - [SALAH] WHO Umumkan Pandemi Covid-19 Telah Berakhir Sejak 14 September
+    - [SALAH] Vaksin Covid-19 mRNA Mengubah DNA Manusia
+    - Keliru, Fenomena Aphelion 2022 Sebabkan Cuaca Dingin Ekstrem dan Picu Masalah Pernafasan
+    - Keliru, Amerika Serikat Menyebarkan Virus Cacar Monyet ke Asia Melalui Burung
+    - Belum Ada Bukti, Virus Cacar Monyet Menular Lewat Udara
+    - [SALAH] 'Akun Facebook Soimah berbagi berkah'
+    - [SALAH] Anaconda raksasa memakan wanita berusia 70 tahun
+    - [SALAH] "BENZEMA DAN ZIDAN MELAYAT KERUMAH RONALDO ISTRINYA MENINGGAL"
+    - Cek Fakta: Hoaks Surat Pemanggilan Seleksi Calon Karyawan Pertamina Minta Biaya Akomodasi
+    - [SALAH] Akun Whatsapp Wakil Bupati Serdang Adlin Umar Yusri T '+6285290137797'
+    - [SALAH] Info Pemberian Dana Bantuan Rp75 Juta Oleh BPJS Kesehatan Melalui Whatsapp
+    - Cek Fakta: Tidak Benar Video Ambulans Mengantar Jenazah Tanpa Pengemudi
+    - [SALAH] Alfamart Membagikan Hadiah Mobil dan Belanja Gratis dalam Rangka HUT RI ke-77
+    - [SALAH] Jokowi Lulusan Jurusan Ngibul
+    - Keliru, CNN Indonesia TV Siarkan Berita Dokter Terawan Berbagi Rahasia Mengatasi Diabetes
+    - [SALAH] Foto Bendera Dari Rambut Wanita Sebagai Bentuk Protes Terhadap Iran
+    - [SALAH] Foto Wajah Semut di Bawah Mikroskop Elektron
+    - [SALAH] Akun WhatsApp Bupati Suprawoto '082132521517'
+    - [SALAH] Foto Pasangan Memumifikasi Janinnya
+    - [SALAH] Manokwari ditetapkan sebagai Kota Injil, dan Melarang Perempuan Berjilbab, Adzan serta Pembangunan Mesjid
+    - [SALAH] Pengumuman Panggilan Calon Karyawan Perum Bulog
+    - [SALAH] Boba nyangkut di usus buntu gak bisa dicerna
+    - [SALAH] Artikel 'Sebaran Titik Genangan Banjir di Kota Semarang Malam Ini'
+    - [SALAH] Video Jembatan Adipala Hanyut Jalan Cilacap Selatan Tertutup
+    - Keliru, Mengobati Masalah Haid, Kista dan Sukar Hamil Pakai Biji Kelapa Muda, Lada dan Serai
+    - Keliru, Video Ribuan Pemuda Malaysia Memilih Gabung Dengan Indonesia
+    - Keliru, Klaim Foto Cacar Monyet Dibawa WNA ke Indonesia
+    - [SALAH] Singa Ini Menggali Kuburan Sendiri
+    - Menyesatkan, Video Bendera Merah Putih Berkibar di Konser Scorpions di Ukraina Berkat Jokowi
+    - Belum Ada Bukti, Uang Rp 900 Miliar Di Bunker Istana Ferdy Sambo Disita
+    - Cek Fakta: Tidak Benar Vladimir Putin Tak Hadir di KTT G20 karena Sibuk Mancing Ikan
+    - Keliru, Video Presiden Putin Serahkan Bukti Nyata Kejahatan Australia Mendukung KKB Papua
+    - [SALAH] 'Innalilahi wainnailaihi Rojiun … Tragis Lettu Marinir Muhammad Ikbal Gugur Ditembak KKB Saat Sujud Sholat Isya'
+    - Keliru, Ratusan Jemaah Haji Meninggal Dunia Karena Listrik Padam di Terowongan
+    - [SALAH] Video 'Semua Tak Menyangka Ratusan Polisi Jemput Rizky Billar Tangisan Lesti Kejora Pecah'
+    - [SALAH] Pemerintah Tunisia Mewajibkan Laki-Laki Menikah Minimal Dua Kali atau Lebih
+    - [SALAH] Akun WhatsApp Ketua Fraksi NasDem DPRD DKI Jakarta Wibi Andrino '081262592219'
+    - [SALAH] Puluhan Kapal Indonesia Dibakar Secara Sadis oleh Australia
+    - [SALAH] Foto 'Detik-detik Polisi Maritim Swiss Menemukan Eril Kamil Di Sungai Aare Swiss'
+    - Cek Fakta: Tidak Benar Tepung Beras Bisa Meredakan Demam pada Anak
+    - Cek Fakta: Tidak Benar Mantan Presiden Soeharto Diberi Gelar Pahlawan Nasional oleh Jokowi
+    - [SALAH] 'Laksamana AS Eric Olson ditangkap di #Azovstal#Mariupol'
+    - [SALAH] 'KSP: Jokowi Terima dan Dengar Aspirasi Rakyat Soal Demo BBM'
+    - [SALAH] Burung Lupa Cara Terbang
+    - [SALAH] Foto Pria Berwajah Ustadz Abdul Somad 'Berkah Dalem Romo'
+    - Cek Fakta: Tidak Benar Motor Hanyut dalam Video Ini Akibat Banjir Bogor
+    - [SALAH] Video Kandungan Minyak pada Satu Kilogram Ayam Goreng
+    - [SALAH] Mobil Esemka Bakal Ikut Formula E Jakarta
+    - [SALAH] Pidato Henry Kissinger pada 25 Februari 2009 Mengenai Vaksinasi Massal dan Modifikasi Genetik
+    - Keliru, Jenazah Ferdy Sambo Dimakamkan di Magelang
+    - [SALAH] Eppy Kusnandar Meninggal Dunia
+    - [SALAH] Innalillahi:Semua Sedih Ustadzah Kondang Mama Dedeh Meninggal Dunia!
+    - [SALAH] Video KPK Tetapkan Anies Baswedan Tersangka Korupsi APBD
+    - [SALAH] Akun Whatsapp Kadis Kominfosanti Ketut Suwarmawan Kabupaten Buleleng '+6281324422253'
+    - Menyesatkan, Jokowi Nyatakan Perang Dengan Malaysia Akibat Puluhan WNI Tewas
+    - [SALAH] Seekor Naga Ditemukan di Mongolia
+    - Benar, Menkes Budi Gunadi: Kelahiran 1980 Ke Bawah Memiliki Antibodi Lawan Virus Cacar Monyet
+    - [SALAH] Foto Presiden Soekarno Bersama Jenderal Soedirman dan Ayah Rizieq Shihab
+    - [SALAH] Ayu Dewi Bagi-bagi Hadiah Senilai Rp15 Juta Melalui TikTok
+    - [SALAH] Sungai Inhulets di Ukraina Berubah Warna Menjadi Merah karena Darah Tentara Ukraina
+    - [SALAH] Gambar Kejadian Tangki BBM meledak di Purwokerto
+    - [SALAH] Cara Cek Jantung Dalam 30 Detik
+    - [SALAH] Link Bantuan PKH Tahap 3
+    - [SALAH] Holywings Pertama Dibuka di Saudi Arabia
+    - [SALAH] Foto 'Kevin Sanjaya calon pemimpin dari Partai Perindo'
+    - [SALAH] Ilmuwan Jepang Menemukan Cara Menjadi Tembus Pandang
+    - [SALAH] Video Nikita Sempoyongan
+    - Sebagian Benar, Kolase Video Angin Puting Beliung di Sidoarjo 10 Oktober 2022
+    - [SALAH] Mobil Esemka Goib
+    - [SALAH] DPW Partai NasDem DIY Buat Baliho Dukung Anies Baswedan untuk Pemilu Presiden 2024
+    - [SALAH] Vaksin Polio Bill Gates Justru Membuat Anak-Anak di India Lumpuh
+    - [SALAH] 'Wow Akhirnya Kang Elon Musk Bikin Tweet Kunjungan Presiden Jokowi'
+    - Keliru, Puluhan Anak Buah Ferdy Sambo Geruduk Mako Brimob
+    - [SALAH] Gerobak Mie Ayam Terpasang Meteran Listrik Daya 2200 Siap Dengan Kompor Listrik 1000 Watt
+    - Cek Fakta: Tidak Benar Goodie Bag Piala Dunia Qatar 2022 Berisi Sajadah dan Booklet Pengenalan Islam
+    - [SALAH] Video George Bush Kesulitan Berbicara setelah Menghina Al Quran
+    - Sebagian benar, Artikel tentang Campuran Minyak Kayu Putih Bikin Hemat Pertalite
+    - [SALAH] Berita CNN 'Anggota Polisi Ini Dimutasi ke Papua Barat karena Anaknya Hina Idol K-Pop'
+    - [SALAH] Iwan Fals Menyatakan Sudah Tidak Mendukung Pemerintah
+    - [SALAH] Tito Karnavian: Masyarakat Boleh Ditembak
+    - [SALAH] Timnas Indonesia Lolos Semifinal Piala AFF U-19 Usai Panitia Mengubah Peraturan
+    - [SALAH] Flyer Donasi Bantu Penyembuhan Syifa dari Penyumbatan Usus Besar oleh LAZISNU Kecamatan Rumpin
+    - Keliru, Eksekusi Ferdy Sambo Diambil Alih TNI
+    - Cek Fakta: Tidak Benar dalam Foto ini Anies Baswedan Jadi Penerima Tamu pada KTT G20 di Bali
+    - Keliru, Video Berjudul Nyali Tentara Malaysia Rontok dan Takut Serang Indonesia
+    - Keliru, Video Seorang Bocah Kritis Usai Tersambar Petir karena Bermain Ponsel Saat Hujan
+    - Cek Fakta: Tidak Benar Balurkan Telur Rebus di Tubuh Bisa Turunkan Demam Anak
+    - [SALAH] 'Ratu Elizabeth pernah memesan 80 kaos Cristiano Ronaldo untuk Royal Court'
+    - Cek Fakta: Hoaks Kabar Dedi Mulyadi Meninggal Dunia Usai Diracun pada 6 Oktober 2022
+    - [SALAH] Judul Artikel The Journal tentang Cacar Monyet yang Dapat Hidup Selama 120 Tahun dan Menular kepada Orang dalam Jarak 5 Mil
+    - [SALAH] Video Kecelakaan di Daerah Bedono, Kabupaten Semarang Tanggal 1 Juni 2022
+    - Keliru, Klaim Hewan Dabbah Muncul di Israel sebagai Pertanda Kiamat
+    - [SALAH] Bermain HP Di Dekat Kompor Menyebabkan Kompor Meledak
+    - Keliru, Tiga Anggota DPR RI Penerima Suap Ferdy Sambo Resmi Ditahan Hari Ini
+    - [SALAH]: Bharada E Divonis Bebas Oleh Ketua Hakim
+    - Menyesatkan, Homoseksual Jadi Pemicu Utama Penyebaran dan Peningkatan Kasus Cacar Monyet
+    - [SALAH] Volta Bagikan Motor Listrik Gratis Karena Harga BBM Naik
+    - Keliru, Video di Telegram Soal Tentara Cina yang Berani Melawan TNI
+    - [SALAH] Vaksin mRNA Tidak Direkomendasikan Selama Kehamilan
+    - [SALAH] Video 'Eril Kamil Terseret Arus, Sampai Sejauh 800 Meter, Dan Di Temukan Sosok Ini'
+    - Menyesatkan, Video Jokowi Dikejar Direktur IMF dan Dipersilakan Isi Cek Berapapun Jumlahnya
+    - Menyesatkan, Dua Negara Anggota Uni Eropa Dikabarkan Terang-terangan Membelot Ke Rusia
+    - [SALAH] 'KENAPA ADA ISTILAH KADRUN, TERNYATA KALIMAT ITU DARI GOLONGAN PKI BERNAMA NYOTO..'
+    - Benar, Jumlah Utang Indonesia Dari Masa ke Masa Jabatan Presiden RI
+    - [SALAH] Pimpinan Redaksi JawaPos.com Meminta Bantuan Melalui WhatsApp
+    - [SALAH] Foto Ibu Yang Mengajak Bersetubuh Anak Kandungnya
+    - Belum Ada Bukti, Menyembuhkan Sakit Gigi dengan Es Batu, Bawang Putih, Jahe dan Bawang Merah dalam 5 Menit
+    - Keliru, Video Rusia Mengadakan Perayaan Maulid Nabi Muhammad SAW
+    - Keliru, Video Pekerja Tutup Saluran Air agar Jakarta Banjir Demi Jatuhkan Citra Anies Baswedan
+    - Keliru, Video Detik-detik Astronot Terjun ke Bumi
+    - [SALAH] Tangkapan Layar Siaran Berita Fox-News tentang 'Gay Hypnosis'
+    - [SALAH] Air Rebusan Daun Putri Malu Menyembuhkan Vertigo hingga Stroke
+    - [SALAH] Permintaan Pengisian Data Penerima BSU di Media Sosial
+    - Menyesatkan, Klaim Kim Jong Un Marah, Ratusan Militer Korea Utara Terbang Menuju Perbatasan Malaysia
+    - [SALAH] Acha Septriasa Meninggal Dunia
+    - [SALAH] Vokalis Band The Rolling Stones Mick Jagger Meninggal Dunia
+    - [SALAH] Tes Kesehatan Paru-Paru dengan Menahan Nafas
+    - [SALAH] Kalbe Farma Bagikan Subsidi Kesehatan Rp 4 Juta dengan Isi Kuesioner
+    - [SALAH] Video Penari Robot di Shanghai Disneyland
+    - [SALAH] Gambar Tangkapan Layar Artikel Pikiran-rakyat.com 'Beredar Video Penampakan Misterius Disebut Yakjuj Makjuj, Sembunyi di Balik Bebatuan Padang Pasir Tandus Arab'
+    - [SALAH] Video iring-iringan jenazah Eril
+    - [SALAH] Video Ratu Elizabeth Melemparkan Makanan ke Anak-Anak di Afrika
+    - [SALAH] Video 'TANPA ROMPI PENGAMAN JOKOWI TINJAU LANGSUNG PULAU PASIR DI NTT'
+    - Keliru, Jenderal Andika Perkasa Deklarasikan Perang Besar-besaran
+    - [SALAH] Anies Melarikan Diri Ke Eropa
+    - [SALAH] Mengunyah Kulit Pohon Jambu Mete Biasa Menetralisir Racun Gigitan Ular
+    - Keliru, Ratu Elizabeth II Pesan 80 Jersey Cristiano Ronaldo"
+    - [SALAH] Video 'NGERI !! Ribuan Korban Terowongan Mina Berserakan Hari Ini'
+    - [SALAH] Meminum Cairan dari Pohon Pisang Dapat Menyembuhkan Asam Lambung
+    - Keliru, Foto Cumi-Cumi Raksasa Terdampar di Pantai California
+    - [SALAH] Ikea Bagikan Lusinan Sofa Gratis Dengan Tulis Warna Favorit di Facebook
+    - Keliru, Video Orang-orang Panik Saat Hiu Raksasa Melompat di Tepi Tanggul
+    - [SALAH] Video Uang Kertas Baru Bernominal 1 Juta
+    - [SALAH] Video Mobil Terbakar Karena Mengisi BBM menggunakan Aplikasi
+    - Menyesatkan, Ferdy Sambo Sewa Orang untuk Culik dan Siksa Orang Tua Bharada E
+    - [SALAH] Akun Facebook Bupati Halmahera Selatan Usman Sidik
+    - [SALAH] Foto Kebakaran Hutan di Pakistan
+    - Keliru, Foto Kecelakaan Ibu Hamil Tewas Terlindas Truk
+    - [SALAH] Teknologi Kloning Manusia, Perempuan Tidak Perlu Hamil untuk Punya Anak
+    - [SALAH] Bawang Merah Bisa Sembuhkan Gigitan Ular
+    - [SALAH] Video 'hari ini tgl 17-09-2022 Gaza akhirnya merdeka'
+    - Menyesatkan, Unggahan tentang Kecelakaan Bus Masuk Jurang pada Tahun 2022
+    - Cek Fakta: Tidak Terbukti AirPods Berbahaya Bagi Otak
+    - [SALAH] Video Band Rock Asing Memainkan Lagu Indonesia Raya
+    - [SALAH] Foto 'MENGAKU S4LAH!!! SBY MINTA MAAF DEPAN JOKOWI'
+    - [SALAH] Lowongan Pekerjaan PT Imecon Teknindo Berbayar
     - Keliru, Foto Anies Baswedan Pakai Jubah Saat Dapat Gelar Amirul Amanah dari Arab Saudi
     - Keliru, Video Detik-detik Pasukan Elit Iran Acak-acak Ukraina
-    - [SALAH] Video Berita dengan Judul 'Kementerian Kesehatan Ukraina: 57 Orang Meninggal, 169 Orang Terluka di Seluruh Ukraina Akibat Serangan Rusia'
-    - Cek Fakta: Tidak Benar Goodie Bag Piala Dunia Qatar 2022 Berisi Sajadah dan Booklet Pengenalan Islam
-    - Cek Fakta: Hoaks Kode Warna Sebagai Tanda Bahan Kandungan dalam Pasta Gigi
-    - [SALAH] Alexandria Ocasio-Cortez: 'Orang-orang tidak akan buru-buru mengisi bensin untuk mobil mereka di tengah badai apabila mereka memakai mobil listrik'
-    - Menyesatkan, Puluhan Ribu Warga Rusia Mendadak Masuk Islam dan Jadi Penganut Terbesar di Eropa
-    - Keliru, Ibu Hamil Peserta BPJS Kesehatan Melahirkan di Tepi Jalan karena Ditolak Rumah Sakit
-    - [SALAH] Video 'Destinasi baru kebanggan masyarakat jateng stadium di atas danau'
-    - [SALAH] Tjahjo Kumolo meninggal karena Vaksin Covid-19
-    - Cek Fakta: Tidak Benar Vladimir Putin Tak Hadir di KTT G20 karena Sibuk Mancing Ikan
-    - [SALAH] Bunglon Dapat Mengubah Warna Kulitnya Sesuai dengan Warna Benda yang Disentuhnya
-    - [SALAH] 'rakyat antusias sekali menyambut kedatangan Anis for presiden 2024'
-    - [SALAH] 'Baim Wong memberikan uang tunai dan handphone untuk 342 orang pertama melalui akun facebook Boss Qlu'
-    - Cek Fakta: Muncul Lagi Hoaks Inul Daratista Bagi-Bagi Uang Tunai Lewat Akun Facebook
-    - [SALAH] Video Kecelakaan di Daerah Bedono, Kabupaten Semarang Tanggal 1 Juni 2022
-    - Cek Fakta: Tidak Benar Video Anies Baswedan Ditunjuk Pimpin Sidang KTT G20
-    - [SALAH] Gambar Letusan Gunung Merapi pada 30 Mei 2022
-    - [SALAH] Wahana Ruang Angkasa Merupakan Hampa Udara
-    - [SALAH] JUARA YG SATU INI SOK NKRI, TAPI ACUNGKAN SYAL BENDERA LGBT
-    - Keliru, Klaim Rekaman Suara Teriakan Minta Tolong Brigadir J Saat Disiksa dan Dibantai Irjen Ferdy Sambo
-    - Cek Fakta: Tidak Benar dalam Video Ini Hewan Hasil Modifikasi Genetik antara Babi dan Sapi
-    - [SALAH] Xi Jinping Dicopot dari Jabatan Ketua Komisi Militer dan Presiden Cina karena Kudeta Militer atas Perintah Li Qiaoming
-    - Keliru, Video Emmeril Khan Mumtadz Ditemukan Seorang Nenek di Swiss
-    - [SALAH] 'Innalilahi wainnailaihi Rojiun … Tragis Lettu Marinir Muhammad Ikbal Gugur Ditembak KKB Saat Sujud Sholat Isya'
-    - [SALAH] Foto Perbedaan Bundaran HI pada Era Anies dan Heru
-    - [SALAH] Pesan Berantai Pendaftaran Penerima Bantuan Sosial PKH Tahap 2
-    - [SALAH] Twice Konser Di Depan Pendukung Persib
-    - Menyesatkan, Video tentang Bisnis Jual Beli Ijazah Palsu
-    - [SALAH] Covid-19 Subvarian XBB berbeda, mematikan dan tidak mudah terdeteksi dengan baik
-    - [SALAH] 'LARI DARI TANGGUNG JAWAB APARAT TERPAKSA LUMPUHKAN KAKI GUBERNUR DKI'
-    - Keliru, Presiden Joko Widodo Umumkan TNI Akan Serang Malaysia
-    - [SALAH] Video Seorang Anak Meninggal Dipukul Domba
-    - [SALAH] Neo PKI bermunculan
-    - Cek Fakta: Hoaks Set Top Box Bisa Baca Data Orang yang Sudah Divaksin
-    - [SALAH] Foto Pemancing Dekat dengan Kumpulan Ikan Paus di Svalbard, Norwegia
-    - [SALAH] Tangkapan Layar Siaran Berita Fox-News tentang 'Gay Hypnosis'
-    - [SALAH] 'Akun Facebook Soimah berbagi berkah'
-    - [SALAH] Meletakkan Bawang Putih Di Telinga Bisa Menyembuhkan Sakit Kepala Dan Sakit Telinga
-    - [SALAH] KABAR KONDISI IBU IRIANA TERKINI USAI TERPELESET, GIBRAN RAKABUMING KABARKAN KONDISI IBU
-    - [SALAH] Ustads Abdul Somad Endors Behel Biru
-    - Keliru, Tabrakan Beruntun di Cisarua Tewaskan 75 orang, 6 Orang Luka-Luka, 1 Mobil Meledak
-    - [SALAH] Sambo dan Bharada E Saling Serang Dalam Sel
-    - Menyesatkan, Jokowi Nyatakan Perang Dengan Malaysia Akibat Puluhan WNI Tewas
-    - [SALAH] Video Gempa Bumi di Papua Nugini
-    - Menyesatkan, Video dengan Narasi Godzilla Muncul di Lautan
-    - [SALAH] Video 'MENGENASKAN ! IBU PUTRI LANGSUNG SYOK BACA WASIAT SAMBO SEBELUM ‘MENINGGAL''
-    - Cek Fakta: Hoaks Indosiar Gelar Konser Cinta Leslar Bersemi Kembali
-    - [SALAH] Kepala Dinas Kesehatan Banjarmasin Meminta Dana Melalui WhatsApp
-    - Cek Fakta: Klarifikasi Qatar Keluarkan Aturan Bagi Fans dan Pengunjung Piala Dunia 2022
-    - Menyesatkan, Siswi SMP dan SMA di Jepang Wajib Pakai Dalaman Senada dengan Seragam Sekolah
-    - Keliru, Video Roy Suryo Ditahan Pada 19 Juni 2022
-    - [SALAH] Video Protes Muslim India
-    - Cek Fakta: Tidak Benar dalam Foto Ini Bus Relawan Anies Baswedan Kecelakaan
-    - Menyesatkan, Video Minta Bantuan Militer Inggris, Indonesia Buat Malaysia Jadi Begini
-    - [SALAH] Panda Merah di Kebun Binatang Toronto Mati usai Divaksin Covid-19
-    - [SALAH] Video DPR Gelar Sidang Tertutup untuk Bahas Ijazah Palsu Jokowi
-    - [SALAH]: Rumah Ustadz Abdul Somad Terbakar
-    - [SALAH] Gempita Maulid Nabi di Bombay pada 17 Juni 2022
-    - Sebagian Benar, Tank Cina Melintas di Kota Xiamen Jelang Kedatangan Nancy Pelosi
-    - [SALAH] Video Uang Kertas Baru Bernominal 1 Juta
-    - [SALAH] Akun Whatsapp Bupati Magelang Zaenal Arifin
-    - [SALAH] Metode Pertolongan Pertama melalui Pelepasan Darah bagi Penderita Stroke
-    - [SALAH] Akun Facebook Bupati Gayo Lues Meminta Bantuan Sejumlah Dana
-    - [SALAH] Foto Pasangan Memumifikasi Janinnya
-    - [SALAH] PERTOLONGAN PERTAMA TERKENA MINYAK GORENG ATAU AIR PANAS DENGAN TEPUNG
-    - Keliru, Video Sidang Ricuh dan Ferdy Sambo Mengamuk
-    - [SALAH] Flyer Donasi Bantu Penyembuhan Syifa dari Penyumbatan Usus Besar oleh LAZISNU Kecamatan Rumpin
-    - [SALAH] 'Di Negara Arab Saudi tidak ada pajak'
-    - [SALAH] Ilmuwan Jepang Menemukan Cara Menjadi Tembus Pandang
-    - [SALAH] Foto 'Masjid Meledak di kota Narayanganj, Bangladesh saat sholat Sebanyak 120 Jamaah Meninggal Dunia'
-    - [SALAH] Foto Gerhana Matahari di Samudra Pasifik Selatan
-    - [SALAH] Tabung Gas Meledak Saat Digoyang-goyang
-    - Benar, Cacar Monyet Bisa Menyebabkan Kematian pada Janin
-    - [SALAH] Penggunaan masker memperburuk kondisi kesehatan tubuh
-    - [SALAH] Begituan di Ruang Kosong, Adik Brigadir J beri bukti hubungan PC dan KM | Hakim Kaget Bukan Main
-    - [SALAH] Video 'Aksi Kader Partai Nasdem Rame-Rame Melepaskan Atribut'
-    - [SALAH] PBB Resmi Menangkan Rusia
-    - [SALAH] Surat Edaran Nomor 16 Tahun 2022 Oleh Lembaga Penjamin Simpanan (LPS)
-    - [SALAH] Video George Bush Kesulitan Berbicara setelah Menghina Al Quran
-    - [SALAH] Akun Whatsapp Plt Bupati Bandung Barat Hengky Kurniawan '0821-3233-0593'
-    - [SALAH] Video 'SOMBONG BANGET ! Kapolda Metro Fadil rampas KTA Paspampres'
-    - Keliru, Pesan Berantai Pulsa Gratis 30 GB oleh Telkomsel, XL
-    - [SALAH] Anies Baswedan Menandatangani Kontrak untuk Pimpin Jakarta dengan Syariat Islam
-    - [SALAH] Anaconda raksasa memakan wanita berusia 70 tahun
-    - [SALAH] Demo Memprotes Kecurangan Hasil Pemilu di Brasilia pada 12 November 2022
-    - [SALAH] Boba nyangkut di usus buntu gak bisa dicerna
-    - [SALAH] Video Penjaga Renang Melempar Pengunjung Hingga Terbang Pada Saat Menaiki Perosotan Kolam Renang
-    - [SALAH] Anies Melarikan Diri Ke Eropa
-    - Keliru, Video Banjir di Bogor Pada Oktober 2022
-    - Menyesatkan, Unggahan tentang Kecelakaan Bus Masuk Jurang pada Tahun 2022
-    - Sebagian Benar, Ratusan Minyak Goreng Tumpah Ruah di Laut Jawa
-    - Keliru, Pernyataan WHO dan CDC soal Infeksi Covid-19 Beri Imunitas Lebih Baik Dibandingkan Vaksin
-    - [SALAH] Nomor WhatsApp BNI +1 (256) 291-8191 Sebagai Customer Service
-    - Keliru, Video Detik-detik Astronot Terjun ke Bumi
-    - Keliru, Video Pekerja Tutup Saluran Air agar Jakarta Banjir Demi Jatuhkan Citra Anies Baswedan
-    - [SALAH] Video 'Atas Permintaan Kapolri Akhirnya Ferdian Gantikan Uya Kuya Giliran Ferdy Sambo Dihipnotis'
-    - [SALAH] Foto 'SBY Dijemput Paksa Brimob Bersenjata Lengkap'
-    - Keliru, Tiga Anggota DPR RI Penerima Suap Ferdy Sambo Resmi Ditahan Hari Ini
-    - Menyesatkan, Kolase Foto Bus Transjakarta Rongsokan yang Diklaim Dibeli oleh Ahok
-    - Cek Fakta: Tidak Benar Penyanyi Cilik Farel Prayoga Meninggal Dunia Dibunuh
-    - Cek Fakta: Tidak Benar Video Ambulans Mengantar Jenazah Tanpa Pengemudi
-    - Keliru, Video Putri Candrawathi Bunuh Diri Akibat Karma Brigadir J
-    - [SALAH] Hadiah 670 Sepeda Listrik Gratis
-    - Cek Fakta: Tidak Benar dalam Video ini Rekaman Bencana Longsor di Cianjur
-    - [SALAH] Pasangan di Ghana Wajib Memakai Baju Pengantin Ketika Akan Bercerai
-    - [SALAH] Foto 'Truck SPBU tepat H4ri ini, 2 Balita T3was 28 lainnya T3rbakar saat Isi Bensin'
-    - Menyesatkan, Homoseksual Jadi Pemicu Utama Penyebaran dan Peningkatan Kasus Cacar Monyet
-    - [SALAH] Air Rebusan Daun Putri Malu Menyembuhkan Vertigo hingga Stroke
-    - [SALAH] PSSI Resmi Keluar dari AFF
-    - [SALAH] Jus Campuran Nanas, Lobak Dan Kemiri Dapat Menyembuhkan Asam Urat
-    - [SALAH] Foto RA Kartini Memakai Jilbab dan Kacamata saat Menjadi Santri
-    - [SALAH] Akun Whatsapp Wakil Bupati Serdang Adlin Umar Yusri T '+6285290137797'
-    - [SALAH] Foto 'orang2 dari zaman belanda ternyata udah romantis'
-    - [SALAH] Penyakit Bell's Palsy Disebabkan Angin Dingin
-    - Cek Fakta: Tidak Benar Video Bocah Kritis Akibat Tersambar Petir Saat Main Handphone
-    - [SALAH] Wakil Bupati Yapen Frans Sanadi Meninggal Dunia
-    - Sebagian Benar, Video Megawati Soekarnoputri Tolak BLT Direspon Emha Ainun Nadjib
-    - [SALAH] Video KPK Tetapkan Anies Baswedan Tersangka Korupsi APBD
-    - [SALAH] Tak Kuat Iman Putri Candrawati Putuskan Bunuh Diri
-    - [SALAH] 'Kata ‘jancuk’ berasal dari Tank Jan Cox'
-    - Sesat, Kebakaran SPBU Pertamina Karena Bayar di Tempat Menggunakan Handphone
-    - [SALAH] 'BODOHNYA METRO TV. jokowi Mendapat Gelar dari Raja Salman yaitu AMIRUL KAZZAB langsung diberitakan'
-    - Menyesatkan, Ayah dan Anak Diikat di Pohon di Luar Wilayah Kendali Militer Rusia
-    - [SALAH] Surat Undangan Penerima Bantuan Dana Operasional Masjid Tahun 2022 Bimas Islam Kemenag
-    - [SALAH] Burung Lupa Cara Terbang
-    - [SALAH] Mantan Presiden Brazil, Lula da Silva, Memegang Patung Satanis
-    - [SALAH] NATO Membeberkan Rencana Ekspansi di Dekat Perbatasan Rusia
-    - [SALAH] Cek Gula Darah Gratis Menularkan Virus HIV
-    - [SALAH] Seumur Hidup Harus Vaksin Covid Tiap 6 Bulan Sekali
-    - [SALAH] 'Bill Gates: Efek Samping Vaksin Covid-19 Muncul Setelah Dua Tahun'
-    - Cek Fakta: Gagal Ginjal Akut pada Anak Tidak Terkait dengan Vaksin Covid-19
-    - [SALAH] Akun WhatsApp Bupati Purwakarta Ambu Anne Ratna Mustika '081359664986'
-    - [SALAH] Video Banyak Domba Mati di Idaho, Amerika Serikat
-    - Cek Fakta: Tidak Benar Kapten Timnas Qatar Pakai Atribut Bendera Palestina Saat Laga Pembuka Piala Dunia 2022
-    - Keliru, Klaim Video Dua Ikan Duyung Berbadan Anak Manusia
-    - Belum Ada Bukti, Uang Rp 900 Miliar Di Bunker Istana Ferdy Sambo Disita
-    - [SALAH] Cacar Monyet Hanya Ditularkan Melalui Hubungan Seksual Sesama Laki-Laki
-    - [SALAH] Akun WhatsApp Wali Kota Malang Sutiaji '083870256204'
-    - [SALAH] Presiden Volodymyr Zelensky Merekam Video-Videonya di Depan Green Screen
-    - Cek Fakta: Tidak Benar Mendeteksi Stroke dengan Menggerakkan Jari Tangan
-    - [SALAH] 'Protes di Indonesia melonjaknya biaya energi'
-    - [SALAH] Ruben Onsu Mualaf
-    - [SALAH] Cacar Monyet Disebabkan dari Efek Samping Vaksin Covid-19 AstraZeneca
-    - [SALAH] Video 'PANGLIMA T N I TEPAKSA TURUN TANGAN NASIB FERDY SAMBO SEMAKIN SADIS'
-    - Keliru, Utang Pemerintah Indonesia Salah Satu yang Terkecil di Dunia
-    - [SALAH] Bus Kampanye Relawan Gabener nyungsep
-    - [SALAH] Gambar Tangkapan Layar Artikel Detik.com 'Kolektor mobil esemka asal Jawa Tengah mempunyai ribuan koleksi esemka dari berbagai tipe. ketika ditanya penampakan mobilnya dia menjawab 'harus puasa mutih dulu mas''
-    - [SALAH] Poster Film Rayap-Rayap Bangsa
-    - [SALAH] Innalillahi:Semua Sedih Ustadzah Kondang Mama Dedeh Meninggal Dunia!
-    - [SALAH] Lowongan Kerja Departemen Sumber Daya Manusia (SDM) Tokopedia
-    - [SALAH] Informasi Razia Kendaraan di Cicurug
-    - [SALAH] HUT Ke-77 RI, Anies Baswedan Pimpin Upacara Pengibaran Bendera Raksasa Di Monas
-    - Keliru, Video Perempuan Hamil dan Melahirkan 9 Bayi Sekaligus
-    - [SALAH] Bahaya Menyebarkan Ucapan Selamat Dengan Gambar
-    - Keliru, Dua Anak Ferdy Sambo Ditangkap Bantu Pembunuhan Brigadir J
-    - [SALAH] Akun WhatsApp Bupati Suprawoto '082132521517'
-    - Sebagian Benar, Video Banjir dan Longsor di Provinsi Aceh Tahun 2022
-    - [SALAH] Pesan Pengumuman Pemenang Hadiah Rp40 Juta dari TikTok
-    - Keliru, Makanan Kaleng Asal Thailand Terkontaminasi Darah dan Virus HIV
-    - [SALAH] Muak Dengan Kelicikan Barat, Puluhan Kepala Negara Minta Jokowi Bentuk Sekaligus Pimpin PBB Baru!!
-    - [SALAH] 'Kadrun adalah sebutan PKI tahun 1960an pada umat Islam sebagai musuhnya.
-    - [SALAH] Foto 'PEMBUAT IJAZAH PALSU DIAMANKAN, KESAKSIANNYA BIKIN JKW TERP0JOK !!'
-    - [SALAH] Pesan WhatsApp Dana Bantuan Pertamina Sebesar Rp100 Juta
-    - [SALAH] Pidato Henry Kissinger pada 25 Februari 2009 Mengenai Vaksinasi Massal dan Modifikasi Genetik
-    - [SALAH] Video Seorang Ayah Menari Saat Pemakaman Putrinya yang Dibunuh Polisi di Iran
-    - Cek Fakta: Tidak Benar Video Klaim Siswa SD Sedang Ujian di KFC
-    - Cek Fakta: Hoaks Pesan Berantai TikTok Bagikan Cek Tunai Rp 75 Juta
-    - [SALAH] Akun WhatsApp Wakil Bupati Purworejo '082132330592'
-    - [SALAH] Hindari Mobilisasi Militer, Seorang Pria di Rusia Bersembunyi di Dalam Kulkas
-    - [SALAH] Gangguan Ginjal Akut Misterius Pada Anak Disebabkan Oleh Vaksin Covid-19
-    - [SALAH] Seorang Pengguna Facebook Memprediksi COVID-19 Sejak 2013
-    - Cek Fakta: Tidak Benar Prabowo Subianto Mundur Sebagai Capres 2024
-    - Tidak Terbukti, Kulit Lemon 10.000 Kali Lebih Kuat Daripada Kemoterapi untuk Membunuh Sel Kanker
-    - [SALAH] Foto 'Detik-detik Polisi Maritim Swiss Menemukan Eril Kamil Di Sungai Aare Swiss'
-    - [SALAH] China Meluncurkan Matahari Buatan
-    - Menyesatkan, Ferdy Sambo Sewa Orang untuk Culik dan Siksa Orang Tua Bharada E
-    - Cek Fakta: Tidak Benar Aksi Pemukulan Suporter dalam Video ini Jadi Penyebab Tragedi Kanjuruhan
-    - [SALAH] Tambahan 10 Ribu Kuota Haji Ditolak Karena Indonesia Tidak Bisa Mengembalikan Dana Haji yang Diambil
-    - [SALAH] Ketua Seksi Intelijen Kejaksaan Negeri Aceh Singkil dengan nomor '081387873896 ' Meminta Bantuan Uang Senilai Rp25 Juta Melalui WhatsApp
-    - [SALAH] Wujud Bebek dan Tikus Hasil Gabungan Kedua DNAnya
-    - Cek Fakta: Tidak Benar Video Ini Kondisi Sungai Ciliwung pada 12 Oktober 2022
-    - [SALAH] Gambar Tangkapan Layar Artikel 'Wapres Ikhlaskan Saja Dana Haji Di Pakai Pemerintah Biar Kalian Masuk Surga'
-    - [SALAH] Foto 'Xavier Bettel Perdana Menteri Luxembourg datang ke sebuah acara dengan istri lelakinya, Gauthier Destenay (brewok pakai longdress)'
-    - [SALAH] Foto Wisuda Jokowi
-    - [SALAH] Gambar Tangkapan Layar Artikel 'Wapres: Pemerintah Gak Sengaja pakai Dana Haji Jadi Tak Dosa'
-    - [SALAH] KISRUH NEGERI ANTARA PRIBUMI DAN NON PRI
-    - Keliru, Video yang Diklaim Tim Sar Swiss saat Mencari Emmeril Khan Mumtadz di Sungai Aare
-    - [SALAH] Rekaman Suara Pertengkaran Ferdy Sambo dan Istrinya di Magelang
-    - Sebagian Benar, Penculikan Anak di Desa Noreh, Sampang, Madura
-    - Keliru, Eksekusi Ferdy Sambo Diambil Alih TNI
-    - [SALAH]: Kadrunwati di Lokasi Penangkaran Kadrun di Puncak Bogor
     - [SALAH] Akun Whatsapp Pj Wali Kota Salatiga Sinoeng N Rachmadi Menawarkan Barang Jasa '+628158854203'
-    - Cek Fakta: Tidak Benar dalam Video Ini Jutaan Pendukung Sambut Anies Baswedan di Yogyakarta
-    - [SALAH] Video Angin Puting beliung dan banjir terjang Cianjur setelah Gempa
-    - [SALAH] 'Video Pilot Merekam Cahaya Merah Yang Menyala Secara Misterius Dari Atas Samudra Atlantik'
-    - Sebagian Benar, Ramuan Herbal, Tembaga Sulfat dan Kapur Sirih Bisa Obati Penyakit Mulut dan Kaki (PMK) Pada Ternak
-    - [SALAH] Wisma atlet resmi ditutup awal bulan Juli 2022
-    - [SALAH] Herd Imunity, Pandemi sudah Berakhir
-    - [SALAH] 'perilaku PKI baru selesai shalat dihajar'
-    - [SALAH] Perbandingan Pertalite Lama dan Pertalite Baru yang Berubah Warna serta Lebih Boros
-    - [SALAH] Akun Whatsapp Bupati Gresik Fandi Akhmad Yani Menggalang Dana
-    - Keliru, Video Pidato Jokowi yang Sebut Seharusnya Amerika Serikat dan NATO Sudah Bubar
-    - [SALAH]: Pesan Whatsapp Pengangkatan Tenaga Honorer Perawat dan Guru di Pemprov NTB
-    - [SALAH] Ramsay Hunt syndrome disebabkan oleh vaksin Covid-19
-    - [SALAH] Malaysia Marah Ditolak Jokowi, Menjadi Anggota G20
-    - [SALAH] 'Giveaway Baim Wong melalui akun Boss Qiuu'
-    - [SALAH] 'SULTAN HAMENGKUBUWONO: CINA DAN KETURUNANNYA TIDAK PANTAS JADI PEMIMPIN DI BUMI NUSANTARA'
-    - [SALAH] Foto Pernikahan Sule dan Riesca Rose
-    - Cek Fakta: Tidak Benar Foto yang Diklaim Kupu-Kupu Bertanduk
-    - [SALAH] Lagu Indonesia Raya Dinyanyikan dalam Bahasa Jepang Saat Kunjungan Jokowi ke Jepang
-    - [SALAH] Surat Undangan Pengadaan Bahan Baku di PT Sido Muncul
-    - Cek Fakta: Tidak Benar Panda Merah di Kebun Binatang Toronto Mati usai Divaksin Covid-19
-    - [SALAH] Penyanyi Cilik Farel Prayoga Dikabarkan Meninggal Dunia
-    - Keliru, Presiden Xi Jinping Dukung Rencana Menteri Agama Yaqut Cholil Qoumas Membangun Kiblat Baru Umat Islam Nusantara di Cina
-    - Cek Fakta: Tidak Benar Gempa Cianjur dan Sukabumi disebabkan Gunung Gede dan Pangrango
-    - [SALAH] Rektor UGM Akui Semua Kecurangan Ijazah dan Mengaku Dibayar oleh Jokowi
-    - [SALAH] Observatorium Bosscha Menjadi Tempat Syuting Pengabdi Setan 2
-    - [SALAH] Video 'ufo sudah satu jam lebih berada diatas daerah tanah abang'
-    - Keliru, Pesan Terakhir Ferdy Sambo Sebelum Dijatuhi Hukuman Mati Kasus Brigadir J
-    - [SALAH] Majalah Italia pada 1962 Memprediksi Bagaimana Dunia Akan Terlihat pada 2022
-    - Keliru, Jokowi Bawa Pasukan Besar-besaran ke Rusia
-    - Keliru, Rusia Kirim Ribuan Pasukan Serang Malaysia Demi Bantu Indonesia
-    - [SALAH] Video 'masyarakat Bali bersuka cita menyambut kedatangan Anis di Bali'
-    - [SALAH] Efektivitas Vaksin Pfizer Hanya Sebesar 12%
-    - [SALAH] Video '21 Mei 2022, Jokowi Resmi Tunjuk Risma Gantikan Anies'
-    - [SALAH] Video 'Tentara Cina sdh mulai beraksi kang sdh berani melawan tentara kita'
-    - [SALAH] Tenggelamnya Kapal Laut di Wilayah NTT dengan Menewaskan 139 Orang Penumpang
-    - [SALAH] Lowongan Kerja BUMN PT. Telkom Indonesia 2022
-    - Keliru, Judul Berita 'Pedagang: Untuk apa kenal Anda' Kepada Puan Maharani
-    - [SALAH] Video 'Militer Ukraina hancurkan kilang minyak Tavrida milik Rusia'
-    - Menyesatkan, Soekarno Meminjamkan 57 Ribu Ton Emas ke John F. Kennedy
-    - [SALAH] Polytron Bagi-Bagi 670 Set Top Box TV Lewat Akun Facebook
-    - Cek Fakta: Tidak Benar Nurofen Ibuprofen Mengandung Logam Graphene Oxide
-    - [SALAH]: Hanyalah Malin Kundang Yang Tidak Mau Mengakui Ibu Kandungnya
-    - [SALAH] Perubahan Tarif Transaksi Bank Aceh Kepada Bank Lain
-    - [SALAH] UJI COBA SUKSES KERETA CEPAT JAKARTA-BANDUNG MENJADI PROYEK KERETA CEPAT PERTAMA DI ASIA TENGGARA
-    - [SALAH] 'Ahmad Dhani: Saya Akan Potong Kemaluan Jika Jokowi Menang'
-    - [SALAH] Vaksin Covid-19 Picu HIV-AIDS
-    - Keliru, CNN Indonesia TV Siarkan Berita Dokter Terawan Berbagi Rahasia Mengatasi Diabetes
-    - [SALAH] Vaksin mRNA Menyebabkan Hepatitis Pada Anak
-    - [SALAH] Judul Artikel 'Laudya Cinthya Bella di undang ke Istana bahas soal kebenaran isu menikah dengan Pangeran Arab'
-    - Menyesatkan, Video Putri Candrawathi Divonis Hukuman Mati
-    - [SALAH] KFC Bagikan Voucher Rayakan HUT ke 71
-    - [SALAH] Foto Gempa di Taiwan pada September 2022
-    - [SALAH] Video 'Kota Medan Turun Salju'
-    - [SALAH] Amarah Mega Memuncak Ganjar Sudah Resmi Keluar Dari PDIP
-    - [SALAH] Video Eksekusi Penyebar Khilafah di Arab Saudi
-    - [SALAH] Video Pendukung PDI-P Menyerukan 'Aku Butuh PKI'
-    - Belum Ada Bukti, Video tentang Muhammadiyah Resmi Usung Anies di Pilpres 2024
-    - [SALAH] Ruas Tol Becakayu, Kalimalang, Bekasi Ambles
-    - [SALAH] Tes Kesehatan Paru-Paru dengan Menahan Nafas
-    - [SALAH] 'AKHIRNYA PARTAI PKS DIBUBARKAN'
-    - [SALAH] Ditetapkan Jadi Tersangka, Prabowo Subianto Minta Maaf Kepada Jokowi
-    - Sebagian Benar, Video Muslim Dilarang Salat Jumat di Kota Gurgaon, India
-    - [SALAH] Video Mobil Berjalan di bawah Truk untuk Bersembunyi
-    - Keliru, Video Warga Eropa Protes Salahkan Uni Eropa karena Sanksi Gas Rusia
-    - Keliru, Video Presiden Jokowi Tagih Utang Malaysia Rp 100 Miliar Lewat Bank Dunia
-    - [SALAH] Video Penyebaran Chemtrail di Blora Melalui Pesawat Bikin Sakit Mata
-    - Cek Fakta: Tidak Benar Mantan Presiden Soeharto Diberi Gelar Pahlawan Nasional oleh Jokowi
-    - [SALAH] Raja Charles III Proklamasikan Donald Trump sebagai Presiden Amerika yang Sah Pada Pilpres Amerika 2020
-    - [SALAH] PEMBINA BRIMOB saat ini bernama Thahir alias Ang Tjoeng Ming
-    - [SALAH] Pesan Whatsapp Acara Launching Program Baru MNC Peduli
-    - Keliru, Video Posisi Eril Ditemukan di Kedalaman Dua Meter Sungai Aare
-    - [SALAH] Video Protes di St. Petersburg pada September 2022
-    - [SALAH] Peserta BPJS Wajib Skrining
-    - [SALAH] Vlogger Meninggal Dunia Karena Memakan Tokek Beracun
-    - [SALAH] Balurkan Telur Rebus di Tubuh Bisa Turunkan Demam Anak
-    - [SALAH] Lagu 'Ojo Dibandingke' Dinyanyikan Di Luar Negeri
-    - [SALAH] Pesan WhatsApp Giveaway Ria Ricis 50 Juta
-    - [SALAH] Video Jokowi Memantau Kasus Penghinaan Agama Buddha
-    - Cek Fakta: Tidak Benar dalam Video Ini Lokasi Perumahan Elit Khusus Warga China di Perbatasan Bekasi
-    - [SALAH] Foto 'Istri Tusuk Suami Usai Lihat Fotonya Dengan Wanita Lain ,Ternyata Perempuan Itu Dirinya Saat Masih Langsing'
-    - [SALAH]: Kerokan Kulit Batang Pohon Mangga Dapat Mengobati Sakit Gigi
-    - Keliru, Panglima TNI Jenderal Andika Perkasa Amankan 100 Ton Narkoba Milik Ferdy Sambo
-    - Keliru, Foto Kecelakaan Ibu Hamil Tewas Terlindas Truk
-    - Menyesatkan, NATO Kalang Kabut, Rudal Rusia Siap Musnahkan Amerika Serikat Dalam Sekejap
-    - [SALAH] Foto Kebakaran Hutan di Pakistan
-    - [SALAH] Fenomena Albelian selama Juli-Agustus 2022
-    - [SALAH] Video 'Lesti Kejora Di Jengukin Iriana Jokowi'
-    - [SALAH] Gambar Spanduk Bertuliskan 'MASJID INI TIDAK MENSHOLATKAN JENAZAH YANG TIDAK MEMBELI TIKET FORMULA E'
-    - Cek Fakta: Tidak Benar Video Jembatan Serayu Adipala Cilacap Runtuh dan Hanyut pada 15 Oktober 2022
-    - [SALAH] Gambar Tangkapan Layar Artikel Detiknews 'Novel Bakmumin : Tribun Formula E Roboh Itu Peringatan Dari Allah Sponosrnya Minuman Bir'
-    - [SALAH] Uskup Katolik Jabodetabek Deklarasi Dukung Anies Baswedan Jadi Presiden
-    - [SALAH] KFC Bagi-Bagi Tiga Ember Ayam Gratis untuk Merayakan 71 Tahun KFC
-    - Keliru, Buah Tanpa Biji Hasil Rekayasa Genetika Berbahaya dan Haram Dikonsumsi
-    - Cek Fakta: Hoaks Informasi TikTok Bagikan Hadiah Mobil hingga Uang Rp 75 juta
-    - [SALAH] Foto Fenomena Mata Sphinx Tertutup pada 13 Mei 2022
-    - Menyesatkan, Video Jokowi Digugat Utang Rp 62 Miliar Buntut Kasus Ijazah Palsu
-    - Keliru, Video Formasi Awan Berbentuk Kepala Manusia Terekam Kamera
-    - Menyesatkan, Pisang dengan Bintik Hitam Mengandung TNF Antikanker
-    - Belum Ada Bukti tentang Penemuan Suku Mante di Kalimantan
-    - Menyesatkan, Video Tips Menyembuhkan Sakit Gigi dengan Bensin
-    - [SALAH] Singa Ini Menggali Kuburan Sendiri
-    - [SALAH] Foto Muslim Bangladesh Barat Menyerang Warga Hindu Pada Juli 2022
-    - [SALAH] Beberapa vaksin COVID-19 dapat meningkatkan risiko HIV.
-    - Keliru, Enam Jenis Makanan yang Berbahaya Jika Dikonsumsi Bersamaan
-    - [SALAH] Video 'NGERI !! Ribuan Korban Terowongan Mina Berserakan Hari Ini'
-    - [SALAH] Video Hari Pertama PM Inggris yang Baru Melakukan Ritual Adat
-    - [SALAH] POSTER FESTIVAL LELANG TAHUNAN OLEH DJKN
-    - [SALAH] Pasien RSJ Dr Soeharto Heerdjan Kabur
-    - [SALAH] 'Hotman Paris bagi-bagi uang tanpa diundi di Facebook'
-    - Belum Ada Bukti, Ferdy Sambo Ditahan di Hotel Bintang Lima, Bukan Mako Brimob
-    - [SALAH] Artikel 'Puan Maharani: Hapus Pendidikan Agama Islam Jika Ingin Negara Maju'
-    - [SALAH] Akun Whatsapp Bupati Mesuji Sulpakar '+6289636247958'
-    - [SALAH] Merapi Ngamuk Erupsi Besar
-    - [SALAH] Foto Banjir di Jakarta
-    - [SALAH] Video 'Akhirnya Penyidik Temukan Ruang Rahasia Ferdy Sambo | Berisi T4ng4n M4nusi4'
-    - [SALAH] Foto Gerhana Matahari dari Luar Angkasa
-    - [SALAH] Australia Serang Indonesia di PBB Terkait Pulau Pasir
-    - [SALAH] Video Putin Tidak Hadir Ke KTT G20 karena Mancing
-    - Menyesatkan, Klaim Sejarah Raja Anglo Saxon Marcia Menerbitkan Koin Emas dengan Kalimat Tauhid Tidak Pernah Diumumkan
-    - [SALAH] Katy Perry terkena Ramsay Hunt Syndrome
-    - [SALAH] Gambar Kejadian Tangki BBM meledak di Purwokerto
-    - [SALAH] Anak-Anak di Rusia Menyanyikan Lagu Indonesia Raya untuk Menyambut Presiden RI dalam Misi Perdamaian Rusia-Ukarina
-    - [SALAH] Panggilan Interview Kerja oleh PT Petrogas Jatim Utama Melalui WhatsApp
-    - [SALAH] Video Padang Bulan Medan Turun Salju
-    - [SALAH] Indonesia Melarang Penumpang Membawa Air Zamzam
-    - [SALAH] Video Barack Obama Meresmikan Foto Anies Baswedan
-    - [SALAH]: 212 Mart Adalah Sponsor Resmi ajang Formula E
-    - Menyesatkan, Kenaikan Kasus Covid-19 pada Juni 2022 Terjadi karena Menjelang Hari Raya Idul Adha
-    - [SALAH] Surat Edaran Oleh Wali Kota Pontianak Terkait Kelayakan Penerima Donasi
-    - Cek Fakta: Hoaks Alfamart Bagikan Kupon Belanja Gratis dengan Ucapkan Selamat Ulang Tahun di Facebook
-    - [SALAH] Pernyataan IDI tentang Daftar Minuman yang Menyebabkan Pengerasan Otak, Diabetes, dan Pengerasan Sumsum Tulang Belakang
-    - [SALAH] Foto 'Bocah Meninggal Gantung Diri Usai Handphonenya Disembunyikan Orang Tuanya'
-    - Menyesatkan, Seorang Ayah Tega Gorok Leher Anak Kandungnya Karena Sepeda Motor Dipakai Tanpa Izin
-    - [SALAH] 'KEREN bendera NKRI kita terbentang luas di konser group Scorpion dipolandia berkat presiden kita Jokowi'
-    - [SALAH] Pidato Anies Baswedan: 'Saya Merancang Grand Design Lapangan Banteng Dari Nol'
-    - Cek Fakta: Tidak Benar Kondisi AS Terkena Dampak Resesi dalam Video Ini
-    - Keliru, Jokowi Akan Hancurkan Amerika Serikat Jika Ikut Campur Urusan Rusia
-    - [SALAH] Air Panas Sipaholon Tapanuli Utara Berhenti Mengalir Akibat Gempa
-    - [SALAH] 'perang Indonesia vs Australia diperbatasan tak terelakkan'
-    - [SALAH] Video 'Supporter Arema turun ke jalan melampiaskan ketidakpuasan nya terhadap PSSI & Aparat Hukum'
-    - [SALAH] Pertalite yang Dijual Pertamina Berkadar RON 86
-    - Menyesatkan, Varian Baru Covid-19 dari India Hanya Bisa Dideteksi dengan Scan Paru-Paru
-    - Belum Ada Bukti, Madu, Air Kelapa, Cokelat Bubuk, dan Alpukat Dapat Menyembuhkan Stroke
-    - [SALAH] Akun Facebook Bupati Nias Barat 'Khenoki Waruwu'
-    - [SALAH] "VIDEO DETIK-DETIK FAREL PRAYOGA JUARA LOMBA ADZAN NO 1 DI ARAB SAUDI"
-    - [SALAH] Keributan antara camat dan warga pemilik tanah
-    - Menyesatkan, Video Bendera Merah Putih Berkibar di Konser Scorpions di Ukraina Berkat Jokowi
-    - [SALAH] Mike Tyson Harus Menggunakan Kursi Roda setelah Menerima Vaksin
-    - Menyesatkan, Narasi dan Video SK Gubernur DKI Jakarta Dicabut Presiden RI
-    - Menyesatkan, Video Detik-detik Jokowi Lari Ketakutan Saat Demo Tolak Kenaikan BBM
-    - [SALAH] Video 'Tersembunyi' Pentagon Dihantam Misil
-    - [SALAH] Saipul Jamil Meninggal Dunia
-    - [SALAH] Mobil Esemka Goib
-    - [SALAH] Durian Tidak Boleh Dimakan Dengan Minuman Berkarbonasi Hingga Kopi
-    - [SALAH] 'Demo tuh MUI dah jelas tertulis ada pork bone kok di cap HALAL !!'
-    - [SALAH] Video Bendungan PLTA Terbesar di Dunia Meledak
-    - Menyesatkan, Klaim Kim Jong Un Marah, Ratusan Militer Korea Utara Terbang Menuju Perbatasan Malaysia
-    - [SALAH] Lowongan Kerja di Puskesmas Ponorogo Selatan
-    - [SALAH] Cacar Monyet adalah Efek Vaksin
-    - [SALAH] Jenazah Nenek Hindun Ditolak dan Tidak Disalatkan Karena Memilih Ahok
-    - Cek Fakta: Tidak Benar dalam Video ini Pertandingan Piala Dunia Qatar 2022 Diskors Saat Azan Berkumandang
-    - Keliru, Video Presiden Putin Serahkan Bukti Nyata Kejahatan Australia Mendukung KKB Papua
-    - [SALAH] Spanduk McDonalds Bertuliskan 'Hey Crypto Bro’s WE ARE HIRING'
-    - Keliru, Video Ferdy Sambo Mengamuk di Persidangan
-    - Menyesatkan, Dua Negara Anggota Uni Eropa Dikabarkan Terang-terangan Membelot Ke Rusia
-    - [SALAH]: Indra Kenz Dibebaskan dan Semua Asetnya Dikembalikan
-    - [SALAH] Zul Zivilia Dieksekusi Mati
-    - Belum Ada Bukti, Menaruh Bawang Putih di Bawah Bantal Akan Dapat Manfaat Kesehatan
-    - [SALAH] Anies Jelaskan Sistem Inovatif Profit ACT: Orang yang Berkekurangan Memberi Kepada Orang yang Berlebih
-    - [SALAH] Akun Whatsapp Wakil Wali Kota Malang Sofyan Edi Jarwoko '083822041010'
-    - [SALAH] Video 'MALU ATAS SIKAP B.REKTOR ALUMNI UGM SERENTAK B4K4R IJAZAH ASLI !!'
-    - [SALAH] Video iring-iringan jenazah Eril
-    - [SALAH] Video Wakil Ketua Banggar DPR RI Jatuh setelah Menyetujui Penarikan LPG 3 Kg dan Penghapusan Daya Listrik 450 VA
-    - Belum Ada Bukti, Menyembuhkan Sakit Gigi dengan Es Batu, Bawang Putih, Jahe dan Bawang Merah dalam 5 Menit
-    - [SALAH] Tiket Masuk Candi Borobudur naik karena patung 'I Gede Utange Jokowi'
-    - [SALAH] Gambar Jokowi sedang Wisuda
-    - [SALAH] Foto 'petani ini disiksa polisi yang dibayar PT Sadoka'
-    - Keliru, Foto Anak Siswa SD Korban Penembakan di Sekolah
-    - [SALAH] Video Burung Garuda
-    - Keliru, Bantuan Kesehatan Rp 150 juta bagi TKI dan TKW
-    - [SALAH] Air Nanas Bisa Membunuh Sel Kanker
-    - Cek Fakta: Tidak Benar dalam Video ini Rekaman Satelit Gempa di Cianjur
-    - Cek Fakta: Tidak Benar IDI Umumkan Wabah Pengerasan Otak hingga Sumsum Tulang Belakang dan Hindari 19 Minuman Penyebabnya
-    - Keliru, Imam Agung Ortodoks Rusia Sebut Islam Akan Memimpin Dunia
-    - [SALAH] 'Wow Akhirnya Kang Elon Musk Bikin Tweet Kunjungan Presiden Jokowi'
-    - [SALAH] "BENZEMA DAN ZIDAN MELAYAT KERUMAH RONALDO ISTRINYA MENINGGAL"
-    - Menyesatkan, Artikel Pesawat Garuda Kecelakaan dengan 22 Korban Jiwa yang Dipublikasikan Juni 2022
-    - [SALAH] Akun Facebook 'Inul Daratista Berbagi'
-    - [SALAH] Pertolongan Pertama Luka Bakar menggunakan Tepung Terigu
-    - [SALAH] Ilmuwan Pembuat Virus Corona Telah Ditangkap
-    - Keliru, Jenazah Ferdy Sambo Dimakamkan di Magelang
-    - Cek Fakta: Tidak Benar Presiden Jokowi Tolak Malaysia Jadi Anggota Penuh G20
-    - [SALAH] PT KAI Membagikan Tunjangan Transportasi Senilai Rp20 Juta
-    - [SALAH] Ketua Adat Papua Pastikan Anies Baswedan Menang Pada Pemilihan Tahun 2024
-    - Menyesatkan, NASA Sebut Matahari akan Terbit dari Barat Tanda Kiamat
-    - [SALAH] Cara Mengidentifikasi Ular Berbisa Dengan Cara Melihat Bentuk Kepalanya
-    - [SALAH] 'Ma’ruf amin: kas negara menipis Ma’ruf Amin minta rakyat sisihkan harta bantu pemerintah'
-    - Keliru, Video Pernyataan Penyesalan Istri Ferdy Sambo soal Kasus Pembunuhan Brigadir J
-    - [SALAH] 'Banyak yang pingsan saat mengantri untuk membeli AC mini Jepang di Tunjungan Plaza'
-    - [SALAH] Video Anak-Anak Ujian di KFC
-    - Menyesatkan, Video Mobil Terbakar di SPBU Wero Gombong Lantaran Gunakan Aplikasi MyPertamina
-    - [SALAH] Permata Bank Menawarkan Pinjaman Dana Tanpa Agunan dan Survei
-    - [SALAH] Video 'Berita Viral ~ INNALILLAH!!HARI INI 4 NOVEMBER 2022 GUNUNG SEMERU MELETUS 384 KALI & HANCUR BEGINI.'
-    - [SALAH] PT Indocement Tigaroda Bagikan Hadiah Pembangunan Rumah
-    - [SALAH] Surat Izin Sementara Bagi Pekerja Asing Tanpa Izin (PATI) di Malaysia
-    - Menyesatkan, Mendagri Tito Karnavian Resmi Ditahan KPK
-    - [SALAH] Akun Facebook Walikota Solok Zul Elfian Umar (Zul Solok)
-    - Keliru, Video Rudal Nuklir Rusia Tiba di Indonesia, Bikin Australia Ketakutan
-    - [SALAH] Ferdy Sambo Mengamuk dan Ancam akan Buka Borok Polri Jika Ditetapkan Sebagai Tersangka
-    - [SALAH]: Cara Cek Asam Urat Normal Atau Tidak Dengan Menekuk Semua Jari Menyentuh Telapak Tangan
-    - [SALAH] Burung Camar Mengambil Pizza Utuh dari Meja
-    - [SALAH] Anggota DPRD Fraksi Demokrat Lampung Barat Heri Gunawan Tawarkan Lelang Kendaraan Melalui Pesan WhatsApp
-    - [SALAH] Video 'Amerika Sampai Terkejut Ide Gila Jokowi Bikin Panik Australia Di Pulau NTT'
-    - [SALAH] 55th Anniversary Indomilk
-    - [SALAH] Akun Whatsapp Kepala BKPSDM Kab Tangerang Hendar Herawan '+6285841645716'
-    - [SALAH] Video Uang Baru Nominal Rp 1 Juta
-    - [SALAH] Foto Jokowi Memangku Wanita Berbikini di Pantai
-    - [SALAH] Pesan Daniel Mananta untuk Umat Nasrani: Ada Jin Kafir di Patung Tuhan Yesus
-    - Cek Fakta: Hoaks Pesan Berantai Klaim Tragedi Kanjuruhan akibat Komunis Ujicoba Gas Beracun untuk Bunuh Rakyat Indonesia
-    - [SALAH] Pesan Whatsapp Menawarkan Pinjaman Online Oleh Ponpes Al Falah Sumber Malang Situbondo
-    - [SALAH] Video Penari Robot di Shanghai Disneyland
-    - Cek Fakta: Tidak Benar Pertalite yang Dijual Pertamina Berkadar RON 86
-    - [SALAH] Ibu Kandung Jokowi Bernama Sulami yang Merupakan Aktivis GERWANI
-    - [SALAH] Justin Bieber Mengatakan Kelumpuhan Wajahnya Disebabkan Oleh Vaksin Covid-19
-    - [SALAH] JERMAN TELAH MENGHENTIKAN SEMUA VAKSIN COVID-19
-    - [SALAH] 'Nah ini dia vidionya …ternyata jokowi dan istrinya yg menyebarkan kaos jokowi 3 periode'
-    - [SALAH] 'Kelompok anies pesta pora makan duit rakyat'
-    - [SALAH] Serial The Simpsons Prediksi Kematian Ratu Elizabeth II Pada Tahun 2022
-    - [SALAH] Judul Artikel IDNTODAY News 'Peneliti Australia Sebut : Jokowi ' Presiden Tak Berkemampuan ' Tapi Memiliki Daya Rusak'
-    - [SALAH]: Dabbah Telah Muncul, binatang Pesan Tanda Kiamat
-    - Keliru, Kabur dari Mako Brimob, Ferdy Sambo Langsung Di Dor di Tempat
-    - Cek Fakta: Hoaks Indomie Goreng dengan Rasa Ganja
-    - [SALAH] 'Varian baru covid hanya berbahaya untuk yang divaksin'
-    - [SALAH] Lowongan Pekerjaan PT Imecon Teknindo Berbayar
-    - [SALAH] PKI Anggarkan Rp5 Triliun Demi Muluskan Jokowi 3 Periode
-    - Keliru, Pemimpin Umat Katolik Sedunia Memeluk Islam pada 2022 dan Menyebabkan 16 Orang Terkena Serangan Jantung
-    - [SALAH] Tangkapan Layar Artikel CNN Indonesia 'PRESIDEN ZELENSKY DAN RAKYAT UKRAINA BANTAH DAN MARAH SUDAH DI FITNAH DAN DI RENDAHKAN JOKOWI'
-    - Keliru, Video Berjudul Nyali Tentara Malaysia Rontok dan Takut Serang Indonesia
-    - [SALAH] Foto 'Remaja ini Tebas Leher Ayahnya karena Sakit Hati Adik Dihamili 3 Bulan dan Ibunya Disiram Minyak Panas'
-    - [SALAH] Vaksin Pfizer Mengandung Logam Berat Graphene Oxide
-    - [SALAH] 'Sri Mulyani: BBM Tidak Dinaikkan Negara Kesulitan Bayar Utang'
-    - [SALAH] Makan Buah Saat Perut Kosong Dapat Sembuhkan Kanker
-    - [SALAH] Vaksin Covid-19 menurunkan fertilitas pria
-    - Keliru, BRI Mengganti Biaya Transaksi ATM dengan Autodebet Rp 150.000 per Bulan PERUBAHAN TARIF LAYANAN BRI
-    - [SALAH] Video 'Cacing akibat makan sosis, naget dan sejenisnya, dari daging yg lama di awetkan'
-    - Keliru, Suku Dayak Ngamuk, Rebut Sabah dan Sarawak dari Pelukan Malaysia
-    - Benar, Menkes Budi Gunadi: Kelahiran 1980 Ke Bawah Memiliki Antibodi Lawan Virus Cacar Monyet
-    - [SALAH] JOKOWI TAGIH HUTANG MALAYSIA 100 MILIAR LEWAT BANK DUNIA
-    - [SALAH] Demonstran Membakar Rumah Ayatollah Khomeini pada 22 November 2022
-    - [SALAH] Gelombang Panas Melanda Indonesia
-    - [SALAH] Surat Pengangkatan Tenaga Honorer Menjadi PNS Tahun 2022 Oleh Menteri PANRB
-    - [SALAH] Pidato Surya Paloh Dalam Rangka Mendukung Anies Baswedan untuk Pemilu 2024
-    - [SALAH] Video Mobil Terbakar Karena Mengisi BBM menggunakan Aplikasi
-    - [SALAH] Akun WhatsApp Wali Kota Magelang dengan Nomor '081358908928' Melakukan Penggalangan Donasi Berupa Uang untuk Pondok Pesantren dan PAUD
-    - [SALAH] Vokalis Band The Rolling Stones Mick Jagger Meninggal Dunia
-    - Cek Fakta: Tidak Benar dalam Video ini Liga Jerman Peringati Maulid Nabi Muhammad SAW
-    - [SALAH] Akun WhatsApp Bupati Bantaeng Ilham Azikin '081233588590'
-    - [SALAH] Video Ledakan Besar dari Beijing Saat Kudeta Terhadap Xi Jinping, Presiden China
-    - Keliru, Video Kedatangan Presiden Jokowi Berhasil Hentikan Perang Rusia-Ukraina
-    - Cek Fakta: Tidak Benar ASI dari Ibu yang Divaksin COVID-19 Berubah Jadi Biru
-    - [SALAH] 'DUNIA DILANDA KRISIS, PRESIDEN JOKOWI DIPILIH PBB JADI PEMIMPIN SATGAS PENANGANAN KRISIS GLOBAL!'
-    - [SALAH] Video 'PEMALSU IJAZAH RESMI DIRINGKUS PAK DHE TAK TERTOLONG KESAKSIANNYA MENGEJUTKAN'
-    - Keliru, Video Jutaan Umat Muslim India Turun ke Jalan Atas Penistaan Nabi Muhamad SAW
-    - [SALAH] Mall Senayan City Dijual 4,5 Triliun di Media Sosial
-    - [SALAH] Ayah Jokowi Bernama Widjiatno Merupakan Anggota PKI: 'Jokowi Asli PKI Tulen!'
-    - [SALAH] Buaya 9 Meter Terbesar Di dunia, Ditemukan di Danau Kota Maine Amerika Serikat
-    - [SALAH] Judul Artikel: Wapres Minta Rakyat Pakai Kayu Bakar Saat Masak biar Irit
-    - [SALAH] Cara Cek Jantung Dalam 30 Detik
-    - [SALAH] Akun Facebook Bupati Cirebon 'Kang Imron' Meminta Sejumlah Sumbangan
-    - [SALAH] Video Penampakan Burung Garuda di Gunung Penanggungan
-    - Menyesatkan, Video TikTok dengan Narasi Etnis Madura Buat Masalah dengan Orang Bandung
-    - [SALAH] Foto Putri Candrawati istri Irjen Ferdy Sambo
-    - [SALAH] Bukannya ke Mekkah Urus Haji, Menteri Yaqut Malah ke Vatikan
-    - [SALAH] Upacara HUT RI ke-77 yang Dipimpin oleh Anies Tidak Disiarkan di TV
-    - [SALAH] Gambar Tangkapan Layar Artikel Pikiran-rakyat.com 'Beredar Video Penampakan Misterius Disebut Yakjuj Makjuj, Sembunyi di Balik Bebatuan Padang Pasir Tandus Arab'
-    - [SALAH] Militer Amerika Menemukan Pestisida dalam Vaksin Covid-19 Moderna
-    - [SALAH] PDIP Suruh Anies Jangan Terus Menerus Bela Buruh
-    - Keliru, Video Rusia Luncurkan Senjata Kiamat Tepat Malam Ini Ke Wilayah Inggris
-    - [SALAH] Artikel Berjudul, 'Optimis Menang Pemilu 2024, Puan: Kita Bersama Wong Licik'
-    - [SALAH] Bermain HP Di Dekat Kompor Menyebabkan Kompor Meledak
-    - [SALAH] 'POMBENSIN TUBAN DIBAKAR MASSA BEGITU HARGA BBM NAIK TGL 03-09-2022'
-    - [SALAH] Lowongan Pekerjaan Dinas P3AP2KB Pasuruan
-    - [SALAH] Luna Maya Hamil Anak Kembar
-    - [SALAH] Meminum Rebusan Tepung Kanji Dan Gula Merah Secara Rutin Dapat Menyembuhkan Asam Lambung
-    - Keliru, Klaim Hewan Dabbah Muncul di Israel sebagai Pertanda Kiamat
-    - [SALAH] Panda Merah Mati Setelah Diberi Dosis Vaksin Covid-19
+    - Menyesatkan, Video Bekas Telapak Kaki Nabi Adam Ada di Aceh
+    - [SALAH] Video 'MENGEJUTKAN! PRABOWO MUNDUR DARI JABATANNYA!!TAK INGIN TERJERUMUS KEJALAN BUSUK JOKOWI'
     - [SALAH] Video 'Kesaksian ibu-ibu penjual dawet atas tr.4gedi #Kanjuruhan'
-    - [SALAH] Foto Bulan Jatuh
-    - Menyesatkan, Video Berjudul Jas dan Kantor Partai Nasdem Dibakar
-    - [SALAH] Foto Warga Papua Demo Tolak PDIP di Papua
-    - [SALAH] Cara Mengecek Resiko Stroke dengan Menggerakan Jari
-    - [SALAH] Lukas Enembe Meninggal Dunia
-    - Keliru, Jenderal Andika Perkasa Deklarasikan Perang Besar-besaran
-    - [SALAH] Putin Tidak Hadir ke KTT G20 karena Parade Angkatan Laut
-    - Keliru, Video Susilo Bambang Yudhoyono Ditangkap Kejaksaan Agung
-    - [SALAH] 'Jangan sampe piala dunia disusupi radikulis'
-    - Keliru, Cara Mengobati Vertigo dan Sakit Kepala dengan Menutup Lubang Hidung
-    - [SALAH] Robot berukuran sel ditemukan dalam vaksin covid baru
-    - Keliru, Pesan WhatsApp Berisi Klaim Cuci Ginjal Alamiah dengan Daun Seledri
-    - Keliru, Video Seluruh NATO Ketakutan, Jet Tempur Jerman Tembak Jatuh Indonesia
-    - [SALAH] Foto Pemandangan Alam Palestina
-    - [SALAH] Akun WhatsApp Ketua Fraksi NasDem DPRD DKI Jakarta Wibi Andrino '081262592219'
-    - [SALAH] Lowongan Kerja di PT. Petrosida Gresik
-    - [SALAH] Anang Meninggal Dunia
-    - [SALAH] VARIAN BARU MUNCUL DARI VAKSIN
-    - Menyesatkan, Video Malaysia Tolak Diplomasi dengan Indonesia, Jokowi Lakukan Ini
-    - [SALAH] Patung Berumur 5.000 tahun di Laut
-    - [SALAH] Donald Trump Meninggal Pada Usia 76 Tahun
-    - [SALAH] Foto 'PI NETWORK DELIVERY'
-    - [SALAH] Informasi Penyaluran Dana Insentif Daerah Tahap 1 Tahun 2022
-    - [SALAH] Pimpinan Redaksi JawaPos.com Meminta Bantuan Melalui WhatsApp
-    - [SALAH] Donald Trump: Ratu Elizabeth Memberikan Saya Gelar Bangsawan Secara Pribadi
-    - Sebagian Benar, Artikel tentang Pesantren Alquran Terbakar
-    - [SALAH] AIDS jenis baru yang merupakan hasil dari pencampuran Covid-19, vaksin, dan Cacar Monyet atau Monkeypox
-    - [SALAH] Umat Muslim Memblokade Jalanan di Perancis dengan Salat Berjamaah
-    - Keliru, Ma'ruf Amin Minta Rakyat Bantu Pemerintah Karena Kas Negara Menipis
-    - Keliru, Video Kakek Terima Upah Tebang Tebu dalam Bentuk Uang Mainan
-    - [SALAH] Foto 'MENGAKU S4LAH!!! SBY MINTA MAAF DEPAN JOKOWI'
-    - Cek Fakta: Tidak Benar Covid-19 Subvarian XBB 5 Kali Lebih Beracun dan Mematikan daripada Varian Delta
-    - [SALAH] Eksperimen simpanse dan anak dihentikan karena anak meniru tingkah monyet
-    - Keliru, Video Pesawat Hilang 37 Tahun Lalu Mendarat Kembali
-    - Keliru, BCA Mengganti Biaya Transaksi Menjadi Biaya Bulanan 150.000 ribu Secara Autodebet
-    - [SALAH] Video 'SELURUH NATO KETAKUTAN JET TEMPUR JERMAN TEMBAK JATUH INDONESIA'
-    - Cek Fakta: Tidak Benar Kabar Jokowi Jenguk Lesti Kejora di Rumah Sakit
-    - [SALAH] Foto Ratu Megawati
-    - Menyesatkan, Video Masjid di Papua Putar Lagu Yospan
-    - [SALAH] Acha Septriasa Meninggal Dunia
-    - [SALAH] Artikel Wartakota Berjudul 'Viral Renovasi Ruang Kerja Megawati di BRIN mencapai Rp 6 Miliar'
-    - [SALAH] Foto Buaya Berenang Dalam Rumah yang Terendam Banjir Setelah Badai di Florida
-    - Sebagian Benar, Kolase Video Angin Puting Beliung di Sidoarjo 10 Oktober 2022
-    - Keliru, Militer Indonesia Pasang 200 Rudal di Selat Malaka yang Diarahkan ke Kuala Lumpur
-    - [SALAH] Info Pemberian Dana Bantuan Rp75 Juta Oleh BPJS Kesehatan Melalui Whatsapp
-    - [SALAH] Video 'Uya Kuya Hipnotis Putri Chandrawati Misteri kematian Brigadir J terbongkar'
-    - Cek Fakta: Tidak Benar Vaksin Genosida Uni Eropa Membuat 100 Ribu Kematian
-    - [SALAH] Jokowi Mengembalikan Ahok ke Balai Kota DKI
-    - [SALAH] 22 Oktober 2022 akan ada Asteroid Menabrak Bumi
-    - [SALAH] Bawang Merah Bisa Sembuhkan Gigitan Ular
-    - Cek Fakta: Tidak Benar Kabar 5000 Kader Partai Nasdem Mengundurkan Diri Usai Usung Anies Baswedan Jadi Capres 2024
-    - [SALAH]: Eric Thohir Berfoto Dengan Ibunya Ediba Tan Mei Hwa dan Kakak Ibunya, William Soerjadjaja, Jangan Terkecoh Dikira Pribumi Muslim
-    - Benar, Pendataan Penerima BSU oleh Kementerian Tenaga Kerja RI menggunakan data BPJS Ketenagakerjaan
-    - Keliru, Foto Seorang Bocah Meninggal karena Ponsel Disembunyikan Orang Tuanya
-    - [SALAH] Gambar Kotak Sereal Bernama Cocopox
-    - [SALAH] Mendeteksi Stroke dengan Menggerakkan Jari Tangan
-    - [SALAH] Akun WhatsApp Bank BRI '082316350080'
-    - Keliru, Video TNI Tingkatkan Serangan Jarak Jauh Hingga Malaysia
-    - Belum Ada Bukti, Anak Yatim Diikat di Pohon karena Mencuri Roti
-    - [SALAH] Foto Pria Berwajah Ustadz Abdul Somad 'Berkah Dalem Romo'
-    - [SALAH] Foto Anies Baswedan Berdiri di Luar Tempat Makan Siang G20
-    - [SALAH] Video 'hari ini tgl 17-09-2022 Gaza akhirnya merdeka'
-    - Keliru, Foto dan Kisah 4 Ribu Tentara Jerman Masuk Agama Islam
-    - [SALAH] Bendera dan Atribut PDI-P Dilarang Beredar di Sumatera Barat karena Telah Menjadi Partai Terlarang
-    - Keliru, Minum Air Panas Menyehatkan Ginjal
-    - [SALAH] Teknologi Kloning Manusia, Perempuan Tidak Perlu Hamil untuk Punya Anak
-    - [SALAH] 'Kebaktian memakai Jilbab, video sebelum Gempa terjadi di Cianjur'
-    - [SALAH] 'Kali Krukut sudah kembali bersih & rapi oleh Pak Gubernur Heru'
-    - [SALAH] Kemampuan Orang Indonesia Dalam Membedakan Fakta & Hoax Adalah Nomor 1 Dari Belakang
-    - Keliru, Rutin Konsumsi Spirulina Dapat Cegah Cacar Monyet
-    - [SALAH] Video Latihan Pengamanan Polisi Jepang Pasca Pembunuhan Mantan PM Jepang
-    - [SALAH] Link Bantuan PKH Tahap 3
-    - Keliru, Brazil Izinkan Pembunuhan Begal Motor Hingga Turunkan Angka Kasus
-    - [SALAH] Lowongan Kerja JNE Kediri
-    - Menyesatkan, Radiasi HP Menyebabkan Kematian
-    - [SALAH] Surya Paloh Sebut Anies Baswedan adalah Kandidat Capres 2024 dari Partai Nasdem
-    - [SALAH] Heri Budi geleng-geleng kepala setelah blusukan melihat kali Ciliwung
-    - [SALAH] Jam Kerja Di Denmark 33 Jam Per Minggu
-    - Keliru, Penyelundupan 36 Pekerja Seks dari Cina di Medan Maimun
-    - [SALAH] Akun Facebook Pengasuh Ponpes Genggong Gus Haris Tawarkan Jasa Pesugihan
-    - Keliru, Penyakit Cacar Monyet Disebabkan Vaksin Covid-19 Astrazeneca
-    - [SALAH] Jokowi dan Putin Joget Bersama Saat Farel Prayoga Nyanyi di Pembukaan KTT G20
-    - Cek Fakta: Tidak Benar Pos Indonesia Bagikan Subsidi dari Pemerintah Rp 10 Juta
-    - [SALAH] Foto Penampakan Demodex, Makhluk yang Hidup di Wajah Manusia
-    - Menyesatkan, Unggahan tentang Sindrom Guillain-Barre yang Terjadi setelah Vaksinasi Covid-19
-    - [SALAH] Video Mengaji dalam Opening FIFA 2022
-    - [SALAH] BNI Terbitkan Uang Kertas Pecahan Rp100 Ribu Bergambar Presiden Joko Widodo
-    - Cek Fakta: Tidak Benar Dokumen CDC AS Nyatakan Covid-19 Tak Ada
-    - [SALAH] Akun WhatsApp Pj Bupati Boalemo Hendriawan '085731465165'
-    - Belum Ada Bukti, Rekaman CCTV Asli Saat Istri Ferdy Sambo Menusuk dan Mengejar Brigadir J dari Belakang
-    - Cek Fakta: Tidak Benar Pemerintah Turunkan DMO Sawit pada November 2022
-    - [SALAH] Beberapa Negara Melaksanakan Kebijakan Haji Gratis Berdasarkan Perintah Kesultanan Buton
-    - [SALAH] Gadis Ular Menggemparkan Dunia
-    - Cek Fakta: Tidak Benar Fenomena Air Laut di Pantai Bangka Surut Simulasi HAARP untuk Membuat Bencana
-    - [SALAH] Video Ratu Elizabeth Melemparkan Makanan ke Anak-Anak di Afrika
-    - [SALAH] Akun Whatsapp Sekretaris Daerah Kabupaten Aceh Utara A. Murtala '+6281250401484'
-    - [SALAH] Pesan Whatsapp Hadiah Gudang Garam Membagikan Hadiah 8000 Dolar
-    - [SALAH] Anggota TNI Dengan Mobil Tim Buser Polres Bersenggolan
-    - Sebagian Benar, Link Cek Bantuan Sosial Subsidi BBM Langsung di HP Sambil Makan atau Sibuk Kerja
-    - [SALAH] Akun Whatsapp Kadisminfosantik Kalteng Agus Siswadi '081213008042'
-    - [SALAH] Fenomena Awan Mammatus di Mumbai, India
-    - Keliru, Video Suasana Sidang DPR Memanas Saat Bahas Ijazah Jokowi
-    - [SALAH] Kemenkes RI Adakan Bantuan Biaya STR Bagi Tenaga Kesehatan
-    - Keliru, Aspartame Mengandung Racun Penyebab Wabah Pengerasan Otak
-    - [SALAH] Video Kebakaran PLTU Guddu Pakistan Juli 2022
-    - [SALAH] Video Banjir Bandang Pakistan 28 Agustus 2022
-    - [SALAH] Foto 'Kevin Sanjaya calon pemimpin dari Partai Perindo'
-    - [SALAH] Perhelatan Puncak Balapan Formula E Sepi Penonton
-    - [SALAH] Video Burung Garuda di Gunung Penanggungan, Jawa Timur
-    - Sebagian Benar, Pakai Sandal Jepit Saat Berkendara Dilarang dan Akan Ditilang
-    - [SALAH] 'NAMA ASLINYA HERBERTUS JOKO WIDODO'
-    - [SALAH] Akun Whatsapp Bupati Limapuluh Kota Safaruddin Dt Bandaro '+6282169316526'
-    - [SALAH] 'baru beberapa minggu sudah merasakan bahwa tugas Gubernur itu tidak gampang'
-    - [SALAH] Video Penampakan Ikan Paus Nabi Yunus
-    - [SALAH] Imbauan Modus Kejahatan Dari Polri dan TNI AD
-    - [SALAH] Giveaway Soimah 1-5 juta
+    - Keliru, Video Berjudul Aku Butuh PKI
+    - [SALAH] MENLU RUSIA DILARIKAN KE RS SANGLAH, BALI
+    - [SALAH] Wujud Bebek dan Tikus Hasil Gabungan Kedua DNAnya
     - [SALAH] Lowongan Kerja di Puskesmas Simpong
-    - [SALAH] Video 'Sidak Sel Tahanan Ferdy Mbak Nana Hanya Temui Ruangan Kosong'
-    - Belum Ada Bukti, Khasiat Biji Mahoni Dapat Mengobati Cacar atau Gatal-gatal Bernanah
-    - Keliru, Video Pemerintah Singapura Menyerahkan 1000 Triliun Aset Negara Indonesia yang Dicuri Koruptor
-    - [SALAH] Akun WhatsApp Bupati Enrekang Melakukan Penggalangan Donasi Berupa Uang Untuk Pondok Pesantren dan PAUD
-    - [SALAH] Dana BLT BBM Merupakan Dana Desa yang Direalokasi
-    - [SALAH] Panglima TNI Panggil ART Ferdy Sambo untuk Membuktikan Ruang Rahasia PC
-    - Keliru, Ratusan Jemaah Haji Meninggal Dunia Karena Listrik Padam di Terowongan
-    - [SALAH] Video Anak Dinosaurus Berkeliaran
-    - [SALAH] Pemain Ligue 1 Prancis Lakukan Aksi Teatrikal Sindir Penggunaan Gas Air Mata di Tragedi Kanjuruhan
-    - [SALAH] Surat Gubernur Papua Perihal Pangkodap TPNPB & Seluruh TPM-OPM Menurunkan Senjata
-    - [SALAH] Video Kandungan Minyak pada Satu Kilogram Ayam Goreng
-    - Keliru, Video Pisah dari Malaysia, Sabah dan Sarawak Resmi Gabung Dengan Indonesia
-    - [SALAH] Video Penghina Ibu Iriana Diusir Paksa
-    - [SALAH] Video 'Hati2 buah tak berbiji berbahaya dan haram'
-    - [SALAH] Peningkatan kasus Covid-19 disebabkan oleh orang-orang yang sudah divaksin
-    - [SALAH] Akun WhatsApp Anggota Ombudsman RI Hery Susanto '+62 813-3336-9598'
-    - Keliru, Video Rusia Mengadakan Perayaan Maulid Nabi Muhammad SAW
-    - Menyesatkan, Video Pembajakan Telkomsel yang Diunggah Pada 17 Juli 2022
-    - [SALAH] Bill Gates Menyiapkan Miliaran Vaksin Cacar Monyet
-    - Keliru, Mike Tyson Pakai Kursi Roda Akibat Suntikan Vaksin Covid-19
-    - [SALAH] Buntut Permasalahan TKI, Indonesia Kirim 450 Prajurit ke Perbatasan Malaysia
-    - [SALAH] Video Simpanan Emas Ratu Elizabeth II Tersimpan di Ruangan Bawah Tanah
-    - [SALAH] Gambar Pratinjau (Thumbnail) Video 'KABAR TERBARU‼️ZELENSKY BERAKHIR MENG3N4SK4N JADI BULAN-BULANAN APARAT.!!'
-    - [SALAH] Sampul Majalah Tempo 'SANG DALANG PERUSAK BHINNEKA'
-    - [SALAH] Vaksin Covid-19 Menyebabkan Peningkatan Kasus Kanker
-    - Keliru, Klaim Foto Cacar Monyet Dibawa WNA ke Indonesia
-    - Belum Ada Bukti, Virus Cacar Monyet Menular Lewat Udara
-    - [SALAH] Ratusan Pasukan Khusus Cina Menjadi Tentara Sukarelawan Rusia Untuk Perang dengan Ukraina
-    - [SALAH] Ketua Kejaksaan Negeri Aceh Singkil Meminta Uang Senilai Rp25 Juta Melalui WhatsApp
-    - Cek Fakta: Tidak Benar Video Penampakan Robot Perang Buatan Militer Amerika Serikat
-    - [SALAH] Petir Menyambar Candi Borobudur
-    - [SALAH] 63 Sepeda Motor Hilang Pada Malam Peringatan Hari Ulang Tahun Kota Medan
-    - Keliru, Klaim Tentang Skrining Kesehatan BPJS Kesehatan Bersifat Wajib Dimulai 17 Juli 2022
-    - [SALAH] Perubahan Tarif Transaksi BRI
-    - [SALAH] 'Alhamdullilah, Biang Coronanya Udah Tertangkap'
-    - Menyesatkan, Video Prabowo Terdepak dari Istana, Jokowi Langsung Bacakan SK Pemberhentian
-    - Menyesatkan, Mie Instan Indonesia Ditolak Masuk Taiwan karena Mengandung Racun Berbahaya
-    - [SALAH] Ahok Ditetapkan Sebagai Menteri Perdagangan Baru Pada Kabinet Indonesia Maju Pemerintahan Presiden Jokowi
-    - Cek Fakta: Hoaks Surat Pemanggilan Seleksi Calon Karyawan Pertamina Minta Biaya Akomodasi
-    - Keliru, Artikel 15 Orang Meninggal Dunia Saat Menghadiri Pesta Pernikahan
-    - [SALAH] Informasi Lowongan Kerja Klinik Pratama At-Tin Wonosobo
-    - [SALAH] Penemuan Burung Ababil di Palestina
-    - Keliru, Awan Jatuh di Kampar Riau
-    - [SALAH] Video 'Kemunculan Masjid di Atas Awan di Lombok'
-    - [SALAH] Foto Artikel 'Pesantren Alquran Terba4kar, 26 Santri Dan Dua Guru T3w4s Terp4ngg4ng'
-    - [SALAH] 'Indonesia resmi keluar dari AFF, Indonesia dipastikan akan gabung di piala EAFF'
-    - [SALAH] Hoaks Surat Pemanggilan Seleksi Pegawai Pertamina
-    - Keliru, Foto Pengunjung Grand Indonesia Mall Berdesakan hingga Pingsan
-    - [SALAH] Video Gunung Anak Krakatau Bocor pada 17 Juni 2022
-    - [SALAH] Video 'Semua Tak Menyangka Ratusan Polisi Jemput Rizky Billar Tangisan Lesti Kejora Pecah'
-    - Keliru, Ferdy Sambo Dipindahkan ke Sel Tahanan Nusakambanga
-    - [SALAH] Video 'mengapa satgasus dibubarkan setelah kasus Sambo Mencuat?'
-    - Keliru, Video Jasad Mustafa Kemal Ataturk Dimuntahkan Bumi
-    - Keliru, Video Berjudul Pimpin Penyidik KPK, Ahok Obrak-Abrik Kantor Cikeas
-    - [SALAH] EMPAT ORANG MASUK ISLAM SAAT MENDENGARKAN CERAMAH ZAKIR NAIK SELAMA UPACARA PEMBUKAAN PIALA DUNIA FIFA DI QATAR 2022.
-    - [SALAH] Video 'RESMI JADI TERSANGKA KPK TITO KARNAVIAN TAK BISA MENGELAK PENYIDIK TEMUKAN INI'
-    - [SALAH] Video Penampakan Robot Perang Buatan Militer Amerika Serikat
-    - [SALAH] Artikel Kecelakaan Mobil Rombongan Ibu-Ibu Senam Masuk Jurang di Aceh
-    - Cek Fakta: Tidak Benar dalam Video ini Seremoni Pembukaan Piala Dunia 2022 di Qatar
-    - [SALAH] Video 'BONGKAR BOROK ANIES WAKIL GUBERNUR OGAH DUKUNG ANIES NYAPRES'
-    - [SALAH] Jokowi Lulusan Jurusan Ngibul
-    - [SALAH] Anies Baswedan di Cover Majalah Al Islam: 'Wujudkan Jakarta Bersyariah'
-    - Cek Fakta: Tidak Benar BMKG Keluarkan Informasi Kewaspadaan atas Sesar Cimandiri
-    - Keliru, Fenomena Aphelion 2022 Sebabkan Cuaca Dingin Ekstrem dan Picu Masalah Pernafasan
-    - [SALAH] 'Kronologis Peristiwa Hasil Klarifikasi dengan Ketiga Guru BK di SMAN 1 Banguntapan Oleh: LBH Muhammadiyyah'
-    - Sebagian Benar, Tepat Hari Ini Akhirnya Istri Ferdy Sambo Ditahan
-    - Sebagian Benar, Foto Anak SD Meninggal Tersambar Petir Karena Handphone Diunggah Tahun 2022
-    - [SALAH] George Floyd Meninggal Karena Overdosis
-    - [SALAH] Video Gempa Cianjur
-    - Cek Fakta: Tidak Benar Video KPK Menyita Harta Mendagri Tito Karnavian
-    - [SALAH] Pesan Whatsapp Dana Bantuan dari BPJS Senilai 50 juta
-    - [SALAH] Petai dapat menyembuhkan sakit pinggang
-    - [SALAH] Foto 'Pantai Ancol dipenuhi belasan ribua turis asing menanti gelaran #FormulaE'
-    - [SALAH] Akun Twitter Investasi Terra Luna
-    - [SALAH] Timnas Indonesia Lolos Semifinal Piala AFF U-19 Usai Panitia Mengubah Peraturan
-    - [SALAH] Akun Twitter @VIVACoid Dinonaktifkan Setelah Beritakan Kematian Kolonel TNI AL Penemu Kokain Senial Rp 1 Triliun
-    - [SALAH] Detik-detik Salmet Maarif Melakukan Percobaan Pembunuhan Terhadap Presiden di Istana
-    - [SALAH] 'ANIES BASWEDAN KRITIS!! KUTUKAN AHOK BENAR BENAR JADI KENYATAAN'
-    - [SALAH]: Puluhan Orang Cidera Parah Gas Air Mata Hujani Masa Aksi 411 yang Sedang Sholat
-    - [SALAH] 'Surat Bung Hatta pada AR Baswedan'
-    - [SALAH] Pemilik Bahan Peledak dan Senjata Api di Bandung telah Ditemukan
-    - [SALAH] Presiden Ukraina Volodymyr Zelensky Mengikuti Acara Gay Pride di New York pada 1999
-    - Cek Fakta: Tidak Benar Vaksin Pfizer Mengandung Logam Berat Graphene Oxide
-    - Keliru, Tangkapan Layar Berita Berjudul Opung Luhut Sudah Turun Tangan Soal Kasus Brigadir J
-    - Keliru, Singapura Luluh Kembalikan Rp 1000 Triliun Aset Negara Indonesia
-    - [SALAH] Video Cara Deteksi Asam Urat Melalui Jari Tangan
-    - Keliru, Tes Kesehatan Paru-paru dengan Menahan Napas Dari Titik A ke B Selama 30 Detik
-    - [SALAH] Seorang Laki-Laki Terpental Ketika Menaiki Wahana Seluncuran Air di Sebuah Kolam Renang
-    - [SALAH] Pelaku Penembakan Mantan PM Jepang Shinzo Abe
-    - [SALAH] SUARA GANJAR GETARKAN JAKARTA, 30.000 WARGA DESA TERIAKI GANJAR PRESIDEN RI 2024.
-    - Cek Fakta: Tidak Benar Ini Daftar 15 Obat Berbahaya
-    - [SALAH] Foto 'Gus Ragil dan Gus Yaqut'
-    - Keliru, Unggahan yang Diklaim Rekaman CCTV Brigadir J Berlutut di Hadapan Ferdy Sambo
-    - Keliru, Amerika Serikat Menyebarkan Virus Cacar Monyet ke Asia Melalui Burung
-    - [SALAH] Puluhan Kapal Indonesia Dibakar Secara Sadis oleh Australia
-    - [SALAH] Video 'Akibat perang Rusia – Ukraina mengakibatkan krisis pangan & ekonomi melanda Negara Eropa.'
-    - [SALAH] Gerobak Mie Ayam Terpasang Meteran Listrik Daya 2200 Siap Dengan Kompor Listrik 1000 Watt
-    - [SALAH] Seorang Jenazah Di Kediri Jawa Timur Tidak Ada Rombongan Tetangga Yang Mau Melayat
-    - [SALAH] China Sengaja Menutupi Fakta Sejarah Indonesia
-    - [SALAH] MK Legalkan Zina dan LGBT
-    - [SALAH] Video Penganiayaan Buruh Pribumi di Sulawesi
-    - [SALAH] Akun Facebook Bupati Halmahera Selatan Usman Sidik
-    - [SALAH] Hidrogen Peroksida Dapat Sembuhkan Kanker Jika Digosokkan ke Kulit
-    - [SALAH] Jokowi Ingin Pindah Agama Katolik
-    - [SALAH] Hepatitis Misterius disebabkan oleh Vaksin Covid-19
-    - [SALAH] BuzzeRp Diam Lihat Hutan Gundul
-    - Belum Ada Bukti, FIFA Ancam Bekukan Seluruh Pertandingan Liga Sepak Bola Indonesia Selama 8 Tahun
-    - [SALAH] Akun WhatsApp Politisi NasDem Ali Mansyur HD '085762089507'
-    - [SALAH] Kereta di Jepang Edisi Kemerdekaan RI
-    - [SALAH] Nomor Call Center Bank Mega '+628041500010'
-    - [SALAH] 'Sanksi FIFA: PSSI di Banned FIFA 8 Tahun'
-    - Keliru, Luhut Binsar Pandjaitan Gandeng Jenderal Andika Memburu Jenderal di Belakang Ferdy Sambo
-    - [SALAH] Video Luhut Perintahkan Kabareskrim Untuk Mengusut Kasus Pembunuhan Brigadir J
-    - [SALAH] Video Fenomena Air Terjun dari Langit di Bekasi
-    - [SALAH] Gambar Tangkapan Layar Artikel Kompas.com 'Jokowi beri isyarat nempak nya akan mundur sehabis lebaran ini. Kegagalan membayar Utang dan kemarahan rakyat akibat kabinet nya gagal kelola negara adalag Faktor utama nya'
-    - Keliru, Sosok Pria dalam Video Kenangan Brigadir J di TikTok
-    - [SALAH] Menkes Budi Gunadi Sadikin: 'Diabetes Mudah Diobati'
-    - [SALAH] Warga Bogor Meninggal Hidup Kembali
-    - [SALAH] Pengumuman Panggilan Calon Karyawan Perum Bulog
-    - Keliru, Demonstrasi Mahasiswa UGM Tolak Pernyataan Rektor Terkait Ijazah Palsu Joko Widodo
-    - Cek Fakta: Tidak Benar Motor Hanyut dalam Video Ini Akibat Banjir Bogor
-    - Cek Fakta: Tidak Benar dalam Video Ini Ratusan Sapi Hanyut Saat Banjir di Blitar
-    - [SALAH] Video 'Gemparkan China, Akhirnya Presiden Xin Jink Dikudeta Hari Ini'
-    - [SALAH] Video Seorang Bocah Dimakan Ular
-    - [SALAH] Ustadz Abdul Somad: 'Hukum Mencintai Pasangan Orang Lain Ternyata Tidak Dosa, Itulah Nilai Jihad'
-    - [SALAH] Kader Partai Nasional Demokrat Mengundurkan Diri setelah Deklarasi Anies Baswedan
-    - [SALAH] 'Lihatlah Pergeseran Tanah Saat Gempa Di Cianjur'
-    - Keliru, Selain Brigadir J, Ada Mayat Misterius yang Disekap Ferdy Sambo
-    - Cek Fakta: Tidak Benar Vaksin COVID-19 Mengandung Microchip dan Robot Berukuran Sel
-    - Menyesatkan, Unggahan Foto Vladimir Putin dan Irjen Ferdy Sambo di Instagram
-    - [SALAH] China Sudah Menjajah NKRI Salah Satunya Komplek Khusus Rumah Elit China Bertuliskan China
-    - [SALAH] Lowongan Pekerjaan Dinas Perhubungan Kota Salatiga
-    - [SALAH] Foto Seorang Anak Yaman Tidur di Antara Kuburan Kedua Orang Tuanya
-    - [SALAH] Surat Undangan Penyerahan SK CPNS Tahap 1 BKN Kantor Regional 2 Surabaya
-    - Cek Fakta: Tidak Benar MUI Berikan Logo Halal Pada Mie Instan Rasa Kaldu Tulang Babi
-    - [SALAH]: Pesan Whatsapp Pengangkatan Tenaga Honorer Perawat dan Guru Tanpa Tes di Pemprov Yogyakarta
-    - [SALAH] Gambar Tangkapan Layar Artikel Viva 'Jateng Disebut Provinsi Termiskin di Pulau Jawa'
-    - Cek Fakta: Klarifikasi Siswa Rohkris SMAN 2 Depok Alami Diskriminasi
-    - [SALAH] Video Buaya Berukuran Besar
-    - [SALAH] Pesan WhatsApp Pembayaran Tilang Online Oleh Polri
-    - Cek Fakta: Tidak Benar dalam Video Ini Rusia Kerahkan 9000 Pasukan ke Perbatasan Indonesia-Australia
-    - [SALAH] Lowongan Kerja di Puskesmas Wonosari 1 Gunung Kidul
-    - [SALAH] Foto Ariel Noah Ijab Qobul
-    - [SALAH] Ribuan Rumah Terendam Banjir, tapi Kuil Rumah Tuhan Masih Berdiri Tegak
-    - [SALAH] Dewan Majelis Negara Bagian Lagos, Nigeria, Mengesahkan Hukum Syariah Demi Kepentingan Pemilu
-    - [SALAH] Video 'Warga Jateng sedang berjuang keluar dari musibah dan bencana.'
-    - [SALAH] Beli BBM Harus Pakai Aplikasi MyPertamina
-    - [SALAH] Akun WhatsApp Wakil Wali Kota Sukabumi Andri Setiawan Hamami '085805025738'
-    - [SALAH] Video Timnas U-15 Bertanding di Piala Dunia Swiss
-    - [SALAH] Detik-Detik Densus 88 Bekuk Anak Kiai Kasus Pencabulan Di Jombang
-    - [SALAH] 'Penyelundupan Wanita Tuna Susila dari Cina'
-    - [SALAH] 'Beredar Video Diduga Mempertontonkan Pasangan LGBT Sedang Bermesraan di Salah Satu Kafe di Palangkaraya'
-    - Cek Fakta: Tidak Benar Orang dalam Video Ini Tersambar Sinar Gamma
-    - Sebagian Benar, Video Jemaah Haji Korea Selatan Pawai di Jalanan Kota Seoul Pada 2022
-    - [SALAH] KTP dan NPWP Ganda Untuk Persiapan 2024
-    - Menyesatkan, Bawang Merah untuk Obat Paru-Paru Kotor
-    - Cek Fakta: Tidak Benar dalam Video ini Perayaan Maulid Nabi Muhammad SAW di Rusia
+    - Cek Fakta: Hoaks Indomie Goreng dengan Rasa Ganja
+    - [SALAH] Video Mengaji dalam Opening FIFA 2022
+    - [SALAH] Penyanyi Cilik Farel Prayoga Meninggal Dunia Dibunuh
+    - Keliru, Alumni UGM Bakar Ijazah Asli karena Malu Soal Dugaan Ijazah Palsu Jokowi
     - [SALAH] Cina dan Rusia Bantu Indonesia Rebut Pulau Pasir dari Australia
-    - [SALAH] Minum Kopi Dicampur Lemon dapat Mengecilkan Perut
+    - [SALAH] 'Video Pilot Merekam Cahaya Merah Yang Menyala Secara Misterius Dari Atas Samudra Atlantik'
+    - Cek Fakta: Tidak Benar Prabowo Subianto Mundur Sebagai Capres 2024
+    - [SALAH] Poster Film Rayap-Rayap Bangsa
     - [SALAH] Mahasiswa Zambia Dipukuli Warga Cina Karena Berpacaran dengan Gadis Cina
-    - Sebagian benar, Artikel tentang Campuran Minyak Kayu Putih Bikin Hemat Pertalite
-    - [SALAH] Memakai Sendal Jepit Akan Ditilang
-    - Cek Fakta: Tidak Benar Penyebab Korban Tewas Tragedi Itaewon akibat Vaksin Covid-19 AstraZeneca
-    - Sebagian Benar, Klaim Sekolah di Jepang Larang Siswa Perempuan Gunakan Gaya Rambut Kuncir Kuda
-    - Keliru, Sandiwara dalam Penjara, Ferdy Sambo Ngamuk dan Ancam Lakukan Ini Pada Polisi
-    - [SALAH] Foto Presiden Soekarno Bersama Jenderal Soedirman dan Ayah Rizieq Shihab
-    - [SALAH] Hati-hati program vaksin BIAS disekolah
-    - [SALAH] Anies Baswedan Salah Mengulang Sumpah Jabatan Berulang Kali
-    - Cek Fakta: Tidak Benar Uskup Katolik Jabodetabek Deklarasi Dukung Anies Baswedan Jadi Presiden
-    - Menyesatkan, Narasi 5 Ribu Kader Nasdem Mengundurkan Diri
-    - [SALAH] Akun WhatsApp Ketua DPC Demokrat Kabupaten Serang Yayang A Nugraha '085767299704'
-    - [SALAH] Foto Xi Jinping Menjadi Tahanan Rumah setelah Dikudeta
-    - [SALAH] Formula E Tidak Disiarkan oleh TV Nasional
-    - [SALAH] Akun Whatsapp Kadis Kominfosanti Ketut Suwarmawan Kabupaten Buleleng '+6281324422253'
-    - Keliru, Cek Asam Urat dengan Merapatkan Jari Tangan
-    - Cek Fakta: Waspada Surel Hoaks Rekrutmen Karyawan Catut Nama Perum Bulog
-    - [SALAH] Video 'Najwa Shihab Berhasil Polisikan Nikita Mirzani, Kini Berakhir Dijeruji Besi'
-    - Cek Fakta: Klarifikasi Setiap Orang Bisa Dapatkan Bansos BBM Rp 600 Ribu dari Pemerintah
-    - [SALAH] "Simpanan Emas 24 Karat Ratu Elizabeth, Yang Tersimpan Di Ruang Bawah Tanah"
-    - [SALAH] Rusia Keluar dari PBB
-    - [SALAH] Akun WhatsApp Tokopedia Membagikan Hadiah
-    - Keliru, Mengobati Masalah Haid, Kista dan Sukar Hamil Pakai Biji Kelapa Muda, Lada dan Serai
-    - [SALAH] 'Akun Facebook Inul Daratista'
-    - [SALAH] 27 Mei 2022 anak Ridwan Kamil sudah ditemukan dalam keadaan selamat
-    - Keliru, Harian Kompas Memuat Pernyataan Menkes Budi Gunadi Sadikin tentang Obat Diabetes
-    - [SALAH] Pesan Berantai 'Grand Design Uji Coba Pembantaian Menggunakan Gas Beracun Melalui Pertandingan Bola'
-    - Benar, Video Bocah 7 Tahun Menangis saat Bersaksi Memenjarakan Ibunya
-    - Cek Fakta: Hoaks Alfamart Bagi-Bagi Tas Kado Spesial Lewat Akun Facebook
-    - Keliru, Terlalu Berani, Jokowi Batalkan Embargo Minyak Rusia
-    - Menyesatkan, Foto Raffi Ahmad Menyuapi Anies Baswedan Terkait dengan LGBT
-    - Cek Fakta: Klarifikasi Pemain Timnas Arab Saudi dapat Rolls-Royce Usai Kalahkan Argentina di Piala Dunia 2022
-    - Keliru, Poster Berlogo CNN Indonesia dengan Klaim Presiden Ukraina Marah telah Difitnah dan Direndahkan Presiden Jokowi
-    - Bentengi Generasi Muda dari Hoaks, Edukasi Cek Fakta Sasar Siswa dan Mahasiswa
-    - Keliru, Kolase Foto tentang Krisis Ekonomi dan Krisis Pangan Amerika Serikat 2022
+    - [SALAH] Demo Memprotes Kecurangan Hasil Pemilu di Brasilia pada 12 November 2022
+    - [SALAH] Gambar Kotak Sereal Bernama Cocopox
+    - [SALAH] Hadiah 670 Sepeda Listrik Gratis
+    - Menyesatkan, Puluhan Ribu Warga Rusia Mendadak Masuk Islam dan Jadi Penganut Terbesar di Eropa
+    - [SALAH] Nomor WhatsApp BRI +1(210)6002003 Menyebarkan Surat Edaran Kenaikan Biaya Transaksi
     - [SALAH] 'IKEA menyumbangkan lusinan kursi sofa yang tidak dapat dijual karena sedikit goresan dan kerusakan ringan'
-    - [SALAH] Informasi Pendaftaran Medical Check Up di RSUD Abdoel Wahab Sjahranie Samarinda
-    - Cek Fakta: Tidak Benar Balurkan Telur Rebus di Tubuh Bisa Turunkan Demam Anak
-    - [SALAH] Alfamart Membagikan Hadiah Mobil dan Belanja Gratis dalam Rangka HUT RI ke-77
-    - [SALAH] 'waduk Pluit diterlantarkan pa Heru gercep dua hari bekerja langsung dikeruk dan dibersihkan'
-    - [SALAH] Sri Mulyani menjebloskan SBY ke Penjara
-    - [SALAH] Vaksin Covid-19 mRNA Mengubah DNA Manusia
-    - [SALAH] 'Beredar Telegram: Anies Baswedan Sahabat Amerika Serikat, Bertujuan Muluskan Kebijakan Asing di Indonesia'
-    - [SALAH] Akun Whatsapp Sekretaris Daerah Probolinggo Ninik Ira Wibawati '+6281331122426'
-    - [SALAH] Poster Indosiar Konser Cinta Leslar Bersemi Kembali
-    - [SALAH] Foto Anak-Anak yang Diculik dan Dibawa ke Thailand untuk Diambil Organ Dalamnya
+    - [SALAH] Video 'Uya Kuya Hipnotis Putri Chandrawati Misteri kematian Brigadir J terbongkar'
+    - Cek Fakta: Tidak Terbukti Perbedaan Foto Joe Biden Asli Bertato dan Palsu
+    - [SALAH] 'Nah ini dia vidionya …ternyata jokowi dan istrinya yg menyebarkan kaos jokowi 3 periode'
+    - Cek Fakta: Tidak Benar Air Nanas Bisa Membunuh Sel Kanker
+    - [SALAH] Video 'masyarakat Bali bersuka cita menyambut kedatangan Anis di Bali'
+    - [SALAH] Video 'Berita Viral ~ INNALILLAH!!HARI INI 4 NOVEMBER 2022 GUNUNG SEMERU MELETUS 384 KALI & HANCUR BEGINI.'
     - [SALAH] Akun Whatsapp Bupati Grobogan Sri Sumarni '+6282132330593'
-    - [SALAH] Foto Gadis 16 Tahun Yang Dipenjara 25 Tahun Karena Melawan Saat Diperkosa
-    - [SALAH] Foto 'Karya fenomenal ahok beli tanah sendiri beli bus rongsokan'
-    - [SALAH] MUI Setujui Merek Bir Jadi Sponsor Formula E
-    - Cek Fakta: Hoaks Informasi Adopsi Bayi Korban Gempa Cianjur di Sebuah Rumah Sakit
-    - [SALAH] Vaksin mRNA Tidak Direkomendasikan Selama Kehamilan
-    - [SALAH] Ayu Dewi Bagi-bagi Hadiah Senilai Rp15 Juta Melalui TikTok
-    - [SALAH] Informasi Jadwal Kegiatan Hari Jadi Lumajang (Harjalu) ke-764
-    - [SALAH] Mengunyah Kulit Pohon Jambu Mete Biasa Menetralisir Racun Gigitan Ular
-    - [SALAH] Trik Baterai Awet dengan Cara Dimasukan ke Magic Com
-    - [SALAH] 'Waspada! Seluruh Pasien Cacar Monyet di Spanyol adalah Penyuka Sesama Jenis alias Homo'
-    - [SALAH] Surat Penetapan Nomor Identitas PPPK
-    - [SALAH]: Foto Plang Rumah Sakit Jiwa Korban Kebencian Formula E
-    - [SALAH] Vaksin Covid-19 mempengaruhi siklus menstruasi
-    - Keliru, Video dengan Klaim Banjir Pakistan
-    - Cek Fakta: Hoaks Kabar Nikita Mirzani Meninggal Dunia Akibat Serangan Jantung pada 2 November 2022
-    - [SALAH] TNI Serbu Malaysia, 6000 TKI Diungsikan
-    - [SALAH] Jenazah Eril Tidak Boleh Dibawa Pulang ke Indonesia
-    - [SALAH]: Formula E Jakarta Masuk Rekor Dunia Sebagai Ajang Lomba Paling Sepi Penonton
-    - [SALAH] 'Hukuman Mati Di Depan Mata, Aktor Ganteng Ini Cuma Minta Dibawakan Makanan Sisa Di Penjara, Ternyata Punya Alasan Mulia Dibaliknya'
-    - Keliru, Video Detik-Detik TNI Tembak Jatuh Jet Tempur Malaysia
-    - [SALAH] Foto Arnold Schwarzenegger Mengenakan Kaus Bergambar Peta Krimea
-    - [SALAH] Akun Whatsapp Ketua PTUN Palangkaraya Nenny Frantika '+6281366865116' Meminta Sejumlah Dana
-    - [SALAH] Video 'Ini situasi terkini di AS negara super power yang menderita, akibat adanya resesi yang melanda dunia.'
-    - [SALAH] Foto Wajah Semut di Bawah Mikroskop Elektron
-    - Keliru, Video Ribuan Pemuda Malaysia Memilih Gabung Dengan Indonesia
-    - [SALAH] 'Bisnis Vaksin PMK dan Efek Shedding penyakit PMK dari Hewan Menular ke Manusia'
+    - [SALAH] Video '*SORE TADI Pos polisi tugu tani di bakar masa td sekitar pkl 16;30'
+    - [SALAH] Artikel Berita 'Puan: Jika Negara Ingin Maju Dan Berkembang, Pendidikan Agama Islam Harus Di Hapus!!'
+    - Keliru, Imam Agung Ortodoks Rusia Sebut Islam Akan Memimpin Dunia
+    - [SALAH] Video 'INDONESIA BERJAYA DI FORMULA 1'
+    - [SALAH] Link BBM Subsidi Pertamina
+    - [SALAH] Raja Charles III Proklamasikan Donald Trump sebagai Presiden Amerika yang Sah Pada Pilpres Amerika 2020
+    - [SALAH] Judul Artikel 'Laudya Cinthya Bella di undang ke Istana bahas soal kebenaran isu menikah dengan Pangeran Arab'
+    - [SALAH] Seumur Hidup Harus Vaksin Covid Tiap 6 Bulan Sekali
+    - [SALAH] Akun Whatsapp Bupati Indramayu Nina Agustina '083185379465'
+    - Keliru, Pemimpin Umat Katolik Sedunia Memeluk Islam pada 2022 dan Menyebabkan 16 Orang Terkena Serangan Jantung
+    - [SALAH] Gempita Maulid Nabi di Bombay pada 17 Juni 2022
+    - Keliru, Tabrakan Beruntun di Cisarua Tewaskan 75 orang, 6 Orang Luka-Luka, 1 Mobil Meledak
+    - Cek Fakta: Hoaks Pesan Berantai TikTok Bagikan Cek Tunai Rp 75 Juta
+    - [SALAH] Akun Facebook Walikota Solok Zul Elfian Umar (Zul Solok)
+    - [SALAH] Warga Bogor Meninggal Hidup Kembali
+    - [SALAH] Pertolongan Pertama Luka Bakar menggunakan Tepung Terigu
+    - Keliru, Video Pesawat Hilang 37 Tahun Lalu Mendarat Kembali
+    - [SALAH] Pernyataan IDI tentang Daftar Minuman yang Menyebabkan Pengerasan Otak, Diabetes, dan Pengerasan Sumsum Tulang Belakang
+    - [SALAH] Alexandria Ocasio-Cortez: 'Orang-orang tidak akan buru-buru mengisi bensin untuk mobil mereka di tengah badai apabila mereka memakai mobil listrik'
+    - Keliru, Makanan Kaleng Asal Thailand Terkontaminasi Darah dan Virus HIV
+    - [SALAH] Berita Tribun Manado 'diduga cemburu dengan adik kandung yang baru lahir, sang kakak nekad olesi racun di putting ibunya. Anehnya keesokan harinya seisi rumah gempar karna mendapati sopir mereka yang tewas.'
+    - [SALAH] 'Lihatlah Pergeseran Tanah Saat Gempa Di Cianjur'
+    - [SALAH] 'ANIES BASWEDAN KRITIS!! KUTUKAN AHOK BENAR BENAR JADI KENYATAAN'
+    - [SALAH] Judul Cover Majalah TIME yang Menampilkan Joe Biden dan Kamala Harris: 'The most unpopular duo in U.S political history'
+    - [SALAH] Informasi Lowongan Kerja Klinik Pratama At-Tin Wonosobo
+    - [SALAH] Akun WhatsApp Wakil Bupati Purworejo '082132330592'
+    - [SALAH] 'Vaksin Cacar Menyebabkan Gelombang Infeksi Virus AIDS'
+    - [SALAH] Gadis Ular Menggemparkan Dunia
+    - [SALAH] Foto Banjir di Jakarta
+    - [SALAH] Judul artikel 'Tidak di izinkan Mancing, Seorang Suami Melaporkan Istrinya ke Kantor Polisi dengan Alasan Pelanggaran HAM'
     - Menyesatkan, Video Pasukan Inggris Kalang Kabut Hadapi Tentara Nasional Indonesia
-    - Cek Fakta: Tidak Benar Video Ganjar Pranowo Resmi Keluar dari PDIP
-    - Sebagian Benar, Video Satu Orang di Taiwan Terjangkit Monkeypox
-    - [SALAH] Video '2 4N4K F3RDY S4MBO DI T4NGKAP TERBUKTI BANTU P3MBVNUHAN BRIGADIR_J'
-    - Belum Ada Bukti, Makan Buah Durian dengan 7 Jenis Makanan dan Minuman Ini Berbahaya Bagi Tubuh
-    - [SALAH] PPATK Keluarkan Sertifikat untuk Keamanan Dana Investasi
-    - [SALAH] Gratis kuota 30GB berbagai operator
-    - [SALAH] Vaksin Covid-19 Dapat Sebabkan AIDS Sampai Cacar Monyet
-    - [SALAH] Video 'Aceh siapkan Haji lepas dari Menag'
-    - [SALAH] 'Laksamana AS Eric Olson ditangkap di #Azovstal#Mariupol'
+    - [SALAH] Detik – Detik Terakhir ruben onsu sebelum meninggal dunia
+    - [SALAH] Anggota TNI Dengan Mobil Tim Buser Polres Bersenggolan
+    - Keliru, Suku Dayak Ngamuk, Rebut Sabah dan Sarawak dari Pelukan Malaysia
+    - [SALAH] Informasi Pendaftaran Medical Check Up di RSUD Abdoel Wahab Sjahranie Samarinda
+    - [SALAH] Buaya 9 Meter Terbesar Di dunia, Ditemukan di Danau Kota Maine Amerika Serikat
+    - Menyesatkan, Mendagri Tito Karnavian Resmi Ditahan KPK
+    - [SALAH] Akun WhatsApp Wali Kota Magelang dengan Nomor '081358908928' Melakukan Penggalangan Donasi Berupa Uang untuk Pondok Pesantren dan PAUD
+    - [SALAH] Tambahan 10 Ribu Kuota Haji Ditolak Karena Indonesia Tidak Bisa Mengembalikan Dana Haji yang Diambil
+    - [SALAH] Amarah Mega Memuncak Ganjar Sudah Resmi Keluar Dari PDIP
+    - [SALAH] 'LARI DARI TANGGUNG JAWAB APARAT TERPAKSA LUMPUHKAN KAKI GUBERNUR DKI'
+    - [SALAH] Akun WhatsApp Sekda Magelang Adi Waryanto '081226161629'
+    - [SALAH] Ustads Abdul Somad Endors Behel Biru
+    - [SALAH] Imbauan Modus Kejahatan Dari Polri dan TNI AD
+    - Keliru, Panglima TNI Jenderal Andika Perkasa Amankan 100 Ton Narkoba Milik Ferdy Sambo
+    - [SALAH] Lukas Enembe Meninggal Dunia
+    - Cek Fakta: Tidak Benar dalam Video ini Liga Jerman Peringati Maulid Nabi Muhammad SAW
+    - [SALAH] Bill Gates Memiliki Sebagian Besar Lahan Pertanian di Amerika
+    - [SALAH] Mantan Presiden Brazil, Lula da Silva, Memegang Patung Satanis
+    - [SALAH]: Kadrunwati di Lokasi Penangkaran Kadrun di Puncak Bogor
+    - [SALAH] Video Protes di St. Petersburg pada September 2022
+    - Keliru, Najwa Shihab Sidak Sel Tahanan Sambo, Ternyata Isinya Kosong
+    - Keliru, Cara Mengobati Vertigo dan Sakit Kepala dengan Menutup Lubang Hidung
+    - [SALAH] Video Gunung Anak Krakatau Bocor pada 17 Juni 2022
+    - Keliru, Video Detik-Detik TNI Tembak Jatuh Jet Tempur Malaysia
+    - [SALAH] Video 'Singapura menyerahkan 1000 triliun aset negara yg di curi koruptor'
+    - [SALAH]: Formula E Jakarta Masuk Rekor Dunia Sebagai Ajang Lomba Paling Sepi Penonton
+    - [SALAH] Foto 'petani ini disiksa polisi yang dibayar PT Sadoka'
+    - [SALAH] Beberapa vaksin COVID-19 dapat meningkatkan risiko HIV.
+    - [SALAH] Elon Musk Ingin Beli Boyband BTS
+    - [SALAH] China Sengaja Menutupi Fakta Sejarah Indonesia
+    - [SALAH] "GEMETAR!!! Pesan Terakhir Brigadir Kepada Sopir Ambulance Di Tengah Perjalanan"
+    - [SALAH] 'Sri Mulyani: BBM Tidak Dinaikkan Negara Kesulitan Bayar Utang'
+    - [SALAH] Video Penceramah Menyampaikan Ferdy Sambo Punya Bungker Rp900 Miliar
+    - [SALAH] Anies Baswedan Menandatangani Kontrak untuk Pimpin Jakarta dengan Syariat Islam
+    - [SALAH] Foto Artikel 'Pesantren Alquran Terba4kar, 26 Santri Dan Dua Guru T3w4s Terp4ngg4ng'
+    - [SALAH] UJI COBA SUKSES KERETA CEPAT JAKARTA-BANDUNG MENJADI PROYEK KERETA CEPAT PERTAMA DI ASIA TENGGARA
+    - Sebagian Benar, Tepat Hari Ini Akhirnya Istri Ferdy Sambo Ditahan
+    - [SALAH] 'Penghina Ibu Negara Ditangkap'
+    - [SALAH] Kecelakaan Bus Rombongan Paskibraka, 7 Orang Tewas, 15 Orang Luka-Luka di Waropen, Papua
+    - [SALAH] Anies Baswedan di Cover Majalah Al Islam: 'Wujudkan Jakarta Bersyariah'
+    - [SALAH] Video 'PANGLIMA T N I TEPAKSA TURUN TANGAN NASIB FERDY SAMBO SEMAKIN SADIS'
+    - Keliru, Video Ferdy Sambo Mengamuk di Persidangan
+    - Benar, Pendataan Penerima BSU oleh Kementerian Tenaga Kerja RI menggunakan data BPJS Ketenagakerjaan
+    - Keliru, Ibu Hamil Peserta BPJS Kesehatan Melahirkan di Tepi Jalan karena Ditolak Rumah Sakit
+    - Cek Fakta: Tidak Benar Penyanyi Cilik Farel Prayoga Meninggal Dunia Dibunuh
+    - [SALAH] Video Minyak Goreng Dibuang ke Laut
+    - [SALAH] Artikel 'Polisi Benarkan Ada Upaya dari FPI dalam Penyebar Kaos & Atribut PKI'
+    - [SALAH] Gambar Tangkapan Layar Artikel Suara.com Berjudul 'Daftar Politisi PDIP yang Korupsi: Juliari Batubara hingga Harun Masiku Dan Ganjar Pranowo'
+    - [SALAH] Kemampuan Orang Indonesia Dalam Membedakan Fakta & Hoax Adalah Nomor 1 Dari Belakang
+    - [SALAH] Video Kebakaran SPBU Akibat Bayar Pakai HP Pada 1 Juli 2022
+    - [SALAH] PT KAI Membagikan Tunjangan Transportasi Senilai Rp20 Juta
+    - [SALAH] 'Penyelundupan Wanita Tuna Susila dari Cina'
+    - [SALAH] Video Wakil Ketua Banggar DPR RI Jatuh setelah Menyetujui Penarikan LPG 3 Kg dan Penghapusan Daya Listrik 450 VA
+    - [SALAH]: Puluhan Orang Cidera Parah Gas Air Mata Hujani Masa Aksi 411 yang Sedang Sholat
+    - [SALAH] Pesan Pengumuman Pemenang Hadiah Rp40 Juta dari TikTok
+    - [SALAH] Video Penghina Ibu Iriana Diusir Paksa
+    - Cek Fakta: Klarifikasi Setiap Orang Bisa Dapatkan Bansos BBM Rp 600 Ribu dari Pemerintah
+    - [SALAH] Video 'seberapa cepat kereta peluru Jepang'
+    - [SALAH] Video 'Destinasi baru kebanggan masyarakat jateng stadium di atas danau'
     - Cek Fakta: Tidak Benar dalam Foto Ini Presiden China Xi Jinping Jadi Tahanan Rumah Usai Dikudeta
-    - Keliru, Unggahan tentang Menkes Budi Gunadi Sadikin Menyatakan Diabetes Mudah Diobati
-    - Keliru, Timnas Indonesia Keluar dari AFF dan Bergabung dengan EAFF
-    - [SALAH] Video Cara Mengecek Minyak Goreng Bekas dan Baru
-    - [SALAH] Video Pertandingan Piala Dunia Qatar 2022 Diskors Saat Azan Berkumandang
+    - [SALAH] Formula E Tidak Disiarkan oleh TV Nasional
+    - [SALAH] Video 'Tersembunyi' Pentagon Dihantam Misil
+    - Keliru, Penyakit Cacar Monyet Disebabkan Vaksin Covid-19 Astrazeneca
+    - [SALAH] Video Anak Dinosaurus Berkeliaran
+    - [SALAH] Pesan WhatsApp Bupati Situbondo Karna Siswandi Dengan Nomor '082143626610' Menawarkan Bantuan
+    - [SALAH] Gambar Kartu Nikah dengan 4 Kolom Foto Istri
+    - [SALAH] Akun Whatsapp Kapolres Yapen Herzoni Saragih '0812-4217-3739'
+    - Keliru, Jutaan Warga Uni Eropa Kecam Dan Protes Menentang Amerika Serikat
+    - Keliru, Video Formasi Awan Berbentuk Kepala Manusia Terekam Kamera
+    - Keliru, Video Persiapan Khusus Polri untuk Eksekusi Mati Irjen Ferdy Sambo
+    - Belum Ada Bukti, Anak Yatim Diikat di Pohon karena Mencuri Roti
+    - [SALAH] Foto Banjir Jakarta di Masa Pemerintahan Heru Budi Hartono
+    - [SALAH] PKI Anggarkan Rp5 Triliun Demi Muluskan Jokowi 3 Periode
+    - Cek Fakta: Tidak Benar Video Salat Berjamaah dalam Stadion Saat Piala Dunia Qatar 2021
+    - [SALAH] 'Indonesia resmi keluar dari AFF, Indonesia dipastikan akan gabung di piala EAFF'
+    - Menyesatkan, Radiasi HP Menyebabkan Kematian
+    - [SALAH] Heri Budi geleng-geleng kepala setelah blusukan melihat kali Ciliwung
+    - Cek Fakta: Tidak Benar dalam Video ini Rekaman Bencana Longsor di Cianjur
+    - [SALAH] Cacar Monyet Hanya Ditularkan Melalui Hubungan Seksual Sesama Laki-Laki
+    - [SALAH] Mumi Raja Tutankhamen Ditemukan
+    - [SALAH] Lowongan Kerja PT Berau Coal
+    - [SALAH] Video 'Gedung Putih Panik ribuan Rakyat Nekat Minta as Tinggalkan Nato'
+    - Keliru, Video dengan Klaim Banjir Pakistan
+    - [SALAH] Seorang Pria Dimangsa Buaya di Sungai Brantas Mojokerto
+    - [SALAH] Informasi Jadwal Kegiatan Hari Jadi Lumajang (Harjalu) ke-764
+    - [SALAH] Vaksin mRNA Menyebabkan Hepatitis Pada Anak
+    - Sebagian Benar, Video Banjir dan Longsor di Provinsi Aceh Tahun 2022
+    - Keliru, Video Susilo Bambang Yudhoyono Ditangkap Kejaksaan Agung
+    - [SALAH] 'DUNIA DILANDA KRISIS, PRESIDEN JOKOWI DIPILIH PBB JADI PEMIMPIN SATGAS PENANGANAN KRISIS GLOBAL!'
+    - [SALAH] Beberapa Negara Melaksanakan Kebijakan Haji Gratis Berdasarkan Perintah Kesultanan Buton
+    - [SALAH] 'Dr Fauci Akui Vaksin Tidak Melindungi Covid'
+    - [SALAH] Ketua Adat Papua Pastikan Anies Baswedan Menang Pada Pemilihan Tahun 2024
+    - [SALAH] Minum Kopi Dicampur Lemon dapat Mengecilkan Perut
+    - [SALAH] Gambar Sampul Artikel Kompas.com Berjudul 'Menurut Studi, Memeluk Pasangan Bisa Turunkan Stres pada Wanita'
+    - [SALAH] Surat Edaran Workshop PAK dan APAK untuk Jabatan Fungsional Perencana oleh Pusbindiklatren
+    - [SALAH] Vaksin Covid-19 Picu HIV-AIDS
+    - Keliru, Mandi Air Hujan untuk Program Kehamilan
+    - Cek Fakta: Tidak Benar BMKG Keluarkan Informasi Kewaspadaan atas Sesar Cimandiri
+    - [SALAH] Video Hari Pertama PM Inggris yang Baru Melakukan Ritual Adat
+    - Menyesatkan, Video Berjudul Jas dan Kantor Partai Nasdem Dibakar
+    - [SALAH] Video Penjaga Renang Melempar Pengunjung Hingga Terbang Pada Saat Menaiki Perosotan Kolam Renang
+    - [SALAH] Video 'Yang Ditunggu Telah Tiba, Ferdy Sambo Ditetapkan Hukuman Mati!'
+    - Keliru, Baterai Ponsel yang Tersisa 10 Persen Mengeluarkan Radiasi Seribu Kali Lebih Kuat
+    - Menyesatkan, Video Penangkapan Pelaku Perusakan Tanggul Bethukandi yang Dikaitkan dengan Muslim India
+    - Keliru, Klaim Tentang Skrining Kesehatan BPJS Kesehatan Bersifat Wajib Dimulai 17 Juli 2022
+    - [SALAH] Foto Anak-Anak yang Diculik dan Dibawa ke Thailand untuk Diambil Organ Dalamnya
+    - [SALAH] Zul Zivilia Dieksekusi Mati
+    - [SALAH] Foto Gadis 16 Tahun Yang Dipenjara 25 Tahun Karena Melawan Saat Diperkosa
+    - Cek Fakta: Klarifikasi Siswa Rohkris SMAN 2 Depok Alami Diskriminasi
+    - [SALAH] PBB Resmi Menangkan Rusia
+    - Keliru, Terlalu Berani, Jokowi Batalkan Embargo Minyak Rusia
+    - [SALAH] Ayah Jokowi Bernama Widjiatno Merupakan Anggota PKI: 'Jokowi Asli PKI Tulen!'
+    - Keliru, Video yang Diklaim Jutaan Umat Muslim India Turun ke Jalan Atas Penistaan Nabi Muhamad SAW
+    - Keliru, Video UFO Sudah Satu Jam Lebih Berada di Langit Tanah Abang
+    - [SALAH] Video Vladimir Putin Meminta Indonesia Angkat Senjata Melawan Australia
+    - [SALAH] Video 'Warga Jateng sedang berjuang keluar dari musibah dan bencana.'
+    - [SALAH] Foto Wisuda Jokowi
+    - [SALAH] Surat Penetapan Nomor Identitas PPPK
+    - [SALAH] Akun WhatsApp Wali Kota Malang Sutiaji '083870256204'
+    - Menyesatkan, Unggahan tentang Sindrom Guillain-Barre yang Terjadi setelah Vaksinasi Covid-19
+    - [SALAH] Foto Kerusakan Gempa di Jalanan Afghanistan Juni 2022
+    - [SALAH] Video 'Lesti Kejora Di Jengukin Iriana Jokowi'
+    - [SALAH] Video 'Allah melihat bagaimana orang Cina membuat telur'
+    - [SALAH] Akun WhatsApp Tokopedia Membagikan Hadiah
+    - [SALAH] Foto 'Bocah Meninggal Gantung Diri Usai Handphonenya Disembunyikan Orang Tuanya'
+    - [SALAH] 'jokowi bilang telah mengakuisisi saham PT. Freport adalah bohong belaka'
+    - [SALAH] SUARA GANJAR GETARKAN JAKARTA, 30.000 WARGA DESA TERIAKI GANJAR PRESIDEN RI 2024.
+    - [SALAH] Video Angin Puting beliung dan banjir terjang Cianjur setelah Gempa
+    - Sebagian Benar, Tank Cina Melintas di Kota Xiamen Jelang Kedatangan Nancy Pelosi
+    - [SALAH] Video '️joe Biden Ancam Indonesia Akan Hadapi Konsekuensi Mengerikan Ini, Jika Danai Rusia Di Ukraina'
+    - [SALAH] Jokowi dan Istrinya Memiliki 20 Rekening Luar Negeri untuk Menyembunyikan Uang Suap dari Komunis Cina
+    - [SALAH] Gambar Tangkapan Layar Artikel Kompas.com 'Jokowi beri isyarat nempak nya akan mundur sehabis lebaran ini. Kegagalan membayar Utang dan kemarahan rakyat akibat kabinet nya gagal kelola negara adalag Faktor utama nya'
+    - Cek Fakta: Tidak Benar dalam Video Ini Para Pemuja Setan di Jalanan London
+    - [SALAH] Perbandingan Pertalite Lama dan Pertalite Baru yang Berubah Warna serta Lebih Boros
+    - [SALAH] Buntut Permasalahan TKI, Indonesia Kirim 450 Prajurit ke Perbatasan Malaysia
+    - [SALAH] Ferdy Sambo Mengamuk dan Ancam akan Buka Borok Polri Jika Ditetapkan Sebagai Tersangka
+    - [SALAH] Video 'Militer Ukraina hancurkan kilang minyak Tavrida milik Rusia'
+    - [SALAH] Rekaman 5 Menit sebelum Brigadir J meninggal
+    - [SALAH] Video '2 4N4K F3RDY S4MBO DI T4NGKAP TERBUKTI BANTU P3MBVNUHAN BRIGADIR_J'
+    - [SALAH] Foto Jokowi Memangku Wanita Berbikini di Pantai
+    - [SALAH] Begituan di Ruang Kosong, Adik Brigadir J beri bukti hubungan PC dan KM | Hakim Kaget Bukan Main
+    - Keliru, Video Seluruh NATO Ketakutan, Jet Tempur Jerman Tembak Jatuh Indonesia
+    - [SALAH] Video Penampakan Burung Garuda di Gunung Penanggungan
+    - [SALAH] Video Bendungan PLTA Terbesar di Dunia Meledak
+    - Sebagian Benar, Aplikasi Cek Penerima Bantuan Sosial Kemensos
+    - Benar, Cacar Monyet Bisa Menyebabkan Kematian pada Janin
+    - [SALAH] Gangguan Ginjal Akut Misterius Pada Anak Disebabkan Oleh Vaksin Covid-19
+    - Keliru, Ferdy Sambo Dipindahkan ke Sel Tahanan Nusakambanga
+    - [SALAH] Infografis Larangan Bagi Pendatang Asing di Qatar Selama Piala Dunia 2022
+    - Keliru, Video Rusia Luncurkan Senjata Kiamat Tepat Malam Ini Ke Wilayah Inggris
+    - [SALAH] Video 'Supporter Arema turun ke jalan melampiaskan ketidakpuasan nya terhadap PSSI & Aparat Hukum'
+    - [SALAH] Video 'MALU ATAS SIKAP B.REKTOR ALUMNI UGM SERENTAK B4K4R IJAZAH ASLI !!'
+    - [SALAH] Video 'Aceh siapkan Haji lepas dari Menag'
+    - [SALAH] Rusia Keluar dari PBB
+    - [SALAH] FIFA Bagikan Kuota Internet 50GB Gratis untuk Nonton Piala Dunia Qatar 2022
+    - Cek Fakta: Tidak Benar IDI Umumkan Wabah Pengerasan Otak hingga Sumsum Tulang Belakang dan Hindari 19 Minuman Penyebabnya
+    - [SALAH] Makanan Kaleng Produksi Thailand Terkontaminasi Darah Penderita AIDS dan Daftar Minuman Penyebab Kanker
+    - [SALAH] Set Top Box Dapat Mendeteksi Orang yang Divaksin
+    - [SALAH] Gratis kuota 30GB berbagai operator
+    - Keliru, Poster Berlogo CNN Indonesia dengan Klaim Presiden Ukraina Marah telah Difitnah dan Direndahkan Presiden Jokowi
+    - Keliru, Panglima TNI Murka Setelah Malaysia Ancam NKRI
+    - Keliru, Pernyataan WHO dan CDC soal Infeksi Covid-19 Beri Imunitas Lebih Baik Dibandingkan Vaksin
+    - [SALAH] Perubahan Biaya Transaksi Bank BCA
+    - [SALAH] KISRUH NEGERI ANTARA PRIBUMI DAN NON PRI
+    - Menyesatkan, Unggahan Foto Vladimir Putin dan Irjen Ferdy Sambo di Instagram
+    - Keliru, Jokowi Bawa Pasukan Besar-besaran ke Rusia
+    - Cek Fakta: Tidak Benar Pemerintah Turunkan DMO Sawit pada November 2022
+    - [SALAH] Lagu Indonesia Raya Dinyanyikan dalam Bahasa Jepang Saat Kunjungan Jokowi ke Jepang
+    - Keliru, Jokowi Akan Hancurkan Amerika Serikat Jika Ikut Campur Urusan Rusia
+    - [SALAH] Gambar Tangkapan Layar Artikel Batam.tribunnews.com 'Bandar Judi Mulai Panik Semenjak Adanya APK CHEAT SLOT'
+    - [SALAH] Nonton Gratis Pertandingan Sepakbola Antara Persib Bandung dan Bali United di Stadion GBLA
+    - [SALAH] Foto Ratu Megawati
+    - Keliru, Video Jokowi Diangkat Jadi Sekjen PBB dan Terima Nobel Perdamaian
+    - [SALAH] 'perang Indonesia vs Australia diperbatasan tak terelakkan'
+    - [SALAH] Informasi Razia Kendaraan di Cicurug
+    - Keliru, Video tentang Serangan Nuklir Rusia ke Ukraina
+    - [SALAH] BP2MI Bagikan Dana Bantuan Untuk Pekerja Migran Sebesar Rp150 Juta
+    - [SALAH] Foto Mantan Manajer yang Mualaf dan Berjualan Es Cincau
+    - [SALAH] 22 Oktober 2022 akan ada Asteroid Menabrak Bumi
+    - [SALAH] Surat Penetapan Penjabat Gubernur Papua Barat Mengatasnamakan Deputi Bidang Administrasi Aparatur, Kementerian Sekretariat Negara
+    - [SALAH] Penyanyi Cilik Farel Prayoga Dikabarkan Meninggal Dunia
+    - Cek Fakta: Tidak Benar dalam Video Ini Jutaan Pendukung Sambut Anies Baswedan di Yogyakarta
+    - [SALAH] Video 'Amerika Sampai Terkejut Ide Gila Jokowi Bikin Panik Australia Di Pulau NTT'
+    - [SALAH] Virus Covid-19 memiliki Motif Antibody Dependent Enhancement (ADE)
+    - [SALAH] Menko Luhut Minta Warga dan Para Lansia Tidak Keluar Rumah Selama Sebulan ke Depan
+    - Sebagian Benar, Ramuan Herbal, Tembaga Sulfat dan Kapur Sirih Bisa Obati Penyakit Mulut dan Kaki (PMK) Pada Ternak
+    - [SALAH] Kebijakan Pemerintah Tiongkok yang Mewajibkan Anak-Anak Menggunakan Baju Hazmat
+    - Cek Fakta: Tidak Benar Penyebab Korban Tewas Tragedi Itaewon akibat Vaksin Covid-19 AstraZeneca
+    - [SALAH] Akun Whatsapp Wakil Wali Kota Malang Sofyan Edi Jarwoko '083822041010'
+    - [SALAH] Pesan Berantai 'Grand Design Uji Coba Pembantaian Menggunakan Gas Beracun Melalui Pertandingan Bola'
+    - [SALAH] Panglima TNI Panggil ART Ferdy Sambo untuk Membuktikan Ruang Rahasia PC
+    - [SALAH] Pesan Berantai Dana Bantuan Rp 189 Juta dari Pertamina
+    - Belum Ada Bukti, Ferdy Sambo Ditahan di Hotel Bintang Lima, Bukan Mako Brimob
+    - Cek Fakta: Muncul Lagi Hoaks Inul Daratista Bagi-Bagi Uang Tunai Lewat Akun Facebook
+    - [SALAH] 'Banyak yang pingsan saat mengantri untuk membeli AC mini Jepang di Tunjungan Plaza'
+    - [SALAH] Surat Permintaan Data Pensiunan PNS dan ASN Terkait Program WIRAUSAHA Pintar Oleh BKN
+    - [SALAH] Hindari Mobilisasi Militer, Seorang Pria di Rusia Bersembunyi di Dalam Kulkas
+    - [SALAH] Xi Jinping Dicopot dari Jabatan Ketua Komisi Militer dan Presiden Cina karena Kudeta Militer atas Perintah Li Qiaoming
+    - [SALAH] Hati-hati program vaksin BIAS disekolah
+    - [SALAH] AIRPODS MEMANCARKAN RADIASI EMF BERBAHAYA.
+    - [SALAH] Observatorium Bosscha Menjadi Tempat Syuting Pengabdi Setan 2
+    - [SALAH] Setelah menjadi pembantu Luhut dan Mega orang tua ini sudah pandai pake celana
+    - [SALAH] Video Burung Garuda di Gunung Penanggungan, Jawa Timur
+    - [SALAH] 'Presiden Jokowi Memberikan Penganugerahan Gelar Pahlawan Nasional Kepada Alm Jenderal TNI Soeharto'
+    - [SALAH] KFC Bagikan Voucher Rayakan HUT ke 71
+    - Keliru, Sweeping Kendaraan Plat Nomor L di Malang Usai Tragedi Kanjuruhan
+    - [SALAH] MUI Setujui Merek Bir Jadi Sponsor Formula E
+    - Keliru, Judul Berita 'Pedagang: Untuk apa kenal Anda' Kepada Puan Maharani
+    - Keliru, Demonstrasi Mahasiswa UGM Tolak Pernyataan Rektor Terkait Ijazah Palsu Joko Widodo
+    - [SALAH] Akun Facebook Pengasuh Ponpes Genggong Gus Haris Tawarkan Jasa Pesugihan
+    - [SALAH] 'BODOHNYA METRO TV. jokowi Mendapat Gelar dari Raja Salman yaitu AMIRUL KAZZAB langsung diberitakan'
+    - [SALAH] Mike Tyson Harus Menggunakan Kursi Roda setelah Menerima Vaksin
+    - Cek Fakta: Hoaks Indosiar Gelar Konser Cinta Leslar Bersemi Kembali
+    - [SALAH] Video Protes Muslim India
+    - Belum Ada Bukti, Kunyit dan Madu sebagai Ramuan Obat Cacar Monyet
+    - [SALAH] Permata Bank Menawarkan Pinjaman Dana Tanpa Agunan dan Survei
+    - [SALAH] Foto Perbedaan Bundaran HI pada Era Anies dan Heru
+    - [SALAH] Sambo dan Bharada E Saling Serang Dalam Sel
+    - [SALAH] 'Di Negara Arab Saudi tidak ada pajak'
+    - Cek Fakta: Hoaks Set Top Box Bisa Baca Data Orang yang Sudah Divaksin
+    - [SALAH] Gunung Gede Aktif Pasca Gempa Cianjur
+    - [SALAH] Video Penyebaran Chemtrail di Blora Melalui Pesawat Bikin Sakit Mata
+    - Cek Fakta: Tidak Benar Pertalite yang Dijual Pertamina Berkadar RON 86
+    - Keliru, Kolase Video Penampakan Makhluk Misterius yang Tertangkap Kamera
+    - Cek Fakta: Tidak Benar Video Anies Baswedan Ditunjuk Pimpin Sidang KTT G20
+    - Keliru, Enam Jenis Makanan yang Berbahaya Jika Dikonsumsi Bersamaan
+    - [SALAH] Video Bocah Kritis Akibat Tersambar Petir Saat Main Handphone
+    - [SALAH] Ledakan di Kantor Kominfo
+    - Cek Fakta: Tidak Benar Muhammadiyah Usung Anies Baswedan untuk Pilpres 2024
+    - [SALAH] Akun WhatsApp Bupati Enrekang Melakukan Penggalangan Donasi Berupa Uang Untuk Pondok Pesantren dan PAUD
+    - [SALAH] Akun Facebook Gubernur Bengkulu 'Rohidin Mersyah'
+    - [SALAH] Pesan Daniel Mananta untuk Umat Nasrani: Ada Jin Kafir di Patung Tuhan Yesus
+    - [SALAH] Foto 'Gus Ragil dan Gus Yaqut'
+    - [SALAH] Dewan Majelis Negara Bagian Lagos, Nigeria, Mengesahkan Hukum Syariah Demi Kepentingan Pemilu
+    - [SALAH] Fenomena Awan Mammatus di Mumbai, India
+    - [SALAH] Video 'mengapa satgasus dibubarkan setelah kasus Sambo Mencuat?'
+    - [SALAH] Video Burung Garuda
+    - [SALAH] 'Tak Sanggup Tahan Air Mata Putin Terharu Dengan Perlakuan Warga Indonesia Terhadap Rusia'
+    - [SALAH] Mendeteksi Stroke dengan Menggerakkan Jari Tangan
+    - Cek Fakta: Tidak Benar dalam Foto Ini Bus Relawan Anies Baswedan Kecelakaan
+    - Keliru, Para Pemimpin Uni Eropa Datangi Joe Biden Agar Mencabut Sanksi untuk Rusia
+    - [SALAH] Video 'Meninggal Saat Khutbah'
+    - [SALAH] Pesan WhatsApp Pembayaran Tilang Online Oleh Polri
+    - [SALAH] Gambar Tangkapan Layar Artikel Detiknews 'Novel Bakmumin : Tribun Formula E Roboh Itu Peringatan Dari Allah Sponosrnya Minuman Bir'
+    - Keliru, Foto dan Nama Ahli dalam Iklan Suplemen Mata Orbitrim
+    - [SALAH] Akun WhatsApp Pj Bupati Boalemo Hendriawan '085731465165'
+    - Keliru, Pria Hamil dan Melahirkan Tiga Anak dari Rahimnya
+    - [SALAH] 'NAMA ASLINYA HERBERTUS JOKO WIDODO'
+    - [SALAH] Mall Senayan City Dijual 4,5 Triliun di Media Sosial
+    - Keliru, Video Sidang Ricuh dan Ferdy Sambo Mengamuk
+    - Keliru, Video yang Mengklaim Rusia Akhiri Perang Ukraina pada 21 Agustus 2022
+    - [SALAH] PSSI Resmi Keluar dari AFF
+    - Keliru, Cek Asam Urat dengan Merapatkan Jari Tangan
+    - [SALAH] Seorang Laki-Laki Terpental Ketika Menaiki Wahana Seluncuran Air di Sebuah Kolam Renang
+    - Keliru, Malaysia Jual Pulau Demi Lunasi Utang ke Indonesia
+    - [SALAH] Cara Mengecek Resiko Stroke dengan Menggerakan Jari
+    - [SALAH] 'Akun Facebook Atta dan Aurel giveaway'
+    - [SALAH] Vaksin Pfizer Mengandung Logam Berat Graphene Oxide
+    - [SALAH] Syahrini Menjadi Istri Simpanan Lelaki Tua
+    - Cek Fakta: Tidak Benar Kapten Timnas Qatar Pakai Atribut Bendera Palestina Saat Laga Pembuka Piala Dunia 2022
+    - [SALAH] Video 'Presiden Jokowi jenguk Lesti Kejora di rumah sakit tanpa kehadiran Rizky Billar'
+    - [SALAH] Umat Muslim Memblokade Jalanan di Perancis dengan Salat Berjamaah
+    - [SALAH] Beberapa Nomor Telepon Luar Negeri yang Bisa Menyalin Data di HP
+    - [SALAH] Putin Tidak Hadir ke KTT G20 karena Parade Angkatan Laut
+    - [SALAH] Pesan Whatsapp Menawarkan Pinjaman Online Oleh Ponpes Al Falah Sumber Malang Situbondo
+    - Cek Fakta: Tidak Benar Iriana Jokowi Jenguk Lesti Kejora di Rumah Sakit
+    - Menyesatkan, Artikel Berjudul Video Detik-Detik Jasad Eril Diangkat dari Pintu Air Engehalde Swiss
+    - Keliru, Minum Air Panas Menyehatkan Ginjal
+    - [SALAH] Malaysia Marah Ditolak Jokowi, Menjadi Anggota G20
+    - [SALAH] Presiden Volodymyr Zelensky Merekam Video-Videonya di Depan Green Screen
+    - [SALAH] Detik-Detik Densus 88 Bekuk Anak Kiai Kasus Pencabulan Di Jombang
+    - Sebagian Benar, Artikel tentang Pesantren Alquran Terbakar

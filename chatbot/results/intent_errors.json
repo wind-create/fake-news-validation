@@ -1,106 +1,10 @@
 [
   {
-    "text": "hello",
-    "intent": "start",
-    "intent_prediction": {
-      "name": "out_of_scope",
-      "confidence": 0.6308056116104126
-    }
-  },
-  {
-    "text": "siang",
-    "intent": "start",
-    "intent_prediction": {
-      "name": "out_of_scope",
-      "confidence": 0.996408224105835
-    }
-  },
-  {
-    "text": "astaga",
-    "intent": "out_of_scope",
-    "intent_prediction": {
-      "name": "start",
-      "confidence": 0.9956808090209961
-    }
-  },
-  {
-    "text": "tidak suka",
-    "intent": "out_of_scope",
-    "intent_prediction": {
-      "name": "goodbye",
-      "confidence": 0.9817876815795898
-    }
-  },
-  {
-    "text": "Kerugian apa yang dialami oleh media yang diserang oleh hoaks?",
+    "text": "Tentang Mafindo",
     "intent": "question",
     "intent_prediction": {
-      "name": "hoax_faq",
-      "confidence": 0.9568056464195251
-    }
-  },
-  {
-    "text": "pagi",
-    "intent": "start",
-    "intent_prediction": {
-      "name": "out_of_scope",
-      "confidence": 0.8257992267608643
-    }
-  },
-  {
-    "text": "robot bacot",
-    "intent": "out_of_scope",
-    "intent_prediction": {
-      "name": "bot",
-      "confidence": 0.9990412592887878
-    }
-  },
-  {
-    "text": "terserah",
-    "intent": "out_of_scope",
-    "intent_prediction": {
-      "name": "goodbye",
-      "confidence": 0.9914854168891907
-    }
-  },
-  {
-    "text": "malam",
-    "intent": "start",
-    "intent_prediction": {
-      "name": "out_of_scope",
-      "confidence": 0.9999752044677734
-    }
-  },
-  {
-    "text": "heleh",
-    "intent": "out_of_scope",
-    "intent_prediction": {
       "name": "start",
-      "confidence": 0.9985284805297852
-    }
-  },
-  {
-    "text": "apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?",
-    "intent": "question",
-    "intent_prediction": {
-      "name": "hoax_faq",
-      "confidence": 0.9997257590293884
-    }
-  },
-  {
-    "text": "dah",
-    "intent": "goodbye",
-    "intent_prediction": {
-      "name": "out_of_scope",
-      "confidence": 0.9999678134918213
-    }
-  },
-  {
-    "text": "apa ini manusia",
-    "intent": "bot",
-    "intent_prediction": {
-      "name": "question",
-      "confidence": 0.9859834313392639
+      "confidence": 0.997305154800415
     }
   },
   {
@@ -108,31 +12,63 @@
     "intent": "out_of_scope",
     "intent_prediction": {
       "name": "hoax_faq",
-      "confidence": 0.9999995231628418
+      "confidence": 0.9999984502792358
     }
   },
   {
-    "text": "Tentang Mafindo",
+    "text": "apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?",
     "intent": "question",
     "intent_prediction": {
-      "name": "start",
-      "confidence": 0.9955832362174988
+      "name": "hoax_faq",
+      "confidence": 0.9547291994094849
     }
   },
   {
-    "text": "selamat tinggal",
+    "text": "dah",
     "intent": "goodbye",
     "intent_prediction": {
-      "name": "start",
-      "confidence": 0.9013712406158447
+      "name": "out_of_scope",
+      "confidence": 0.9675409197807312
     }
   },
   {
-    "text": "mati kau",
+    "text": "hello",
+    "intent": "start",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.867455780506134
+    }
+  },
+  {
+    "text": "astaga",
     "intent": "out_of_scope",
     "intent_prediction": {
-      "name": "bot",
-      "confidence": 0.9943956136703491
+      "name": "start",
+      "confidence": 0.9752724766731262
+    }
+  },
+  {
+    "text": "malam",
+    "intent": "start",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9971485733985901
+    }
+  },
+  {
+    "text": "apa ini manusia",
+    "intent": "bot",
+    "intent_prediction": {
+      "name": "question",
+      "confidence": 0.9999288320541382
+    }
+  },
+  {
+    "text": "heleh",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9999880790710449
     }
   },
   {
@@ -140,7 +76,39 @@
     "intent": "out_of_scope",
     "intent_prediction": {
       "name": "goodbye",
-      "confidence": 0.9172980189323425
+      "confidence": 0.9659415483474731
+    }
+  },
+  {
+    "text": "selamat tinggal",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9444840550422668
+    }
+  },
+  {
+    "text": "robot bacot",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot",
+      "confidence": 0.9916321635246277
+    }
+  },
+  {
+    "text": "penis",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.8115692734718323
+    }
+  },
+  {
+    "text": "gempa",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.9981337189674377
     }
   }
 ]
