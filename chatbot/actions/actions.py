@@ -103,11 +103,12 @@ class GetHoaxFaqAnswer(Action):
         query = tracker.latest_message['text']
         questions = list(self.faq['pertanyaan'])
         answer = list(self.faq['response'])
+        # memproses ratio pada fuzzy 
         Ratios = process.extract(query, questions)
         print(Ratios)
-
+        # penggunaan fuzzy pada menilai kesamaan pertanyaan 
         mathed_question, score = process.extractOne(query,questions, scorer=fuzz.token_set_ratio)
-
+        # jika score ratio diatas 50 maka akan memberitahukan jawaban tersebut
         if score > 50:
             matched_row = self.faq.loc[self.faq['pertanyaan'] == mathed_question,]
             answer = matched_row['response'].values[0]
