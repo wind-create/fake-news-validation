@@ -33,6 +33,13 @@ nlu:
     - is this a chatbot
     - ini chatbot
 
+- intent: search_google
+  examples: |
+    - [SALAH] Pesan Daniel Mananta untuk Umat Nasrani: Ada Jin Kafir di Patung Tuhan Yesus
+    - [SALAH] Cina dan Rusia Bantu Indonesia Rebut Pulau Pasir dari Australia
+    - [SALAH] Puluhan Kapal Indonesia Dibakar Secara Sadis oleh Australia
+    - [SALAH] Perubahan Biaya Transaksi Bank BCA
+
 - intent: out_of_scope
   examples: |
     - gila

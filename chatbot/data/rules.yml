@@ -3,27 +3,18 @@ rules:
 #    steps:
 #    - intent: faq
 #    - action: utter_faq
- - rule: respond to question
-   steps:
-   - intent: question
-   - action: action_get_answer
 
- - rule: respond to hoax news
-   steps:
-   - intent: hoax_faq
-   - action: action_get_hoax_faq_answer
-#  - rule: option 1, respond to FAQs
+#  - rule: respond to question
 #    steps:
-#    - action: utter_greet
-#    - intent: inform
-#      entities:
-#      - number: "1"
-#    - action: utter_faq
-
-#  - rule: option 2, respond to question
-#    steps:
-#    - action: utter_greet
-#    - intent: inform
-#      entities:
-#      - number: "2"
+#    - intent: question
 #    - action: action_get_answer
+
+#  - rule: respond to hoax news
+#    steps:
+#    - intent: hoax_faq
+#    - action: action_get_hoax_faq_answer
+
+ - rule: search google
+   steps:
+   - intent: search_google
+   - action: action_search_google

@@ -11,24 +11,57 @@ import { useNavigate } from "react-router-dom";
 
 const Faq = () => {
   const theme = useTheme();
+  const [ deletedId, setDeletedId ] = useState(null);
   const [sort, setSort] = useState({});
   const { data, isLoading } = useGetFaqQuery({
     sort: JSON.stringify(sort),
   });
+
+  useEffect(() => {
+    if (deletedId) {
+      // refresh component by re-fetching the data
+      const { data, isLoading } = useGetFaqQuery({
+      sort: JSON.stringify(sort),
+      });
+    }
+  }, [deletedId]);
+
+  // const fetchData = async () => {
+  //   const { data, isLoading } = await useGetFaqQuery({
+  //   sort: JSON.stringify(sort),
+  //   });
+  // }
+  // const [faqData, setFaqData] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
+  
+  // useEffect(() => {
+  //     if (deletedId) {
+  //       // refresh component by re-fetching the data
+  //       setIsLoading(true);
+  //       const { data } = useGetFaqQuery({sort: JSON.stringify(sort)});
+  //       setFaqData(data);
+  //       setIsLoading(false);
+  //     }
+  //   }, [deletedId]);
+  
   const navigate = useNavigate()
-  const deletedFAQ= async (id) => {
+  // const deletedFAQ= async (id) => {
+  //   try {
+  //     await axios.delete(process.env.REACT_APP_BASE_URL + `/client/faq/${id}/deletefaq`);
+  //     navigate("/dashboard");
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  console.log("data", data);
+  const onButtonDeleteClick = async (e, id) => {
+    e.stopPropagation();
     try {
       await axios.delete(process.env.REACT_APP_BASE_URL + `/client/faq/${id}/deletefaq`);
-      navigate("/");
+      setDeletedId(id);
     } catch (error) {
       console.log(error);
     }
-  };
-  console.log("data", data);
-  const onButtonDeleteClick = (e, id) => {
-    e.stopPropagation();
-    //do whatever you want with the row
-    deletedFAQ(id)
   };
   const onButtonEditClick = (e, id) => {
     e.stopPropagation();
@@ -81,12 +114,12 @@ const Faq = () => {
             </Button>
           );
         }
-        },
+      },
     
   ]
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="data FAQ" subtitle="List pertanyaan dan response FAQ"/>
+      <Header title="Data FAQ" subtitle="List Pertanyaan dan Response FAQ"/>
       <Box
       mt="30px"
       height="75vh"

@@ -18,7 +18,7 @@ const Hoax = () => {
   const deleteQAHoax= async (id) => {
     try {
       await axios.delete(process.env.REACT_APP_BASE_URL + `/client/qahoaxnews/${id}/deleteQAHoax`);
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.log(error);
     }
