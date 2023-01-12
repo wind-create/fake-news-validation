@@ -178,8 +178,51 @@ class ActionSearchGoogle(Action):
         results = result.get("items", [])
         response = ""
         for item in results:
-            response += f"{item['title']}\n{item['link']}\n\n"
+            response += f"{item['title']}\n{item['snippet']}\n{item['link']}\n\n"
         if response:
             dispatcher.utter_message(response)
         else:
             dispatcher.utter_message("Sorry, I couldn't find any results")
+
+
+# class MyAction(Action):
+#     def name(self) -> Text:
+#         return "action_show_options"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        
+#         dispatcher.utter_message(text="Please select an option: option 1 or option 2")
+#         return []
+
+# class Option1(Action):
+#     def name(self) -> Text:
+#         return "action_option_1"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         last_utterance = tracker.get_slot("last_utterance")
+#         if last_utterance == "action_show_options":
+#             dispatcher.utter_message(text="You selected option 1")
+#         else:
+#             dispatcher.utter_message(text="Invalid selection. Please try again.")
+#         return []
+
+# class Option2(Action):
+#     def name(self) -> Text:
+#         return "action_option_2"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+#         last_utterance = tracker.get_slot("last_utterance")
+#         if last_utterance == "action_show_options":
+#             dispatcher.utter_message(text="You selected option 2")
+#         else:
+#             dispatcher.utter_message(text="Invalid selection. Please try again.")
+#         return []

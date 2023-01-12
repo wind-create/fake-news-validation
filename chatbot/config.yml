@@ -22,3 +22,8 @@ policies:
     max_history: 5
     epochs: 100
     constrain_similarities: true
+
+actions:
+  - action_show_options
+  - action_option_1
+  - action_option_2

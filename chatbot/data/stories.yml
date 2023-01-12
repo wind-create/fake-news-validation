@@ -33,9 +33,10 @@ stories:
 #    - intent: hoax_faq
 #    - action: action_get_hoax_faq_answer
 
- - story: interaksi_story_1
+ - story: interaksi_story_3
    steps:
    - intent: start
    - action: utter_start
    - intent: search_google
    - action: action_search_google
+
