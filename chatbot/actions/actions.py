@@ -165,6 +165,24 @@ from googleapiclient.discovery import build
 
 
 class ActionSearchGoogle(Action):
+    # def __init__(self):
+
+    #     # csv dan sqlite
+    #     #   conn = DBQueryingMethods.create_connection(db_file= "./data/faq.db")
+    #     #  self.faq = pd.read_csv('./data/faq.csv')
+    #     #  self.faq = pd.read_sql_query("SELECT * from faq_hoax_news", conn)
+
+    #     # mongodb
+    #      db = _connect_mongo(username='skripsiuser', password='skripsi12345')['test']
+    #      cursor = db['faqs'].find()
+    #      self.faq =  pd.DataFrame(list(cursor))
+        
+    #      qss = list(self.faq['pertanyaan'])
+    #      with open("./data/faq.yml", "wt", encoding="utf-8") as f:
+    #          f.write("nlu: \n- intent: question\n  examples: | \n")
+    #          for q in qss:
+    #              f.write(f"    - {q}\n")
+
     def name(self) -> str:
         return "action_search_google"
 
@@ -172,57 +190,38 @@ class ActionSearchGoogle(Action):
             tracker: Tracker,
             domain: Dict[str, Any]) -> List[Dict[str, Any]]:
         
-        query = tracker.latest_message['text']
-        service = build("customsearch", "v1", developerKey="AIzaSyBiRrDiWdY1MfRrFtO5U0NgZfTDIiL-U9k")
-        result = service.cse().list(q=query, cx="3bd74cd840a9b9f50", num=3).execute()
-        results = result.get("items", [])
-        response = ""
-        for item in results:
-            response += f"{item['title']}\n{item['snippet']}\n{item['link']}\n\n"
-        if response:
-            dispatcher.utter_message(response)
+        message = tracker.latest_message.get('text')
+        if message.startswith("Cek berita"):
+            query = message.replace("cek berita", "").strip()
+            service = build("customsearch", "v1", developerKey="AIzaSyBiRrDiWdY1MfRrFtO5U0NgZfTDIiL-U9k")
+            result = service.cse().list(q=query, cx="3bd74cd840a9b9f50", num=3).execute()
+            results = result.get("items", [])
+            response = ""
+            for item in results:
+                response += f"{item['title']}\n{item['snippet']}\n{item['link']}\n\n"
+            if response:
+                dispatcher.utter_message(response)
+            else:
+                dispatcher.utter_message("Sorry, I couldn't find any results")
+
         else:
-            dispatcher.utter_message("Sorry, I couldn't find any results")
+            dispatcher.utter_message("Sorry, gak tau")
+            # query = tracker.latest_message['text']
+            # questions = list(self.faq['pertanyaan'])
+            # answer = list(self.faq['response'])
+            # Ratios = process.extract(query, questions)
+            # print(Ratios)
 
+            # mathed_question, score = process.extractOne(query,questions, scorer=fuzz.token_set_ratio)
 
-# class MyAction(Action):
-#     def name(self) -> Text:
-#         return "action_show_options"
-
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            # if score > 50:
+            #     matched_row = self.faq.loc[self.faq['pertanyaan'] == mathed_question,]
+            #     answer = matched_row['response'].values[0]
+            #     response = "{} \n".format(answer)
+        
+            # else:
+            #     response = "maaf, saya tidak menemukan jawaban untuk pertanyaan tersebut"
 
         
-#         dispatcher.utter_message(text="Please select an option: option 1 or option 2")
-#         return []
+            # dispatcher.utter_message(response)
 
-# class Option1(Action):
-#     def name(self) -> Text:
-#         return "action_option_1"
-
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-#         last_utterance = tracker.get_slot("last_utterance")
-#         if last_utterance == "action_show_options":
-#             dispatcher.utter_message(text="You selected option 1")
-#         else:
-#             dispatcher.utter_message(text="Invalid selection. Please try again.")
-#         return []
-
-# class Option2(Action):
-#     def name(self) -> Text:
-#         return "action_option_2"
-
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-#         last_utterance = tracker.get_slot("last_utterance")
-#         if last_utterance == "action_show_options":
-#             dispatcher.utter_message(text="You selected option 2")
-#         else:
-#             dispatcher.utter_message(text="Invalid selection. Please try again.")
-#         return []
