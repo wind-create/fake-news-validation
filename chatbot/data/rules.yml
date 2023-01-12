@@ -14,7 +14,7 @@ rules:
 #    - intent: hoax_faq
 #    - action: action_get_hoax_faq_answer
 
- - rule: search google
+ - rule: respond to search google
    steps:
    - intent: search_google
    - action: action_search_google

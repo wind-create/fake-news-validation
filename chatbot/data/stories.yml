@@ -35,5 +35,7 @@ stories:
 
  - story: interaksi_story_1
    steps:
-   - intent: search google
-   - action: utter_search_google
+   - intent: start
+   - action: utter_start
+   - intent: search_google
+   - action: action_search_google
