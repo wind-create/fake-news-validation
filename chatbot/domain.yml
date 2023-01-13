@@ -14,7 +14,7 @@ intents:
 
 responses:
   utter_start:
-  - text: "Hi! apakah kamu punya pertanyaan seputar hoax? chatbot ini dirancang untuk menjawab pertanyaan seputar hoax, tips dan trik melawan hoaks,  serta memberitahukan kebenaran dari berita hoaks. \nAnda bisa memberi pertanyaan seperti: \n- tips trik melawan hoaks \n- apa itu mafindo \n- Cek Fakta: Hoaks Informasi Adopsi Bayi Korban Gempa Cianjur di Sebuah Rumah Sakit \n- Cek Fakta: Hoaks FIFA Bagikan Kuota Internet 50GB Gratis untuk Nonton Piala Dunia Qatar 2022 \n- [SALAH] Warga Bogor Meninggal Hidup Kembali "
+  - text: "Hi! apakah kamu punya pertanyaan seputar hoax? chatbot ini dirancang untuk menjawab pertanyaan seputar hoax, tips dan trik melawan hoaks,  serta memberitahukan kebenaran dari suatu berita. \nAnda bisa memberi pertanyaan seperti: \n- tips trik melawan hoaks \n- apa itu mafindo \nSedangkan untuk memeriksa kebenaran suatu berita anda dapat memberikan keyword 'Cek berita' pada pertanyaan berita anda seperti: \n- Cek berita perubahan tarif transaksi bank BRI \n- Cek berita telah terjadi tsunami di Aceh "
   utter_i_am_a_bot:
   - text: "saya adalah sebuah bot yang dibuat untuk menanggapi pertanyaan seputar hoax"
   utter_goodbye:

@@ -19,12 +19,12 @@ stories:
    - intent: bot
    - action: utter_i_am_a_bot
 
-#  - story: interaksi_story_1
-#    steps:
-#    - intent: start
-#    - action: utter_start
-#    - intent: question
-#    - action: action_get_answer
+ - story: interaksi_story_1
+   steps:
+   - intent: start
+   - action: utter_start
+   - intent: question
+   - action: action_search_google
    
 #  - story: interaksi_story_2
 #    steps:

@@ -33,17 +33,17 @@ from googleapiclient.discovery import build
 #         collection = db['hoax_faqs']
 
 
-# def _connect_mongo(username, password):
-#     """ A util for making a connection to mongo """
+def _connect_mongo(username, password):
+    """ A util for making a connection to mongo """
 
-#     if username and password:
-#         mongo_uri = 'mongodb+srv://%s:%s@cluster0.khqzqbq.mongodb.net/?retryWrites=true&w=majority' % (username, password)
-#         conn = MongoClient(mongo_uri)
-#     else:
-#         print("koneksi mongodb gagal")
+    if username and password:
+        mongo_uri = 'mongodb+srv://%s:%s@cluster0.khqzqbq.mongodb.net/?retryWrites=true&w=majority' % (username, password)
+        conn = MongoClient(mongo_uri)
+    else:
+        print("koneksi mongodb gagal")
 
 
-#     return conn
+    return conn
 
 # class GetHoaxFaqAnswer(Action):
 
@@ -165,23 +165,23 @@ from googleapiclient.discovery import build
 
 
 class ActionSearchGoogle(Action):
-    # def __init__(self):
+    def __init__(self):
 
-    #     # csv dan sqlite
-    #     #   conn = DBQueryingMethods.create_connection(db_file= "./data/faq.db")
-    #     #  self.faq = pd.read_csv('./data/faq.csv')
-    #     #  self.faq = pd.read_sql_query("SELECT * from faq_hoax_news", conn)
+        # csv dan sqlite
+        #   conn = DBQueryingMethods.create_connection(db_file= "./data/faq.db")
+        #  self.faq = pd.read_csv('./data/faq.csv')
+        #  self.faq = pd.read_sql_query("SELECT * from faq_hoax_news", conn)
 
-    #     # mongodb
-    #      db = _connect_mongo(username='skripsiuser', password='skripsi12345')['test']
-    #      cursor = db['faqs'].find()
-    #      self.faq =  pd.DataFrame(list(cursor))
+        # mongodb
+         db = _connect_mongo(username='skripsiuser', password='skripsi12345')['test']
+         cursor = db['faqs'].find()
+         self.faq =  pd.DataFrame(list(cursor))
         
-    #      qss = list(self.faq['pertanyaan'])
-    #      with open("./data/faq.yml", "wt", encoding="utf-8") as f:
-    #          f.write("nlu: \n- intent: question\n  examples: | \n")
-    #          for q in qss:
-    #              f.write(f"    - {q}\n")
+         qss = list(self.faq['pertanyaan'])
+         with open("./data/faq.yml", "wt", encoding="utf-8") as f:
+             f.write("nlu: \n- intent: question\n  examples: | \n")
+             for q in qss:
+                 f.write(f"    - {q}\n")
 
     def name(self) -> str:
         return "action_search_google"
@@ -205,23 +205,23 @@ class ActionSearchGoogle(Action):
                 dispatcher.utter_message("Sorry, I couldn't find any results")
 
         else:
-            dispatcher.utter_message("Sorry, gak tau")
-            # query = tracker.latest_message['text']
-            # questions = list(self.faq['pertanyaan'])
-            # answer = list(self.faq['response'])
-            # Ratios = process.extract(query, questions)
-            # print(Ratios)
+            # dispatcher.utter_message("Sorry, gak tau")
+            query = tracker.latest_message['text']
+            questions = list(self.faq['pertanyaan'])
+            answer = list(self.faq['response'])
+            Ratios = process.extract(query, questions)
+            print(Ratios)
 
-            # mathed_question, score = process.extractOne(query,questions, scorer=fuzz.token_set_ratio)
+            mathed_question, score = process.extractOne(query,questions, scorer=fuzz.token_set_ratio)
 
-            # if score > 50:
-            #     matched_row = self.faq.loc[self.faq['pertanyaan'] == mathed_question,]
-            #     answer = matched_row['response'].values[0]
-            #     response = "{} \n".format(answer)
+            if score > 50:
+                matched_row = self.faq.loc[self.faq['pertanyaan'] == mathed_question,]
+                answer = matched_row['response'].values[0]
+                response = "{} \n".format(answer)
         
-            # else:
-            #     response = "maaf, saya tidak menemukan jawaban untuk pertanyaan tersebut"
+            else:
+                response = "maaf, saya tidak menemukan jawaban untuk pertanyaan tersebut"
 
         
-            # dispatcher.utter_message(response)
+            dispatcher.utter_message(response)
 
