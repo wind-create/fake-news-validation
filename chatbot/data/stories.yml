@@ -4,20 +4,20 @@ stories:
    - intent: start
    - action: utter_start
 
- - story: goodbye
-   steps:
-   - intent: goodbye
-   - action: utter_goodbye
+#  - story: goodbye
+#    steps:
+#    - intent: goodbye
+#    - action: utter_goodbye
 
- - story: out of scope
-   steps:
-   - intent: out_of_scope
-   - action: utter_out_of_scope
+#  - story: out of scope
+#    steps:
+#    - intent: out_of_scope
+#    - action: utter_out_of_scope
 
- - story: are you a bot
-   steps:
-   - intent: bot
-   - action: utter_i_am_a_bot
+#  - story: are you a bot
+#    steps:
+#    - intent: bot
+#    - action: utter_i_am_a_bot
 
  - story: interaksi_story_1
    steps:
