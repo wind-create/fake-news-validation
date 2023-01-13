@@ -86,7 +86,7 @@ const Faq = () => {
   ]
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="data FAQ" subtitle="List pertanyaan dan response FAQ"/>
+      <Header title="Data FAQ" subtitle="List Pertanyaan dan Response FAQ"/>
       <Box
       mt="30px"
       height="75vh"
