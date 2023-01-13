@@ -15,9 +15,9 @@ import {
     ChevronLeft,
     ChevronRightOutlined,
     HomeOutlined,
-    AdminPanelSettingsOutlined,
+    // AdminPanelSettingsOutlined,
     QuestionAnswerOutlined,
-    ChatOutlined,
+    // ChatOutlined,
     AddBoxOutlined
 } from "@mui/icons-material";
 import { useEffect, useState } from 'react';
@@ -41,18 +41,18 @@ const navItems = [
         text: "CreateFAQ",
         icon: <AddBoxOutlined />
     },
-    {
-        text: "Data QA Hoax",
-        icon: null,
-    },
-    {
-        text: "Hoax",
-        icon: <ChatOutlined />
-    },
-    {
-        text: "Create",
-        icon: <AddBoxOutlined />
-    },
+    // {
+    //     text: "Data QA Hoax",
+    //     icon: null,
+    // },
+    // {
+    //     text: "Hoax",
+    //     icon: <ChatOutlined />
+    // },
+    // {
+    //     text: "Create",
+    //     icon: <AddBoxOutlined />
+    // },
     // {
     //     text: "Management",
     //     icon: null

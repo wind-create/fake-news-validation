@@ -1,8 +1,8 @@
 stories:
- - story: start
-   steps:
-   - intent: start
-   - action: utter_start
+#  - story: start
+#    steps:
+#    - intent: start
+#    - action: utter_start
 
 #  - story: goodbye
 #    steps:
