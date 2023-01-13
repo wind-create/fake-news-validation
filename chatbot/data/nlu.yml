@@ -1,85 +1,66 @@
 version: "2.0"
 nlu:
-- intent: search_google
+- intent: start
   examples: |
-    - cari informasi
-    - cari berita
-- intent: bot
-  examples: |
-    - bot
-    - apa kau bot?
-    - ini chatbot
-    - apa ini manusia
-    - Are you a bot?
+    - Hi
+    - Hey!
+    - hello
+    - hallo
+    - halo
+    - hai
+    - pagi
+    - siang
+    - malam
+    - /start
+    - start
+
 - intent: goodbye
   examples: |
     - bye
-    - see you later
-    - dah
     - goodbye
+    - selamat tinggal
+    - dah
+    - see you later
     - see you around
-- intent: start
+    - bye bye
+
+- intent: bot
   examples: |
-    - start
-    - halo
-    - hai
-    - siang
-    - hallo
-    - Hey!
-    - Hi
-    - hello
-    - malam
+    - Are you a bot?
+    - apa kau bot?
+    - bot
+    - apa ini manusia
+    - is this a chatbot
+    - ini chatbot
+
+- intent: search_google
+  examples: |
+    - cek berita
+    - cari berita
+    - cari informasi
+
 - intent: out_of_scope
   examples: |
-    - dapur
-    - la la la
-    - berhenti bertanya
-    - heleh
-    - mati kau
-    - bukan urusan mu
-    - laptop
-    - fuck
     - gila
-    - astaga
     - bacottt
-    - jelek
-    - gempa
-    - terserah
-    - robot bacot
+    - mati kau
     - minta judul
     - lapet
-- intent: question
-  examples: |
-    - cara kerja machine learning dalam menangani hoax?
-    - Serikat Jurnalis untuk Keberagaman (SEJUK) lembaga apa?
-    - tips masyarakat dalam membuat PSA anti-hoax
-    - seberapa efektif iklan layanan masyarakat (PSA) dalam menangkal hoax?
-    - Mengapa Tirto mengambil data dari Mafindo?
-    - apakah misinformasi, disinformasi / hoax itu sama?
-    - misi Serikat Jurnalis untuk Keberagaman (SEJUK)
-    - apa saja bentuk hoaks yang menyerangan media-media informasi ?
-    - Tentang Mafindo
-    - apakah facebook memiliki langkah dalam menangani disinformasi ?
-    - PSA tersebar di platform apa?
-    - bagaimana machine learning dapat membantu dalam menangani hoax?
-    - apa pentingnya kecakapan literasi pada pelajar dalam menangkal hoax?
-    - mengapa hoax yang bertema agama selalu dikaitkan dengan politik ?
-    - mengapa fenomena penyebaran hoax dapat terjadi?
-    - apa penyebab facebook memiliki banyak penyebaran hoax?
-    - apa itu Pubic Service Announcemen (PSA) ?
-    - bagaimana cara MUI menangkal hoax bertema agama?
-    - adakah perbedaan hoax yang tersebar di berbagai media sosial?
-    - bagaimana tingkat literasi digital di masyarakat Indonesia ?
-    - tentang Serikat Jurnalis untuk Keberagaman (SEJUK)
-    - kenapa hoaks bisa menyerang media-media informasi?
-    - apakah facebook memiliki pihak ketiga dalam memeriksa fakta dari berita hoax?
-    - apakah banyak berita hoax pandemi yang dikaitkan dengan politik?
-    - apa manfaat hasil riset mandiri Tirto untuk para pemangku kepentingan seperti platform media sosial?
-    - apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?
-    - Bagaimana manfaat riset mandiri Tirto terkait hoax itu sendiri?
-    - cara efektif untuk mengatasi situs-situs yang menyebarkan informasi hoaks?
-    - ada situs-situs yang menyebarkan berita hoaks, kira-kira apa pendapat jurnalis mengenai situs-situs tersebut?
-    - Kerugian apa yang dialami oleh media yang diserang oleh hoaks?
-    - apa tujuan dari Pubic Service Announcemen (PSA) ?
-    - siapa oknum atau orang-orang yang suka menyebarkan hoax ?
-    - bagaimana cara untuk menangani hoax yang tersebar di media sosial?
+    - fuck
+    - robot bacot
+    - gak guna
+    - bla bla bla
+    - penis
+    - jelek
+    - laptop
+    - gempa
+    - astaga
+    - heleh
+    - dapur
+    - berhenti bertanya
+    - terserah
+    - bukan urusan mu
+    - tidak suka
+    - la la la
+
+
