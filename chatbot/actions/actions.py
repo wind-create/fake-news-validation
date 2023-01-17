@@ -191,7 +191,7 @@ class ActionSearchGoogle(Action):
             domain: Dict[str, Any]) -> List[Dict[str, Any]]:
         
         message = tracker.latest_message.get('text')
-        if message.startswith("Cek berita"):
+        if message.lower().startswith("cek berita"):
             query = message.replace("cek berita", "").strip()
             service = build("customsearch", "v1", developerKey="AIzaSyBiRrDiWdY1MfRrFtO5U0NgZfTDIiL-U9k")
             result = service.cse().list(q=query, cx="3bd74cd840a9b9f50", num=3).execute()
@@ -202,7 +202,7 @@ class ActionSearchGoogle(Action):
             if response:
                 dispatcher.utter_message(response)
             else:
-                dispatcher.utter_message("Sorry, I couldn't find any results")
+                dispatcher.utter_message("maaf, saya tidak menemukan hasil dari informasi yang anda cari")
 
         else:
             # dispatcher.utter_message("Sorry, gak tau")

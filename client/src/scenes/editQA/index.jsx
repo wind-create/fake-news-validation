@@ -50,7 +50,7 @@ const EditQA = () => {
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="CREATE DATA QA" subtitle="Create Pertanyaan dan Response" />
+      <Header title="Edit DATA QA" subtitle="Edit Pertanyaan dan Response" />
       <Box
       mt="30px"
       height="75vh">
