@@ -23,6 +23,10 @@ const Navbar = ({
     const handleClick = (event) => setAnchorEl(event.currentTarget);
     const handleClose = () => setAnchorEl(null);
     const fullName = `${user.firstName}`;
+    const handleLogout = () => {
+		localStorage.removeItem("token");
+		window.location.reload();
+	};
 
 
     return (
@@ -107,7 +111,7 @@ const Navbar = ({
                     onClose={handleClose}
                     anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
                     >
-                    <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
+                    <MenuItem onClick={handleLogout}>Log Out</MenuItem>
                     </Menu>
                 </FlexBetween>
             </FlexBetween>

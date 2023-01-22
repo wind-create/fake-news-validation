@@ -20,6 +20,7 @@ const CreateQA = () => {
       setPertanyaan('')
       setResponse('')
       navigate('/faq')
+      window.location.reload()
     }
   }, [isSuccess, navigate])
 

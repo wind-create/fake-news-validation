@@ -19,7 +19,8 @@ const Faq = () => {
   const deletedFAQ= async (id) => {
     try {
       await axios.delete(process.env.REACT_APP_BASE_URL + `/client/faq/${id}/deletefaq`);
-      navigate("/");
+      navigate("/faq");
+      window.location.reload()
     } catch (error) {
       console.log(error);
     }

@@ -42,7 +42,8 @@ const EditQA = () => {
           pertanyaan,
           response
         });
-        navigate("/");
+        navigate("/faq");
+        window.location.reload()
       } catch (error) {
         console.log(error);
       }

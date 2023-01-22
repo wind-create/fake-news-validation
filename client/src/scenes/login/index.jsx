@@ -30,6 +30,7 @@ const Login = () => {
         body: JSON.stringify(values),
       });
       const loggedIn = await loggedInResponse.json()
+      localStorage.setItem('token', loggedIn.token);
       onSubmitProps.resetForm()
       if(loggedIn) {
         dispatch(
@@ -39,6 +40,7 @@ const Login = () => {
           })
         );
         navigate("/dashboard")
+        window.location.reload()
       }
     } catch (error){
       console.log(error)
