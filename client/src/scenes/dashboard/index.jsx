@@ -18,20 +18,14 @@ const Dashboard = () => {
        
        </FlexBetween>
        <FlexBetween>
-       <Box
-       component="img"
-       alt="intent_histogram"
-       src={intent_histogram}
-       height="600px"
-       width="600px"
-       />
+       
        
        <Box
        component="img"
        alt="intent_confusion_matrix"
        src={intent_confusion_matrix}
-       height="600px"
-       width="600px"
+       height="800px"
+       width="1000px"
        />
        </FlexBetween>
     </Box>

@@ -1,6 +1,6 @@
 language: en
 pipeline:
-  - name: WhitespaceTokenizer
+  - name: CustomTokenizer.CustomTokenizer
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1

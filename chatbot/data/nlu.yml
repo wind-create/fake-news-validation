@@ -1,66 +1,78 @@
 version: "2.0"
 nlu:
-- intent: start
-  examples: |
-    - Hi
-    - Hey!
-    - hello
-    - hallo
-    - halo
-    - hai
-    - pagi
-    - siang
-    - malam
-    - /start
-    - start
+# - intent: start
+#   examples: |
+#     - Hi
+#     - Hey!
+#     - hello
+#     - hallo
+#     - halo
+#     - hai
+#     - pagi
+#     - siang
+#     - malam
+#     - /start
+#     - start
 
-- intent: goodbye
-  examples: |
-    - bye
-    - goodbye
-    - selamat tinggal
-    - dah
-    - see you later
-    - see you around
-    - bye bye
+# - intent: goodbye
+#   examples: |
+#     - bye
+#     - goodbye
+#     - selamat tinggal
+#     - dah
+#     - see you later
+#     - see you around
+#     - bye bye
 
-- intent: bot
-  examples: |
-    - Are you a bot?
-    - apa kau bot?
-    - bot
-    - apa ini manusia
-    - is this a chatbot
-    - ini chatbot
+# - intent: bot
+#   examples: |
+#     - Are you a bot?
+#     - apa kau bot?
+#     - bot
+#     - apa ini manusia
+#     - is this a chatbot
+#     - ini chatbot
 
 - intent: search_google
   examples: |
     - cek berita
     - cari berita
     - cari informasi
+    - Cek berita Angin Puting beliung dan banjir terjang Cianjur setelah Gempa
+    - Cek berita Perubahan Tarif Transaksi Bank Aceh Kepada Bank Lain
+    - Cek berita gadis ular menggemparkan dunia
+    - Cek berita terjadi tsunami di Aceh
+    - Cek berita perubahan tarif transaksi bank BRI
+    - cek berita sambo
+    - cek berita hoaks
+    - cek berita informasi hoaks
+    - cek berita tsunami aceh
+    - cek berita Ilmuwan Jepang Menemukan Cara Menjadi Tembus Pandang
+    - cek berita Video Gempa Cianjur
+    - cek berita Vaksin Polio Bill Gates Justru Membuat Anak-Anak di India Lumpuh
 
-- intent: out_of_scope
-  examples: |
-    - gila
-    - bacottt
-    - mati kau
-    - minta judul
-    - lapet
-    - fuck
-    - robot bacot
-    - gak guna
-    - bla bla bla
-    - penis
-    - jelek
-    - laptop
-    - gempa
-    - astaga
-    - heleh
-    - dapur
-    - berhenti bertanya
-    - terserah
-    - bukan urusan mu
-    - tidak suka
-    - la la la
+# - intent: out_of_scope
+#   examples: |
+#     - gila
+#     - bacottt
+#     - mati kau
+#     - minta judul
+#     - lapet
+#     - fuck
+#     - robot bacot
+#     - gak guna
+#     - bla bla bla
+#     - penis
+#     - jelek
+#     - laptop
+#     - gempa
+#     - astaga
+#     - heleh
+#     - dapur
+#     - berhenti bertanya
+#     - terserah
+#     - bukan urusan mu
+#     - tidak suka
+#     - la la la
 
 

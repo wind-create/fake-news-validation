@@ -21,8 +21,6 @@ stories:
 
  - story: interaksi_story_1
    steps:
-   - intent: start
-   - action: utter_start
    - intent: question
    - action: action_search_google
    
@@ -35,8 +33,6 @@ stories:
 
  - story: interaksi_story_3
    steps:
-   - intent: start
-   - action: utter_start
    - intent: search_google
    - action: action_search_google
 

@@ -1,26 +1,18 @@
 [
   {
-    "text": "selamat tinggal",
-    "intent": "goodbye",
+    "text": "cari informasi",
+    "intent": "search_google",
     "intent_prediction": {
       "name": "question",
-      "confidence": 0.9684851169586182
+      "confidence": 0.9951919317245483
     }
   },
   {
-    "text": "pagi",
-    "intent": "start",
-    "intent_prediction": {
-      "name": "out_of_scope",
-      "confidence": 0.9266234636306763
-    }
-  },
-  {
-    "text": "penis",
-    "intent": "out_of_scope",
+    "text": "cek berita Vaksin Polio Bill Gates Justru Membuat Anak-Anak di India Lumpuh",
+    "intent": "search_google",
     "intent_prediction": {
       "name": "question",
-      "confidence": 0.5731809735298157
+      "confidence": 0.9198086857795715
     }
   }
 ]
