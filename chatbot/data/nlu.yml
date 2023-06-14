@@ -50,6 +50,17 @@ nlu:
     - cek berita Ilmuwan Jepang Menemukan Cara Menjadi Tembus Pandang
     - cek berita Video Gempa Cianjur
     - cek berita Vaksin Polio Bill Gates Justru Membuat Anak-Anak di India Lumpuh
+    - Cek berita terjadi tsunami di Aceh
+    - Cek berita gadis ular menggemparkan dunia
+    - cek berita Video Gempa Cianjur
+    - cek berita hoaks
+    - cek berita informasi hoaks
+    - cari informasi
+    - cek berita Vaksin Polio Bill Gates Justru Membuat Anak-Anak di India Lumpuh
+    - Cek berita Angin Puting beliung dan banjir terjang Cianjur setelah Gempa
+    - cek berita sambo
+    - cek berita tsunami aceh
+    - Cek berita perubahan tarif transaksi bank BRI
 
 # - intent: out_of_scope
 #   examples: |

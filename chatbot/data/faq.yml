@@ -1,115 +1,89 @@
 nlu: 
 - intent: question
   examples: | 
-    - ['Hello', 'Hi', 'Halo', 'Yuuhu', '', '', '']
-    - ['I want to know about Ulos', 'Can you tell me about Ulos?', 'Explain to me about Ulos', 'Tell me about Ulos', '', '', '']
-    - ['What is the function of Ulos', 'What is ulos was made for', 'Why Bataknese made Ulos a long time ago?', '', '', '', '']
-    - ['Is there any difference between the function of Ulos then and now?', 'What is the function of ulos for Batak Community nowadays?', '', '', '', '', '']
-    - ['Can you tell me more about ulos?', 'can we have stroy time about ulos', 'Tell me more about ulos', '', '', '', '']
-    - ['How many types of ulos?', 'how much ulos type out there?', 'How much is variation of ulos', '', '', '', '']
-    - ['What is the meaning of giving ulos for Bataknese?', 'Is there any meaning of giving ulos to other according to Batak People?', '', '', '', '', '']
-    - ['who is the one who made ulos', 'what is people who weaved ulos called?', 'what is the name of the ulos weaver?', 'what is the name that bataknese use to call someone who weave ulos?', '', '', '']
-    - ['Who is partonun?', 'What is partonun refer to?', 'What is partonun?', 'Who is Partonun refer to?', '', '', '']
-    - ['What kind of terms which categorized ulos?', 'How many terms that categorized Ulos?', '', '', '', '', '']
-    - ['terms of ulos that worn for marriage', 'How we know which ulos that we can wear when attending a wedding?', '', '', '', '', '']
-    - ['terms of ulos that worn for child birth', ' what ulos that we can use in the childbirth event?', '', '', '', '', '']
-    - ['terms of ulos that worn for the dead', 'terms of ulos that worn for deceased person', 'what ulos that we worn for the dead', 'what ulos that we worn for deceased person', '', '', '']
-    - ['what is ulos ragi hotang?', 'can you tell me about ulos ragi hotang?', 'Please tell me about Ulos ragi hotang', ' what is ulos ragi hotang?', '', '', '']
-    - ['What is the function of Ulos Ragi hotang?', 'What is Ulos ragi hotang for?', 'What is the purpose of ulos ragi hotang?', '', '', '', '']
-    - ['who is allowed to wear ragi hotang?', 'who are the people who allowed to wear ragi hotang?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos ragi hotang?', 'Is there any meaning of ulos ragi hotang?', 'what is philosophy behind ulos ragi hotang?', 'can you tell me the philosophy behind ulos ragi hotang?', '', '', '']
-    - ['explain how to wear ulos ragi hotang', 'is there any rule of how to wear ulos ragi hotang?', 'how to wear ulos ragi hotang?', 'rules of wearing ulos ragi hotang', ' how to give ulos ragi hotang to the newlywed?', '', '']
-    - ['what is ulos ragidup?', 'can you tell me about ulos ragidup?', 'Please tell me about Ulos ragidup', ' what is ulos ragidup?', '', '', '']
-    - ['What is the function of Ulos Ragidup?', 'What is Ulos ragidup for?', 'What is the purpose of ulos ragidup?', '', '', '', '']
-    - ['who is allowed to wear ragidup', 'who are the people who allowed to wear ragidup?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos ragidup?', 'Is there any meaning of ulos ragidup?', 'what is philosophy behind ulos ragidup?', 'can you tell me the philosophy behind ulos ragidup ?', '', '', '']
-    - ['explain how to wear ulos ragidup', 'is there any rule of how to wear ulos ragi hotang?', 'how to wear ulos ragidup?', 'rules of wearing ulos ragidup', '', '', '']
-    - ['what is ulos mangiring?', 'can you tell me about ulos mangiring', 'Please tell me about Ulos mangiring', ' what is ulos mangiring?', '', '', '']
-    - ['What is the function of Ulos mangiring?', 'What is Ulos mangiring for?', 'What is the purpose of ulos mangiring?', '', '', '', '']
-    - ['who is allowed to wear mangiring', 'who are the people who allowed to wear mangiirng?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos mangiring?', 'Is there any meaning of ulos mangiring?', 'what is philosophy behind ulos mangiring?', 'can you tell me the philosophy behind ulos mangiring ?', '', '', '']
-    - ['explain how to wear ulos mangiring', 'is there any rule of how to wear ulos mangiring?', 'how to wear ulos mangiring?', 'rules of wearing ulos mangiring', '', '', '']
-    - ['what is ulos bintang maratur ', 'can you tell me about ulos bintang maratur ', 'Please tell me about Ulos bintang maratur', ' what is ulos bintang maratur?', '', '', '']
-    - ['What is the function of Ulos bintang maratur?', 'What is Ulos bintang maratur for?', 'What is the purpose of ulos bintang maratur?', '', '', '', '']
-    - ['who is allowed to wear ulos bintang maratur?', 'who are the people who allowed to wear bintang maratur?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos bintang maratur?', 'Is there any meaning of ulos bintang maratur?', 'what is philosophy behind ulos bintang maratur?', 'can you tell me the philosophy behind ulos bintang maratur ?', '', '', '']
-    - ['explain how to wear ulos bintang maratur', 'is there any rule of how to wear ulos bintang maratur?', 'how to wear ulos bintang maratur?', 'rules of wearing ulos bintang maratur', '', '', '']
-    - ['what is ulos runjat ', 'can you tell me about ulos runjat ', 'Please tell me about Ulos runjat', ' what is ulos runjat?', '', '', '']
-    - ['What is the function of Ulos runjat?', 'What is Ulos runjat for?', 'What is the purpose of ulos runjat?', '', '', '', '']
-    - ['who is allowed to wear ulos runjat?', 'who are the people who allowed to wear runjat?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos runjat?', 'Is there any meaning of ulos runjat?', 'what is philosophy behind ulos runjat?', 'can you tell me the philosophy behind ulos runjat ?', '', '', '']
-    - ['explain how to wear ulos runjat', 'is there any rule of how to wear ulos runjat?', 'how to wear ulos runjat?', 'rules of wearing ulos runjat', '', '', '']
-    - ['what is ulos jugia ', 'can you tell me about ulos jugia ', 'Please tell me about Ulos jugia', ' what is ulos jugia? ', '', '', '']
-    - ['What is the function of Ulos jugia ?', 'What is Ulos jugia for?', 'What is the purpose of ulos jugia?', '', '', '', '']
-    - ['who is allowed to wear ulos jugia?', 'who are the people who allowed to wear jugia?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos jugia?', 'Is there any meaning of ulos jugia?', 'what is philosophy behind ulos jugia?', 'can you tell me the philosophy behind ulos jugia ?', '', '', '']
-    - ['explain how to wear ulos jugia', 'is there any rule of how to wear ulos jugia ?', 'how to wear ulos jugia ?', 'rules of wearing ulos jugia ', '', '', '']
-    - ['what is ulos sibolang ', 'can you tell me about ulos sibolang ', 'Please tell me about Ulos sibolang', ' what is ulos sibolang?', '', '', '']
-    - ['What is the function of Ulos sibolang?', 'What is Ulos sibolang for?', 'What is the purpose of ulos sibolang?', '', '', '', '']
-    - ['who is allowed to wear ulos sibolang?', 'who are the people who allowed to wear sibolang?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos sibolang?', 'Is there any meaning of ulos sibolang?', 'what is philosophy behind ulos sibolang?', 'can you tell me the philosophy behind ulos sibolang ?', '', '', '']
-    - ['explain how to wear ulos sibolang', 'is there any rule of how to wear ulos sibolang?', 'how to wear ulos sibolang?', 'rules of wearing ulos sibolang', '', '', '']
-    - ['what is ulos suri suri ganjang ', 'can you tell me about ulos suri suri ganjang ', 'Please tell me about Ulos suri suri ganjang', ' what is ulos suri suri ganjang?', '', '', '']
-    - ['What is the function of Ulos suri suri ganjang?', 'What is Ulos suri suri ganjang for?', 'What is the purpose of ulos suri suri ganjang', '', '', '', '']
-    - ['who is allowed to wear ulos suri suri ganjang?', 'who are the people who allowed to wear suri suri ganjang?', '', '', '', '', '']
-    - ['Is there any philosophy of ulos suri suri ganjang?', 'Is there any meaning of ulos suri suri ganjang?', 'what is philosophy behind ulos suri suri ganjang?', 'can you tell me the philosophy behind ulos suri suri ganjang ?', '', '', '']
-    - ['explain how to wear ulos suri suri ganjang', 'is there any rule of how to wear ulos suri suri ganjang?', 'how to wear ulos suri suri ganjang?', 'rules of wearing ulos suri suri ganjang', '', '', '']
-    - ['what is saur matua?', 'Who is saur matua?', 'Tell me about saur matua', 'can you tell me about saur matua', 'I want to know about  saur matua ', '', '']
-    - ['who is qualified as saur matua?', 'What makes someone can be saur matua?', 'Tell me about saur matua', 'how is someone can be called as saur matua?', '', '', '']
-    - ['what is parompa', 'tell me about parompa', 'about parompa can you tell me about parompa', 'what do you know about parompa', '', '', '']
-    - ['what is bulang-bulang', 'tell me about bulang-bulang', 'about parompa can you tell me about bulang-bulang', 'what do you know about bulang-bulang', '', '', '']
-    - ['what is pargomgom mampe goar ', 'tell me about pargomgom mampe goar', 'about parompa can you tell me about pargomgom mampe goar', 'what do you know about pargomgom mampe goar', '', '', '']
-    - ['what is marjabu', 'tell me about marjabu', 'about parompa can you tell me about marjabu', 'what do you know about marjabu', '', '', '']
-    - ['what is pansamot', 'tell me about pansamot', 'about parompa can you tell me about pansamot ', 'what do you know about pansamot', '', '', '']
-    - ['what is pamarai', 'tell me about pamarai', 'about parompa can you tell me about pamarai', 'what do you know about pamarai', '', '', '']
-    - ['what is simolohon', 'tell me about simolohon', 'about parompa can you tell me about simolohon', 'what do you know about simolohon', '', '', '']
-    - ['what is saput', 'tell me about saput', 'about parompa can you tell me about saput', 'what do you know about saput', '', '', '']
-    - ['what is tujung', 'tell me about tujung', 'about parompa can you tell me about tujung', 'what do you know about tujung', '', '', '']
-    - ['How long it takes to make ulos?', 'How long it takes to weave ulos?', '', '', '', '', '']
-    - ['What is mangulosi', 'Do you know about mangulosi', 'please tell me about mangulosi', 'can you tell me about mangulosi', 'can you explain me about mangulosi', 'tell me about mangulosi', 'explain to me about mangulosi']
-    - ['Hello Domu!', 'Hi Domu!', 'Halo Domu', 'Yuuhu Domu', 'Domu!', '', '']
-    - ['can you teach me how to mangulosi?', 'Teach me how to mangulosi someone ', 'Can you tell me how to do mangulosi?', '', '', '', '']
-    - ['How about mangulosi in wedding ceremony', 'can you tell me how to mangulosi in wedding ceremony?', 'teach me how to mangulosi in wedding ceremony', '', '', '', '']
-    - ['How about mangulosi in birth ceremony', 'can you tell me how to mangulosi in birth ceremony?', 'teach me how to mangulosi in birth ceremony', '', '', '', '']
-    - ['what is mampe goar ceremony', ' anything you know about mampe goar ceremony', 'tell me about mampe goar ceremony', '', '', '', '']
-    - ['How about mangulosi in funeral', 'can you tell me how to mangulosi at funeral?', 'teach me how to mangulosi in funeral', '', '', '', '']
-    - ['what is dalihan na tolu', 'do you know about dalihan na tolu?', 'can you tell me about dalihan na tolu?', 'please explain about dalihan na tolu', '', '', '']
-    - ['is there any philosophy behind dalihan na tolu', 'what is the philosophy behind dalihan na tolu', '', '', '', '', '']
-    - ['are all batak tribe believe in dalihan na tolu?', 'is dalihan na toly exist in every batak tribe?', 'are all batak tribes have dalihan na tolu ?', '', '', '', '']
-    - ['What is dalihan na tolu called at Batak Karo tribe', 'What is Dalihan na tolu known at Batak Karo?', '', '', '', '', '']
-    - ['Is there any difference for Dalihan Na Tolu in Karo?', 'Is Telu singkarak have different practice between dalihan na tolu? ', 'Are there any practice differences between dalihan na tolu and telu singkarak?', '', '', '', '']
-    - ['What is dalihan na tolu called at Batak Angkola tribe', 'What is Dalihan na tolu known at Batak Angkola?', '', '', '', '', '']
-    - ['Is there any difference for Dalihan Na Tolu in Angkola?', 'Is Tiga Bagas have different practice between dalihan na tolu? ', 'Are there any practice differences between dalihan na tolu and tiga bagas?', '', '', '', '']
-    - ['What is dalihan na tolu called at Batak Mandailing tribe', 'What is Dalihan na tolu known at Batak Mandailing?', '', '', '', '', '']
-    - ['What is dalihan na tolu called at Batak PakPak tribe', 'What is Dalihan na tolu known at Batak Pakpak?', '', '', '', '', '']
-    - ['Is there any difference for Dalihan Na Tolu in Pakpak?', 'Is Tiga Batua have different practice between dalihan na tolu? ', 'Are there any practice differences between dalihan na tolu and tiga batua?', '', '', '', '']
-    - ['What is dalihan na tolu called at Batak simalungun tribe', 'What is Dalihan na tolu known at Batak Simalungun?', '', '', '', '', '']
-    - ['Is there any difference for Dalihan Na Tolu in Pakpak?', 'Is Tiga Batua have different practice between dalihan na tolu? ', 'Are there any practice differences between dalihan na tolu and tiga batua?', '', '', '', '']
-    - ['How to make an ulos cloth?', 'How to create an ulos', '', '', '', '', '']
-    - ['How to make an ulos cloth traditionally?', 'How to weave ulos ', 'How to create an ulos traditionally', 'How to weave ulos traditionallu?', '', '', '']
-    - ['What makes difference between ulos execpt the motives?', "Is there anything that makes different between ulos exept it's motives?", 'What makes difference between ulos execpt the pertanyaan?', "Is there anything that makes different between ulos exept it's pertanyaan?", '', '', '']
-    - ['what is gatip?', 'can you tell me about gatip?', 'tell me about gatip', '', '', '', '']
-    - ['what are the colors that commonly used by ulos??', 'how many colors that ulos have?', 'how many color variations that usually ulos use.', '', '', '', '']
-    - ['is there any sepcific colors commonly used for ulos at simalungun??', 'is there color variations of ulos that represent batak simalungun', '', '', '', '', '']
-    - ['is there any sepcific colors commonly used for ulos at toba??', 'is there color variations of ulos that represent batak toba', '', '', '', '', '']
-    - ['is there any sepcific colors commonly used for ulos at karo??', 'is there color variations of ulos that represent batak karo', '', '', '', '', '']
-    - ['is there any sepcific colors commonly used for ulos at north tapanuli ??', 'is there color variations of ulos that represent north tapanuli', '', '', '', '', '']
-    - ['is there any sepcific colors commonly used for ulos at south tapanuli ??', 'is there color variations of ulos that represent south tapanuli', '', '', '', '', '']
-    - ['what is north sumatera ??', 'can you tell me about north sumatera?', '', '', '', '', '']
-    - ['what is capital of north sumatera?', 'where is the capital of north sumatera?', '', '', '', '', '']
-    - ['what is Batah Ethnic?', 'what is the main ethnic that North Sumatera has?', '', '', '', '', '']
-    - ['how many batak tribes there?', 'how many batak tribes that north sumatera have?', '', '', '', '', '']
-    - ['What are you really are?', 'who are you Domu?', 'How can you describe yourself, Domu?', '', '', '', '']
-    - ['Thank you, Domu!', "I'm Happy you're here to help, Domu!?", 'Thank you for your assistance, Domu!', '', '', '', '']
-    - ['Tell me how to use this weaving tool', 'how can i start weaving with this weaving tool', '', '', '', '', '']
-    - ["what's the first thing that i should do after i sit.", 'I already sat comfortably. what should i do first?', 'what should i do first?', 'What is the first step?', 'what is the step one', '', '']
-    - ["what's next after i put the thread to the supporting wood?.", 'I just put the thread to supporting wood. And then what should i do?', 'what is the second step?', 'what is the step two?', '', '', '']
-    - ["what's next after i kicked the lidi?.", 'I just kicked the lidi. And then what should i do?', 'what is the third step?', 'what is the step three?', '', '', '']
-    - ["what's next after i lifted the hatulungan.", 'I just lifted the hatulungan. And then what should i do?', 'what is the fourth step?', 'what is the step four?', '', '', '']
-    - ["what's next after i crossed the hasoli?", 'I kicked the baliga and crossed the hasoli. And then what should i do?', 'what is the fifth step?', 'what is the step one?', '', '', '']
-    - ["what's next after i pull the hatulungan and kicked the lidi again?", 'I pulled the hatulungan and kicked the lidi again. And then what should i do?', 'what is the sixth step?', 'what is the step six?', '', '', '']
-    - ['what is a lidi', 'what is lidi for', 'can you tell me about lidi', 'what is the function of lidi?', '', '', '']
-    - ['what is a baliga', 'what is baliga for', 'can you tell me about baliga', 'what is the function of baliga?', '', '', '']
-    - ['what is a hasoli', 'what is hasoli for', 'can you tell me about hasoli', 'what is the function of hasoli?', '', '', '']
-    - ['what is a hatulungan', 'what is hatulungan for', 'can you tell me about hatulungan', 'what is the function of hatulungan?', '', '', '']
-    - ['Bye, Domu!', 'Good bye, Domu!?', 'See you, Domu!', 'bye-bye!', 'dada, Domu!', '', '']
+    - kenapa hoaks bisa menyerang media-media informasi?
+    - apa saja bentuk hoaks yang menyerangan media-media informasi ?
+    - Kerugian apa yang dialami oleh media yang diserang oleh hoaks?
+    - ada situs-situs yang menyebarkan berita hoaks, kira-kira apa pendapat jurnalis mengenai situs-situs tersebut?
+    - apa penyebab sering munculnya situs-situs yang menyebarkan informasi hoaks?
+    - cara efektif untuk mengatasi situs-situs yang menyebarkan informasi hoaks?
+    - Tips & trik untuk melawan hoax
+    - Mafindo
+    - apa alasan Tirto membuat riset mandiri terkait hoax di tahun 2020 ?
+    - Mengapa Tirto mengambil data dari Mafindo?
+    - Bagaimana manfaat riset mandiri Tirto terkait hoax itu sendiri?
+    - apa manfaat hasil riset mandiri Tirto untuk para pemangku kepentingan seperti platform media sosial?
+    - apakah banyak berita hoax pandemi yang dikaitkan dengan politik?
+    - bagaimana pendapat dari sudut pandang MUI mengenai hoax bertema agama?
+    - mengapa hoax yang bertema agama selalu dikaitkan dengan politik ?
+    - bagaimana cara MUI menangkal hoax bertema agama?
+    - fenomena masyarakat dalam melihat hoax?
+    - seberapa efektif iklan layanan masyarakat (PSA) dalam menangkal hoax?
+    - apa itu Pubic Service Announcemen (PSA) ?
+    - apa tujuan dari Pubic Service Announcemen (PSA) ?
+    - PSA tersebar di platform apa?
+    - tips masyarakat dalam membuat PSA anti-hoax
+    - bagaimana machine learning dapat membantu dalam menangani hoax?
+    - cara kerja machine learning dalam menangani hoax?
+    - siapa oknum atau orang-orang yang suka menyebarkan hoax ?
+    - bagaimana karakter dari sebuah hoax yang disebarkan di twitter?
+    - adakah perbedaan hoax yang tersebar di berbagai media sosial?
+    - bagaimana cara untuk menangani hoax yang tersebar di media sosial?
+    - mengapa fenomena penyebaran hoax dapat terjadi?
+    - apa pentingnya kecakapan literasi pada pelajar dalam menangkal hoax?
+    - apa itu literasi digital?
+    - bagaimana tingkat literasi digital di masyarakat Indonesia ?
+    - apakah misinformasi, disinformasi / hoax itu sama?
+    - apakah facebook memiliki langkah dalam menangani disinformasi ?
+    - apa penyebab facebook memiliki banyak penyebaran hoax?
+    - apakah facebook memiliki pihak ketiga dalam memeriksa fakta dari berita hoax?
+    - Serikat Jurnalis untuk Keberagaman (SEJUK) lembaga apa?
+    - apa tujuan dari lembaga Serikat Jurnalis untuk Keberagaman (SEJUK) ?
+    - tentang Serikat Jurnalis untuk Keberagaman (SEJUK) 
+    - visi Serikat Jurnalis untuk Keberagaman (SEJUK) 
+    - misi Serikat Jurnalis untuk Keberagaman (SEJUK) 
+    - Hi
+    - Hey!
+    - hello
+    - hallo
+    - halo
+    - hai
+    - pagi
+    - siang
+    - malam
+    - /start
+    - start
+    - bye
+    - goodbye
+    - selamat tinggal
+    - dah
+    - see you later
+    - see you around
+    - bye bye
+    - Are you a bot?
+    - apa kau bot?
+    - bot
+    - apa ini manusia
+    - is this a chatbot
+    - ini chatbot
+    - gila
+    - bacottt
+    - mati kau
+    - minta judul
+    - lapet
+    - fuck
+    - robot bacot
+    - gak guna
+    - bla bla bla
+    - penis
+    - jelek
+    - laptop
+    - gempa
+    - astaga
+    - heleh
+    - dapur
+    - berhenti bertanya
+    - terserah
+    - bukan urusan mu
+    - tidak suka
+    - la la la
